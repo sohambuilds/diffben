@@ -112,6 +112,29 @@ def main():
         except RuntimeError as e:
             print(f"  {name}: fitting failed ({e})")
 
+    # Independence analysis
+    p_avg = np.mean(mean_arr)
+    print(f"\nIndependence Analysis:")
+    print(f"  Mean per-constraint satisfaction: p = {p_avg:.3f}")
+    print(f"  If constraints fail independently, P(all k satisfied) = p^k:")
+    for k in k_levels:
+        predicted = p_avg ** k
+        observed = np.mean(per_k_all_sat[k])
+        ratio = observed / predicted if predicted > 0 else float("inf")
+        print(
+            f"    k={k}: predicted={predicted:.4f}, observed={observed:.4f}, "
+            f"ratio={ratio:.2f}"
+        )
+    print(
+        f"  If ratio ≈ 1.0 across all k: constraints fail independently (no interference)."
+    )
+    print(
+        f"  If ratio < 1.0 at high k: constraints interfere (worse than independent)."
+    )
+    print(
+        f"  If ratio > 1.0 at high k: some correlation in successes."
+    )
+
     if not fits:
         print("\nNo curves could be fitted. Check your data.")
         return
@@ -152,16 +175,24 @@ def main():
     ax1.legend(fontsize=9)
     ax1.grid(True, alpha=0.3)
 
-    # Plot 2: All-constraints-satisfied rate
+    # Plot 2: All-constraints-satisfied rate with independence model
     ax2.bar(
         k_levels, all_sat_means, color="#3498db", alpha=0.7, width=0.6,
-        edgecolor="black", linewidth=0.5,
+        edgecolor="black", linewidth=0.5, label="Observed",
+    )
+    # Overlay the independence model: P(all) = p^k where p = mean per-constraint rate
+    p_indep = np.mean(mean_arr)
+    indep_pred = [p_indep ** k for k in k_levels]
+    ax2.plot(
+        k_levels, indep_pred, "ro--", markersize=6, linewidth=1.5,
+        label=f"Independence model (p={p_indep:.2f})^k",
     )
     ax2.set_xlabel("Constraint count (k)", fontsize=12)
     ax2.set_ylabel("Full-prompt satisfaction rate", fontsize=12)
     ax2.set_title("Fraction of Images Satisfying ALL Constraints", fontsize=13)
     ax2.set_xticks(k_levels)
     ax2.set_ylim(-0.05, 1.05)
+    ax2.legend(fontsize=9)
     ax2.grid(True, alpha=0.3, axis="y")
 
     fig.tight_layout()
