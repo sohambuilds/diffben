@@ -1,0 +1,242 @@
+[
+  {
+    "id": "v2_k1_01",
+    "k": 1,
+    "prompt": "A bright and spacious kitchen with white marble countertops and warm sunlight streaming through the window, featuring exactly 2 red apples on a wooden cutting board",
+    "constraints": [{"count": 2, "color": "red", "object": "apple"}]
+  },
+  {
+    "id": "v2_k1_02",
+    "k": 1,
+    "prompt": "A cozy reading nook in a living room with a comfortable armchair and soft ambient lighting from a nearby lamp, showing exactly 3 blue mugs on the side table",
+    "constraints": [{"count": 3, "color": "blue", "object": "mug"}]
+  },
+  {
+    "id": "v2_k1_03",
+    "k": 1,
+    "prompt": "A tidy home office desk arranged with notebooks and pens beside a window overlooking a quiet neighborhood street, with exactly 1 orange pumpkin on the shelf",
+    "constraints": [{"count": 1, "color": "orange", "object": "pumpkin"}]
+  },
+  {
+    "id": "v2_k1_04",
+    "k": 1,
+    "prompt": "A rustic farmhouse dining table set with patterned placemats and a simple centerpiece of dried lavender, holding exactly 2 green pears in a ceramic bowl",
+    "constraints": [{"count": 2, "color": "green", "object": "pear"}]
+  },
+  {
+    "id": "v2_k1_05",
+    "k": 1,
+    "prompt": "A modern art studio with blank canvases leaning against the wall and scattered brushes on a paint-stained table, holding exactly 3 yellow bananas in a bowl",
+    "constraints": [{"count": 3, "color": "yellow", "object": "banana"}]
+  },
+  {
+    "id": "v2_k1_06",
+    "k": 1,
+    "prompt": "A children's playroom with colorful foam floor tiles and wooden shelves filled with storybooks and soft blankets, showing exactly 1 brown teddy bear on the rug",
+    "constraints": [{"count": 1, "color": "brown", "object": "teddy bear"}]
+  },
+  {
+    "id": "v2_k1_07",
+    "k": 1,
+    "prompt": "A charming bakery display with glass cases and handwritten price tags on small chalkboard signs nearby, showing exactly 2 pink cupcakes on a white tray",
+    "constraints": [{"count": 2, "color": "pink", "object": "cupcake"}]
+  },
+  {
+    "id": "v2_k1_08",
+    "k": 1,
+    "prompt": "A sunlit balcony with potted herbs and a wrought iron railing overlooking a courtyard with old brick walls, featuring exactly 3 red tomatoes on a plate",
+    "constraints": [{"count": 3, "color": "red", "object": "tomato"}]
+  },
+  {
+    "id": "v2_k1_09",
+    "k": 1,
+    "prompt": "A quaint breakfast table beside a bay window with sheer white curtains and gentle morning light, featuring exactly 1 yellow bell pepper on a cutting board",
+    "constraints": [{"count": 1, "color": "yellow", "object": "bell pepper"}]
+  },
+  {
+    "id": "v2_k1_10",
+    "k": 1,
+    "prompt": "A peaceful garden scene with a stone pathway winding through lush green grass and blooming hedges, with exactly 2 white bottles on a wooden bench",
+    "constraints": [{"count": 2, "color": "white", "object": "bottle"}]
+  },
+  {
+    "id": "v2_k2_01",
+    "k": 2,
+    "prompt": "A well-organized kitchen counter with natural lighting and a tiled backsplash, with exactly 2 red apples and 1 green pear arranged on a wooden board",
+    "constraints": [{"count": 2, "color": "red", "object": "apple"}, {"count": 1, "color": "green", "object": "pear"}]
+  },
+  {
+    "id": "v2_k2_02",
+    "k": 2,
+    "prompt": "A cozy living room with a brick fireplace and bookshelves along the walls, featuring exactly 3 blue mugs and 1 white bottle on the coffee table",
+    "constraints": [{"count": 3, "color": "blue", "object": "mug"}, {"count": 1, "color": "white", "object": "bottle"}]
+  },
+  {
+    "id": "v2_k2_03",
+    "k": 2,
+    "prompt": "A cheerful breakfast spread on a wooden table with a checkered tablecloth, with exactly 2 yellow bananas and 3 pink cupcakes on a platter",
+    "constraints": [{"count": 2, "color": "yellow", "object": "banana"}, {"count": 3, "color": "pink", "object": "cupcake"}]
+  },
+  {
+    "id": "v2_k2_04",
+    "k": 2,
+    "prompt": "A tidy classroom with a whiteboard and rows of desks arranged neatly by the windows, with exactly 1 red backpack and 2 blue pens on the front desk",
+    "constraints": [{"count": 1, "color": "red", "object": "backpack"}, {"count": 2, "color": "blue", "object": "pen"}]
+  },
+  {
+    "id": "v2_k2_05",
+    "k": 2,
+    "prompt": "A garden patio with stone tiles and climbing vines on a wooden trellis behind the table, featuring exactly 3 red tomatoes and 1 green cucumber on a plate",
+    "constraints": [{"count": 3, "color": "red", "object": "tomato"}, {"count": 1, "color": "green", "object": "cucumber"}]
+  },
+  {
+    "id": "v2_k2_06",
+    "k": 2,
+    "prompt": "A small produce stand at a farmers market with wooden crates and hand-painted signs, featuring exactly 2 orange tangerines and 3 green pears in a basket",
+    "constraints": [{"count": 2, "color": "orange", "object": "tangerine"}, {"count": 3, "color": "green", "object": "pear"}]
+  },
+  {
+    "id": "v2_k2_07",
+    "k": 2,
+    "prompt": "A modern bathroom vanity with a round mirror and marble countertop in soft warm lighting, with exactly 1 yellow sponge and 2 white bottles on the shelf",
+    "constraints": [{"count": 1, "color": "yellow", "object": "sponge"}, {"count": 2, "color": "white", "object": "bottle"}]
+  },
+  {
+    "id": "v2_k2_08",
+    "k": 2,
+    "prompt": "A child's bedroom with a wooden bed frame and star-patterned wallpaper in the background, showing exactly 2 brown teddy bears and 1 red backpack on the floor",
+    "constraints": [{"count": 2, "color": "brown", "object": "teddy bear"}, {"count": 1, "color": "red", "object": "backpack"}]
+  },
+  {
+    "id": "v2_k2_09",
+    "k": 2,
+    "prompt": "A sunny café table by the window with a checkered napkin and fresh flowers nearby, showing exactly 3 white mugs and 2 yellow bell peppers on the counter",
+    "constraints": [{"count": 3, "color": "white", "object": "mug"}, {"count": 2, "color": "yellow", "object": "bell pepper"}]
+  },
+  {
+    "id": "v2_k2_10",
+    "k": 2,
+    "prompt": "A study desk near a window with warm afternoon light and a potted plant in the corner, with exactly 1 green cucumber and 3 red apples on a tray",
+    "constraints": [{"count": 1, "color": "green", "object": "cucumber"}, {"count": 3, "color": "red", "object": "apple"}]
+  },
+  {
+    "id": "v2_k4_01",
+    "k": 4,
+    "prompt": "A kitchen counter displaying 2 red apples, 1 green pear, 3 yellow bananas, and 2 blue mugs arranged for an afternoon snack",
+    "constraints": [{"count": 2, "color": "red", "object": "apple"}, {"count": 1, "color": "green", "object": "pear"}, {"count": 3, "color": "yellow", "object": "banana"}, {"count": 2, "color": "blue", "object": "mug"}]
+  },
+  {
+    "id": "v2_k4_02",
+    "k": 4,
+    "prompt": "A dining table with 1 orange pumpkin, 3 red tomatoes, 2 green cucumbers, and 1 white bottle placed neatly together",
+    "constraints": [{"count": 1, "color": "orange", "object": "pumpkin"}, {"count": 3, "color": "red", "object": "tomato"}, {"count": 2, "color": "green", "object": "cucumber"}, {"count": 1, "color": "white", "object": "bottle"}]
+  },
+  {
+    "id": "v2_k4_03",
+    "k": 4,
+    "prompt": "A child's desk with 2 brown teddy bears, 1 red backpack, 3 blue pens, and 2 yellow sponges scattered on the surface",
+    "constraints": [{"count": 2, "color": "brown", "object": "teddy bear"}, {"count": 1, "color": "red", "object": "backpack"}, {"count": 3, "color": "blue", "object": "pen"}, {"count": 2, "color": "yellow", "object": "sponge"}]
+  },
+  {
+    "id": "v2_k4_04",
+    "k": 4,
+    "prompt": "A garden bench with 3 green pears, 2 pink cupcakes, 1 orange tangerine, and 2 white bottles arranged side by side",
+    "constraints": [{"count": 3, "color": "green", "object": "pear"}, {"count": 2, "color": "pink", "object": "cupcake"}, {"count": 1, "color": "orange", "object": "tangerine"}, {"count": 2, "color": "white", "object": "bottle"}]
+  },
+  {
+    "id": "v2_k4_05",
+    "k": 4,
+    "prompt": "A breakfast tray holding 1 yellow bell pepper, 2 red apples, 3 blue mugs, and 1 brown teddy bear next to the plate",
+    "constraints": [{"count": 1, "color": "yellow", "object": "bell pepper"}, {"count": 2, "color": "red", "object": "apple"}, {"count": 3, "color": "blue", "object": "mug"}, {"count": 1, "color": "brown", "object": "teddy bear"}]
+  },
+  {
+    "id": "v2_k4_06",
+    "k": 4,
+    "prompt": "A produce shelf showing 2 orange tangerines, 3 red tomatoes, 1 green cucumber, and 2 yellow bananas neatly lined up",
+    "constraints": [{"count": 2, "color": "orange", "object": "tangerine"}, {"count": 3, "color": "red", "object": "tomato"}, {"count": 1, "color": "green", "object": "cucumber"}, {"count": 2, "color": "yellow", "object": "banana"}]
+  },
+  {
+    "id": "v2_k4_07",
+    "k": 4,
+    "prompt": "A bathroom counter with 1 pink cupcake, 3 white bottles, 2 yellow sponges, and 1 blue mug placed on a towel",
+    "constraints": [{"count": 1, "color": "pink", "object": "cupcake"}, {"count": 3, "color": "white", "object": "bottle"}, {"count": 2, "color": "yellow", "object": "sponge"}, {"count": 1, "color": "blue", "object": "mug"}]
+  },
+  {
+    "id": "v2_k4_08",
+    "k": 4,
+    "prompt": "A classroom table with 2 green pears, 1 red backpack, 3 blue pens, and 2 orange tangerines sitting together",
+    "constraints": [{"count": 2, "color": "green", "object": "pear"}, {"count": 1, "color": "red", "object": "backpack"}, {"count": 3, "color": "blue", "object": "pen"}, {"count": 2, "color": "orange", "object": "tangerine"}]
+  },
+  {
+    "id": "v2_k4_09",
+    "k": 4,
+    "prompt": "A picnic blanket with 3 yellow bananas, 1 white bottle, 2 red apples, and 1 green cucumber laid out neatly",
+    "constraints": [{"count": 3, "color": "yellow", "object": "banana"}, {"count": 1, "color": "white", "object": "bottle"}, {"count": 2, "color": "red", "object": "apple"}, {"count": 1, "color": "green", "object": "cucumber"}]
+  },
+  {
+    "id": "v2_k4_10",
+    "k": 4,
+    "prompt": "A farmhouse shelf holding 2 pink cupcakes, 3 brown teddy bears, 1 orange pumpkin, and 2 blue mugs in a row",
+    "constraints": [{"count": 2, "color": "pink", "object": "cupcake"}, {"count": 3, "color": "brown", "object": "teddy bear"}, {"count": 1, "color": "orange", "object": "pumpkin"}, {"count": 2, "color": "blue", "object": "mug"}]
+  },
+  {
+    "id": "v2_k8_01",
+    "k": 8,
+    "prompt": "2 red apples, 1 green pear, 3 yellow bananas, 2 blue mugs, 1 orange pumpkin, 3 white bottles, 2 pink cupcakes, and 1 brown teddy bear on a dining table",
+    "constraints": [{"count": 2, "color": "red", "object": "apple"}, {"count": 1, "color": "green", "object": "pear"}, {"count": 3, "color": "yellow", "object": "banana"}, {"count": 2, "color": "blue", "object": "mug"}, {"count": 1, "color": "orange", "object": "pumpkin"}, {"count": 3, "color": "white", "object": "bottle"}, {"count": 2, "color": "pink", "object": "cupcake"}, {"count": 1, "color": "brown", "object": "teddy bear"}]
+  },
+  {
+    "id": "v2_k8_02",
+    "k": 8,
+    "prompt": "A kitchen counter with 3 red tomatoes, 2 green cucumbers, 1 yellow bell pepper, 2 orange tangerines, 1 blue mug, 3 green pears, 2 white bottles, and 1 pink cupcake",
+    "constraints": [{"count": 3, "color": "red", "object": "tomato"}, {"count": 2, "color": "green", "object": "cucumber"}, {"count": 1, "color": "yellow", "object": "bell pepper"}, {"count": 2, "color": "orange", "object": "tangerine"}, {"count": 1, "color": "blue", "object": "mug"}, {"count": 3, "color": "green", "object": "pear"}, {"count": 2, "color": "white", "object": "bottle"}, {"count": 1, "color": "pink", "object": "cupcake"}]
+  },
+  {
+    "id": "v2_k8_03",
+    "k": 8,
+    "prompt": "A desk with 1 red backpack, 3 blue pens, 2 yellow sponges, 1 green cucumber, 2 brown teddy bears, 3 red apples, 1 white bottle, and 2 orange tangerines",
+    "constraints": [{"count": 1, "color": "red", "object": "backpack"}, {"count": 3, "color": "blue", "object": "pen"}, {"count": 2, "color": "yellow", "object": "sponge"}, {"count": 1, "color": "green", "object": "cucumber"}, {"count": 2, "color": "brown", "object": "teddy bear"}, {"count": 3, "color": "red", "object": "apple"}, {"count": 1, "color": "white", "object": "bottle"}, {"count": 2, "color": "orange", "object": "tangerine"}]
+  },
+  {
+    "id": "v2_k8_04",
+    "k": 8,
+    "prompt": "A shelf with 2 pink cupcakes, 1 orange pumpkin, 3 blue mugs, 2 yellow bananas, 1 red tomato, 3 green pears, 2 white bottles, and 1 brown teddy bear",
+    "constraints": [{"count": 2, "color": "pink", "object": "cupcake"}, {"count": 1, "color": "orange", "object": "pumpkin"}, {"count": 3, "color": "blue", "object": "mug"}, {"count": 2, "color": "yellow", "object": "banana"}, {"count": 1, "color": "red", "object": "tomato"}, {"count": 3, "color": "green", "object": "pear"}, {"count": 2, "color": "white", "object": "bottle"}, {"count": 1, "color": "brown", "object": "teddy bear"}]
+  },
+  {
+    "id": "v2_k8_05",
+    "k": 8,
+    "prompt": "A table with 3 red apples, 2 green cucumbers, 1 yellow bell pepper, 2 blue pens, 3 orange tangerines, 1 white bottle, 2 pink cupcakes, and 1 brown teddy bear",
+    "constraints": [{"count": 3, "color": "red", "object": "apple"}, {"count": 2, "color": "green", "object": "cucumber"}, {"count": 1, "color": "yellow", "object": "bell pepper"}, {"count": 2, "color": "blue", "object": "pen"}, {"count": 3, "color": "orange", "object": "tangerine"}, {"count": 1, "color": "white", "object": "bottle"}, {"count": 2, "color": "pink", "object": "cupcake"}, {"count": 1, "color": "brown", "object": "teddy bear"}]
+  },
+  {
+    "id": "v2_k8_06",
+    "k": 8,
+    "prompt": "A counter with 1 red backpack, 2 yellow bananas, 3 green pears, 1 blue mug, 2 orange tangerines, 3 red tomatoes, 1 white bottle, and 2 pink cupcakes",
+    "constraints": [{"count": 1, "color": "red", "object": "backpack"}, {"count": 2, "color": "yellow", "object": "banana"}, {"count": 3, "color": "green", "object": "pear"}, {"count": 1, "color": "blue", "object": "mug"}, {"count": 2, "color": "orange", "object": "tangerine"}, {"count": 3, "color": "red", "object": "tomato"}, {"count": 1, "color": "white", "object": "bottle"}, {"count": 2, "color": "pink", "object": "cupcake"}]
+  },
+  {
+    "id": "v2_k8_07",
+    "k": 8,
+    "prompt": "A picnic scene with 2 red apples, 3 yellow bananas, 1 green cucumber, 2 white bottles, 1 orange pumpkin, 3 blue mugs, 2 brown teddy bears, and 1 pink cupcake",
+    "constraints": [{"count": 2, "color": "red", "object": "apple"}, {"count": 3, "color": "yellow", "object": "banana"}, {"count": 1, "color": "green", "object": "cucumber"}, {"count": 2, "color": "white", "object": "bottle"}, {"count": 1, "color": "orange", "object": "pumpkin"}, {"count": 3, "color": "blue", "object": "mug"}, {"count": 2, "color": "brown", "object": "teddy bear"}, {"count": 1, "color": "pink", "object": "cupcake"}]
+  },
+  {
+    "id": "v2_k8_08",
+    "k": 8,
+    "prompt": "A market stall with 3 green cucumbers, 2 red tomatoes, 1 yellow bell pepper, 2 orange tangerines, 3 green pears, 1 blue pen, 2 yellow sponges, and 1 red backpack",
+    "constraints": [{"count": 3, "color": "green", "object": "cucumber"}, {"count": 2, "color": "red", "object": "tomato"}, {"count": 1, "color": "yellow", "object": "bell pepper"}, {"count": 2, "color": "orange", "object": "tangerine"}, {"count": 3, "color": "green", "object": "pear"}, {"count": 1, "color": "blue", "object": "pen"}, {"count": 2, "color": "yellow", "object": "sponge"}, {"count": 1, "color": "red", "object": "backpack"}]
+  },
+  {
+    "id": "v2_k8_09",
+    "k": 8,
+    "prompt": "A playroom floor with 1 brown teddy bear, 2 red apples, 3 blue mugs, 1 yellow banana, 2 pink cupcakes, 3 white bottles, 1 green pear, and 2 orange tangerines",
+    "constraints": [{"count": 1, "color": "brown", "object": "teddy bear"}, {"count": 2, "color": "red", "object": "apple"}, {"count": 3, "color": "blue", "object": "mug"}, {"count": 1, "color": "yellow", "object": "banana"}, {"count": 2, "color": "pink", "object": "cupcake"}, {"count": 3, "color": "white", "object": "bottle"}, {"count": 1, "color": "green", "object": "pear"}, {"count": 2, "color": "orange", "object": "tangerine"}]
+  },
+  {
+    "id": "v2_k8_10",
+    "k": 8,
+    "prompt": "A farmhouse table with 2 yellow bananas, 3 red tomatoes, 1 blue mug, 2 green cucumbers, 1 orange pumpkin, 3 pink cupcakes, 2 white bottles, and 1 brown teddy bear",
+    "constraints": [{"count": 2, "color": "yellow", "object": "banana"}, {"count": 3, "color": "red", "object": "tomato"}, {"count": 1, "color": "blue", "object": "mug"}, {"count": 2, "color": "green", "object": "cucumber"}, {"count": 1, "color": "orange", "object": "pumpkin"}, {"count": 3, "color": "pink", "object": "cupcake"}, {"count": 2, "color": "white", "object": "bottle"}, {"count": 1, "color": "brown", "object": "teddy bear"}]
+  }
+]

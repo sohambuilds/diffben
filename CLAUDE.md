@@ -531,4 +531,59 @@ Frame every section through the NLP lens:
 - **Researcher:** Soham, KIIT Bhubaneswar, pre-final year CS
 - **Prior work:** ICCV 2025 paper (accepted), GeoAgent (ACL submission), SEA-Web (adversarial web agent benchmark)
 - **Compute:** 3× 48GB VRAM GPUs, personal compute budget
-- **This document last updated:** March 2026, v2
+- **This document last updated:** March 2026, v3
+
+---
+
+## Pilot Sanity Check Findings (March 25, 2026)
+
+### Setup
+- Model: FLUX.2 klein 4B, 4 steps, guidance_scale=1.0
+- Evaluator: Gemini 3 Flash Preview (VQA-based counting)
+- 40 numeracy prompts: 10 per k-level (k=1,2,4,8), N=4 images per prompt
+
+### Key Finding: Per-Object Count Difficulty Dominates Over Constraint Count k
+
+The pilot revealed that **per-object count difficulty** (how many of a single object are requested) is a far stronger predictor of failure than constraint count k. The k variable showed no clean decay because count distributions were uncontrolled across k levels.
+
+**Satisfaction by expected per-object count (the real signal):**
+| Expected count | Accuracy |
+|---|---|
+| 1 | 66.7% |
+| 2 | 36.2% |
+| 3 | 26.4% |
+| 4 | 22.5% |
+| 5 | 13.9% |
+| 6 | 5.0% |
+| 7 | 0.0% |
+
+**Why the k-level analysis was flat/non-monotonic:**
+- k=1 prompts included hard counts (5 tulips, 6 cookies) → low baseline
+- k=4 prompts had many count=1 constraints (gift box, towel roll) → inflated scores
+- Result: k=4 (0.431) outscored k=1 (0.375), masking any k-driven decay
+
+### Object Countability Tiers (Empirical)
+
+Objects fall into clear tiers based on generation+evaluation reliability:
+
+**Tier 1 — Highly countable (75-100% accuracy at count 1-3):**
+pumpkin, backpack, gift box, stapler, calculator, toothbrush, yarn ball, spool of thread, towel roll, bell pepper, bus, teddy bear, sponge, velvet cake, toast slice, cheese cube, mug, cupcake, bottle, cucumber
+
+**Tier 2 — Moderately countable (40-70%):**
+apple, tomato, pen, button, car, mushroom, cake, macaron, banana, pear, tangerine, folder, candle, sticky note
+
+**Tier 3 — Uncountable (0-25%, DO NOT USE):**
+bead, sequin, cotton ball, feather, forget-me-not, daisy, lavender, fern, marigold, sunflower, confetti, grape cluster, sheet of paper, paperclip, felt square, hair tie, croissant, meringue, lemon tart, mint cookie, cookie, soap bar, crayon, party hat, napkin, block, dinosaur, streamer
+
+**Root causes for Tier 3 failure:**
+- Objects that naturally cluster/scatter (beads, confetti, cotton balls)
+- Objects that are small and hard to individuate (sequins, paperclips, feathers)
+- Flowers that grow in clusters, not discrete units (daisies, forget-me-nots, lavender)
+- Food items with irregular shapes that blend together (croissants piled up, cookies on a tray)
+
+### Design Implications for CompScale-Bench v2
+
+1. **CRITICAL: Hold per-object counts constant across all k levels.** Use only counts 1-3 for all constraints at all k. This isolates k as the sole independent variable.
+2. **Use only Tier 1-2 objects.** Curate a verified countable object list (~30-40 objects).
+3. **The "count difficulty" decay curve itself is a finding.** Consider reporting it as evidence of fundamental numeracy limitations — even a single constraint with count>4 fails reliably.
+4. **VLM evaluator reliability:** Gemini 3 Flash Preview is reliable for counts 1-3 of Tier 1 objects. Unreliable for counts >5 or Tier 3 objects (impossible to distinguish evaluator failure from generation failure).
