@@ -1,0 +1,242 @@
+[
+  {
+    "id": "attr_k1_01",
+    "k": 1,
+    "prompt": "A bright and spacious parking lot with trees lining the edges and sunlight reflecting off the pavement, featuring a red car parked near the entrance",
+    "constraints": [{"color": "red", "object": "car"}]
+  },
+  {
+    "id": "attr_k1_02",
+    "k": 1,
+    "prompt": "A cozy living room with bookshelves along the walls and soft ambient lighting from a nearby window, showing a blue sofa against the far wall",
+    "constraints": [{"color": "blue", "object": "sofa"}]
+  },
+  {
+    "id": "attr_k1_03",
+    "k": 1,
+    "prompt": "A quiet residential street with brick houses and neatly trimmed hedges on both sides of the road, with a yellow bicycle leaning against a fence",
+    "constraints": [{"color": "yellow", "object": "bicycle"}]
+  },
+  {
+    "id": "attr_k1_04",
+    "k": 1,
+    "prompt": "A tidy kitchen counter with marble surfaces and wooden cabinets in warm afternoon light from the window, holding a green mug on a small saucer",
+    "constraints": [{"color": "green", "object": "mug"}]
+  },
+  {
+    "id": "attr_k1_05",
+    "k": 1,
+    "prompt": "A modern office desk with a monitor and keyboard arranged neatly beside a potted plant near the window, featuring a black backpack on the chair",
+    "constraints": [{"color": "black", "object": "backpack"}]
+  },
+  {
+    "id": "attr_k1_06",
+    "k": 1,
+    "prompt": "A charming garden pathway with stepping stones winding through green grass and blooming flower beds, showing a white bench under a large oak tree",
+    "constraints": [{"color": "white", "object": "bench"}]
+  },
+  {
+    "id": "attr_k1_07",
+    "k": 1,
+    "prompt": "A rustic farmhouse porch with wooden railings and hanging planters swaying gently in the afternoon breeze, with a pink umbrella resting by the door",
+    "constraints": [{"color": "pink", "object": "umbrella"}]
+  },
+  {
+    "id": "attr_k1_08",
+    "k": 1,
+    "prompt": "A children's playroom with colorful foam floor tiles and shelves full of storybooks and stuffed animals, showing an orange ball on the floor",
+    "constraints": [{"color": "orange", "object": "ball"}]
+  },
+  {
+    "id": "attr_k1_09",
+    "k": 1,
+    "prompt": "A bustling city sidewalk with tall buildings in the background and pedestrians walking past shop windows, featuring a purple suitcase near the curb",
+    "constraints": [{"color": "purple", "object": "suitcase"}]
+  },
+  {
+    "id": "attr_k1_10",
+    "k": 1,
+    "prompt": "A sunny beach scene with golden sand and gentle waves lapping at the shore under a clear blue sky, with a brown hat resting on a towel",
+    "constraints": [{"color": "brown", "object": "hat"}]
+  },
+  {
+    "id": "attr_k2_01",
+    "k": 2,
+    "prompt": "A parking lot on a sunny day with trees along the edges and a clear sky overhead, featuring a red car and a blue truck parked side by side",
+    "constraints": [{"color": "red", "object": "car"}, {"color": "blue", "object": "truck"}]
+  },
+  {
+    "id": "attr_k2_02",
+    "k": 2,
+    "prompt": "A cozy living room with a fireplace and bookshelves along the walls in soft warm lighting, showing a green sofa and a yellow armchair facing each other",
+    "constraints": [{"color": "green", "object": "sofa"}, {"color": "yellow", "object": "armchair"}]
+  },
+  {
+    "id": "attr_k2_03",
+    "k": 2,
+    "prompt": "A quiet residential street with brick houses and trimmed hedges lining both sides, with a black bicycle and a white scooter on the sidewalk",
+    "constraints": [{"color": "black", "object": "bicycle"}, {"color": "white", "object": "scooter"}]
+  },
+  {
+    "id": "attr_k2_04",
+    "k": 2,
+    "prompt": "A kitchen counter with marble surfaces and wooden cabinets in warm afternoon light, holding a pink mug and an orange bowl next to each other",
+    "constraints": [{"color": "pink", "object": "mug"}, {"color": "orange", "object": "bowl"}]
+  },
+  {
+    "id": "attr_k2_05",
+    "k": 2,
+    "prompt": "A modern office with a large window and potted plants on the windowsill in natural light, featuring a brown desk and a red chair in the center",
+    "constraints": [{"color": "brown", "object": "desk"}, {"color": "red", "object": "chair"}]
+  },
+  {
+    "id": "attr_k2_06",
+    "k": 2,
+    "prompt": "A garden scene with stepping stones and blooming flower beds along a winding path, showing a purple bench and a green watering can on the grass",
+    "constraints": [{"color": "purple", "object": "bench"}, {"color": "green", "object": "watering can"}]
+  },
+  {
+    "id": "attr_k2_07",
+    "k": 2,
+    "prompt": "A children's bedroom with star-patterned wallpaper and wooden shelves full of toys, with a blue backpack and a yellow lamp on the nightstand",
+    "constraints": [{"color": "blue", "object": "backpack"}, {"color": "yellow", "object": "lamp"}]
+  },
+  {
+    "id": "attr_k2_08",
+    "k": 2,
+    "prompt": "A city sidewalk with tall buildings in the background and shop windows along the street, featuring a white umbrella and a black suitcase near a bench",
+    "constraints": [{"color": "white", "object": "umbrella"}, {"color": "black", "object": "suitcase"}]
+  },
+  {
+    "id": "attr_k2_09",
+    "k": 2,
+    "prompt": "A sunny beach with golden sand and gentle waves under a bright clear sky, with an orange surfboard and a red towel laid out on the sand",
+    "constraints": [{"color": "orange", "object": "surfboard"}, {"color": "red", "object": "towel"}]
+  },
+  {
+    "id": "attr_k2_10",
+    "k": 2,
+    "prompt": "A farmhouse porch with wooden railings and hanging planters swaying in the breeze, showing a brown rocking chair and a pink cushion on the steps",
+    "constraints": [{"color": "brown", "object": "rocking chair"}, {"color": "pink", "object": "cushion"}]
+  },
+  {
+    "id": "attr_k4_01",
+    "k": 4,
+    "prompt": "A street scene with a red car, a blue truck, a yellow bicycle, and a green bus all visible near an intersection",
+    "constraints": [{"color": "red", "object": "car"}, {"color": "blue", "object": "truck"}, {"color": "yellow", "object": "bicycle"}, {"color": "green", "object": "bus"}]
+  },
+  {
+    "id": "attr_k4_02",
+    "k": 4,
+    "prompt": "A living room with a white sofa, a brown coffee table, a black lamp, and an orange cushion arranged in the center of the room",
+    "constraints": [{"color": "white", "object": "sofa"}, {"color": "brown", "object": "coffee table"}, {"color": "black", "object": "lamp"}, {"color": "orange", "object": "cushion"}]
+  },
+  {
+    "id": "attr_k4_03",
+    "k": 4,
+    "prompt": "A kitchen with a red kettle, a blue mug, a yellow plate, and a green bowl placed together on a wooden counter",
+    "constraints": [{"color": "red", "object": "kettle"}, {"color": "blue", "object": "mug"}, {"color": "yellow", "object": "plate"}, {"color": "green", "object": "bowl"}]
+  },
+  {
+    "id": "attr_k4_04",
+    "k": 4,
+    "prompt": "A child's bedroom with a pink bed, a purple rug, a white bookshelf, and an orange toy box against the walls",
+    "constraints": [{"color": "pink", "object": "bed"}, {"color": "purple", "object": "rug"}, {"color": "white", "object": "bookshelf"}, {"color": "orange", "object": "toy box"}]
+  },
+  {
+    "id": "attr_k4_05",
+    "k": 4,
+    "prompt": "A park scene with a brown bench, a red umbrella, a black dog, and a yellow kite visible on a sunny afternoon",
+    "constraints": [{"color": "brown", "object": "bench"}, {"color": "red", "object": "umbrella"}, {"color": "black", "object": "dog"}, {"color": "yellow", "object": "kite"}]
+  },
+  {
+    "id": "attr_k4_06",
+    "k": 4,
+    "prompt": "An office with a white desk, a blue chair, a green plant pot, and a black monitor arranged in a tidy workspace",
+    "constraints": [{"color": "white", "object": "desk"}, {"color": "blue", "object": "chair"}, {"color": "green", "object": "plant pot"}, {"color": "black", "object": "monitor"}]
+  },
+  {
+    "id": "attr_k4_07",
+    "k": 4,
+    "prompt": "A beach scene with an orange surfboard, a blue cooler, a white towel, and a red bucket sitting together on the sand",
+    "constraints": [{"color": "orange", "object": "surfboard"}, {"color": "blue", "object": "cooler"}, {"color": "white", "object": "towel"}, {"color": "red", "object": "bucket"}]
+  },
+  {
+    "id": "attr_k4_08",
+    "k": 4,
+    "prompt": "A garden with a green wheelbarrow, a brown fence, a pink flamingo ornament, and a purple watering can on the lawn",
+    "constraints": [{"color": "green", "object": "wheelbarrow"}, {"color": "brown", "object": "fence"}, {"color": "pink", "object": "flamingo ornament"}, {"color": "purple", "object": "watering can"}]
+  },
+  {
+    "id": "attr_k4_09",
+    "k": 4,
+    "prompt": "A classroom with a yellow backpack, a red pencil case, a blue water bottle, and a green folder on a student desk",
+    "constraints": [{"color": "yellow", "object": "backpack"}, {"color": "red", "object": "pencil case"}, {"color": "blue", "object": "water bottle"}, {"color": "green", "object": "folder"}]
+  },
+  {
+    "id": "attr_k4_10",
+    "k": 4,
+    "prompt": "A bathroom with a white bathtub, a black towel rack, a blue soap dispenser, and a pink bath mat on the tiled floor",
+    "constraints": [{"color": "white", "object": "bathtub"}, {"color": "black", "object": "towel rack"}, {"color": "blue", "object": "soap dispenser"}, {"color": "pink", "object": "bath mat"}]
+  },
+  {
+    "id": "attr_k8_01",
+    "k": 8,
+    "prompt": "A street with a red car, a blue truck, a yellow bicycle, a green bus, a white van, a black motorcycle, an orange scooter, and a purple skateboard",
+    "constraints": [{"color": "red", "object": "car"}, {"color": "blue", "object": "truck"}, {"color": "yellow", "object": "bicycle"}, {"color": "green", "object": "bus"}, {"color": "white", "object": "van"}, {"color": "black", "object": "motorcycle"}, {"color": "orange", "object": "scooter"}, {"color": "purple", "object": "skateboard"}]
+  },
+  {
+    "id": "attr_k8_02",
+    "k": 8,
+    "prompt": "A living room with a brown sofa, a white coffee table, a red armchair, a blue rug, a yellow lamp, a green cushion, a black bookshelf, and an orange vase",
+    "constraints": [{"color": "brown", "object": "sofa"}, {"color": "white", "object": "coffee table"}, {"color": "red", "object": "armchair"}, {"color": "blue", "object": "rug"}, {"color": "yellow", "object": "lamp"}, {"color": "green", "object": "cushion"}, {"color": "black", "object": "bookshelf"}, {"color": "orange", "object": "vase"}]
+  },
+  {
+    "id": "attr_k8_03",
+    "k": 8,
+    "prompt": "A kitchen with a red kettle, a blue mug, a yellow plate, a green bowl, a white toaster, a black pan, an orange cutting board, and a pink apron",
+    "constraints": [{"color": "red", "object": "kettle"}, {"color": "blue", "object": "mug"}, {"color": "yellow", "object": "plate"}, {"color": "green", "object": "bowl"}, {"color": "white", "object": "toaster"}, {"color": "black", "object": "pan"}, {"color": "orange", "object": "cutting board"}, {"color": "pink", "object": "apron"}]
+  },
+  {
+    "id": "attr_k8_04",
+    "k": 8,
+    "prompt": "A bedroom with a blue bed, a white nightstand, a red lamp, a brown dresser, a green rug, a yellow curtain, a black alarm clock, and a pink pillow",
+    "constraints": [{"color": "blue", "object": "bed"}, {"color": "white", "object": "nightstand"}, {"color": "red", "object": "lamp"}, {"color": "brown", "object": "dresser"}, {"color": "green", "object": "rug"}, {"color": "yellow", "object": "curtain"}, {"color": "black", "object": "alarm clock"}, {"color": "pink", "object": "pillow"}]
+  },
+  {
+    "id": "attr_k8_05",
+    "k": 8,
+    "prompt": "A park with a brown bench, a red umbrella, a yellow kite, a green tree, a white fence, a blue fountain, a black dog, and an orange frisbee on the grass",
+    "constraints": [{"color": "brown", "object": "bench"}, {"color": "red", "object": "umbrella"}, {"color": "yellow", "object": "kite"}, {"color": "green", "object": "tree"}, {"color": "white", "object": "fence"}, {"color": "blue", "object": "fountain"}, {"color": "black", "object": "dog"}, {"color": "orange", "object": "frisbee"}]
+  },
+  {
+    "id": "attr_k8_06",
+    "k": 8,
+    "prompt": "An office with a white desk, a black monitor, a blue chair, a red stapler, a green plant pot, a yellow notepad, a brown shelf, and an orange mug",
+    "constraints": [{"color": "white", "object": "desk"}, {"color": "black", "object": "monitor"}, {"color": "blue", "object": "chair"}, {"color": "red", "object": "stapler"}, {"color": "green", "object": "plant pot"}, {"color": "yellow", "object": "notepad"}, {"color": "brown", "object": "shelf"}, {"color": "orange", "object": "mug"}]
+  },
+  {
+    "id": "attr_k8_07",
+    "k": 8,
+    "prompt": "A beach with a red surfboard, a blue cooler, a white towel, a yellow umbrella, an orange bucket, a green chair, a pink sandcastle mold, and a black sunglasses case",
+    "constraints": [{"color": "red", "object": "surfboard"}, {"color": "blue", "object": "cooler"}, {"color": "white", "object": "towel"}, {"color": "yellow", "object": "umbrella"}, {"color": "orange", "object": "bucket"}, {"color": "green", "object": "chair"}, {"color": "pink", "object": "sandcastle mold"}, {"color": "black", "object": "sunglasses case"}]
+  },
+  {
+    "id": "attr_k8_08",
+    "k": 8,
+    "prompt": "A garden with a red wheelbarrow, a blue watering can, a yellow birdhouse, a green hose, a white fence, a brown shed, a pink flamingo ornament, and an orange pot",
+    "constraints": [{"color": "red", "object": "wheelbarrow"}, {"color": "blue", "object": "watering can"}, {"color": "yellow", "object": "birdhouse"}, {"color": "green", "object": "hose"}, {"color": "white", "object": "fence"}, {"color": "brown", "object": "shed"}, {"color": "pink", "object": "flamingo ornament"}, {"color": "orange", "object": "pot"}]
+  },
+  {
+    "id": "attr_k8_09",
+    "k": 8,
+    "prompt": "A classroom with a yellow backpack, a red pencil case, a blue water bottle, a green folder, a white eraser, a black calculator, a brown notebook, and a pink ruler",
+    "constraints": [{"color": "yellow", "object": "backpack"}, {"color": "red", "object": "pencil case"}, {"color": "blue", "object": "water bottle"}, {"color": "green", "object": "folder"}, {"color": "white", "object": "eraser"}, {"color": "black", "object": "calculator"}, {"color": "brown", "object": "notebook"}, {"color": "pink", "object": "ruler"}]
+  },
+  {
+    "id": "attr_k8_10",
+    "k": 8,
+    "prompt": "A bathroom with a white bathtub, a blue soap dispenser, a pink bath mat, a black towel, a green toothbrush, a red cup, a yellow rubber duck, and a brown basket",
+    "constraints": [{"color": "white", "object": "bathtub"}, {"color": "blue", "object": "soap dispenser"}, {"color": "pink", "object": "bath mat"}, {"color": "black", "object": "towel"}, {"color": "green", "object": "toothbrush"}, {"color": "red", "object": "cup"}, {"color": "yellow", "object": "rubber duck"}, {"color": "brown", "object": "basket"}]
+  }
+]

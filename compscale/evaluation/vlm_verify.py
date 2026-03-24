@@ -100,22 +100,42 @@ def main():
 
             constraint_results = []
             for c in prompt_data["constraints"]:
-                obj = c["object"]
-                obj_plural = obj + "s" if not obj.endswith("s") else obj
-                question = (
-                    f"How many {c['color']} {obj_plural} are in this image? "
-                    f"Answer with just a number."
-                )
-                answer_text = ask_vlm(client, args.model, str(img_path), question)
-                parsed = parse_count(answer_text)
-                satisfied = parsed == c["count"]
+                constraint_type = c.get("type", "numeracy" if "count" in c else "attribute")
 
-                if args.dry_run:
-                    print(
-                        f"  {prompt_data['id']}/img_{img_idx}: "
-                        f"'{question}' -> '{answer_text.strip()}' "
-                        f"(parsed={parsed}, expected={c['count']})"
+                if constraint_type == "attribute" or "count" not in c:
+                    # Attribute binding: check if object has correct color
+                    question = (
+                        f"What color is the {c['object']} in this image? "
+                        f"Answer with just the color name."
                     )
+                    answer_text = ask_vlm(client, args.model, str(img_path), question)
+                    parsed = answer_text.strip().lower()
+                    satisfied = c["color"].lower() in parsed
+
+                    if args.dry_run:
+                        print(
+                            f"  {prompt_data['id']}/img_{img_idx}: "
+                            f"'{question}' -> '{answer_text.strip()}' "
+                            f"(expected={c['color']}, satisfied={satisfied})"
+                        )
+                else:
+                    # Numeracy: check count
+                    obj = c["object"]
+                    obj_plural = obj + "s" if not obj.endswith("s") else obj
+                    question = (
+                        f"How many {c['color']} {obj_plural} are in this image? "
+                        f"Answer with just a number."
+                    )
+                    answer_text = ask_vlm(client, args.model, str(img_path), question)
+                    parsed = parse_count(answer_text)
+                    satisfied = parsed == c["count"]
+
+                    if args.dry_run:
+                        print(
+                            f"  {prompt_data['id']}/img_{img_idx}: "
+                            f"'{question}' -> '{answer_text.strip()}' "
+                            f"(parsed={parsed}, expected={c['count']})"
+                        )
 
                 constraint_results.append(
                     {

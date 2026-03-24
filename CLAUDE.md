@@ -581,9 +581,37 @@ bead, sequin, cotton ball, feather, forget-me-not, daisy, lavender, fern, marigo
 - Flowers that grow in clusters, not discrete units (daisies, forget-me-nots, lavender)
 - Food items with irregular shapes that blend together (croissants piled up, cookies on a tray)
 
-### Design Implications for CompScale-Bench v2
+### Pilot v2: Controlled Count Distribution (March 25, 2026)
+
+**Changes from v1:** Restricted all counts to 1-3, used only Tier 1-2 objects, balanced count distribution across k levels.
+
+**Results:**
+| k | Per-constraint satisfaction | All-satisfied rate |
+|---|---|---|
+| 1 | 35.0% | 35.0% |
+| 2 | 36.2% | 10.0% |
+| 4 | 43.8% | 2.5% |
+| 8 | 31.2% | 0.0% |
+
+**Curve fitting:** R²=0.10 for best fit (exponential). No meaningful per-constraint decay.
+
+**Independence analysis:** With p=0.366 mean per-constraint satisfaction, the all-satisfied decay matches the independence model (p^k) closely:
+| k | Predicted (p^k) | Observed | Ratio |
+|---|---|---|---|
+| 1 | 0.366 | 0.350 | 0.96 |
+| 2 | 0.134 | 0.100 | 0.75 |
+| 4 | 0.018 | 0.025 | 1.40 |
+| 8 | 0.0003 | 0.000 | — |
+
+**Key conclusion:** FLUX.2 klein 4B is at floor performance for numeracy (~35% per-constraint). The all-satisfied decay is just binomial math (p^k), not interference. **Cannot measure cross-constraint interference when baseline is this low.** Need either:
+1. An easier constraint type with p > 0.7 at k=1 (→ attribute binding pilot)
+2. A stronger model with better numeracy baseline (→ frontier API models later)
+
+### Design Implications for CompScale-Bench
 
 1. **CRITICAL: Hold per-object counts constant across all k levels.** Use only counts 1-3 for all constraints at all k. This isolates k as the sole independent variable.
 2. **Use only Tier 1-2 objects.** Curate a verified countable object list (~30-40 objects).
 3. **The "count difficulty" decay curve itself is a finding.** Consider reporting it as evidence of fundamental numeracy limitations — even a single constraint with count>4 fails reliably.
 4. **VLM evaluator reliability:** Gemini 3 Flash Preview is reliable for counts 1-3 of Tier 1 objects. Unreliable for counts >5 or Tier 3 objects (impossible to distinguish evaluator failure from generation failure).
+5. **Numeracy on weak models is at floor.** For the scaling law analysis to work, need per-constraint baseline > 70%. Attribute binding is the better first dimension to test on small models. Save numeracy for frontier APIs.
+6. **Independence test is essential.** Always compare observed all-satisfied rates against the p^k independence model. The interesting finding is when observed < predicted (active interference), not when it merely follows binomial decay.
