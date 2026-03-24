@@ -7,7 +7,8 @@ import re
 import time
 from pathlib import Path
 
-import google.generativeai as genai
+from google import genai
+from google.genai import types
 from PIL import Image
 
 
@@ -21,10 +22,13 @@ def parse_count(response: str) -> int | None:
         return int(match.group()) if match else None
 
 
-def ask_vlm(model, image_path: str, question: str) -> str:
+def ask_vlm(client, model_name: str, image_path: str, question: str) -> str:
     """Ask the VLM a question about an image."""
     img = Image.open(image_path)
-    response = model.generate_content([question, img])
+    response = client.models.generate_content(
+        model=model_name,
+        contents=[question, img],
+    )
     return response.text
 
 
@@ -72,8 +76,7 @@ def main():
         print("Error: GEMINI_API_KEY environment variable not set.")
         return
 
-    genai.configure(api_key=api_key)
-    model = genai.GenerativeModel(args.model)
+    client = genai.Client(api_key=api_key)
 
     prompts = json.loads(Path(args.prompts).read_text())
     if args.prompt_ids:
@@ -103,7 +106,7 @@ def main():
                     f"How many {c['color']} {obj_plural} are in this image? "
                     f"Answer with just a number."
                 )
-                answer_text = ask_vlm(model, str(img_path), question)
+                answer_text = ask_vlm(client, args.model, str(img_path), question)
                 parsed = parse_count(answer_text)
                 satisfied = parsed == c["count"]
 
