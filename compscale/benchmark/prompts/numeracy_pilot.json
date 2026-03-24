@@ -1,0 +1,242 @@
+[
+  {
+    "id": "num_k1_01",
+    "k": 1,
+    "prompt": "A bright and spacious kitchen with white marble countertops and warm sunlight streaming through the window, featuring exactly 3 red apples on a wooden cutting board",
+    "constraints": [{"count": 3, "color": "red", "object": "apple"}]
+  },
+  {
+    "id": "num_k1_02",
+    "k": 1,
+    "prompt": "A peaceful garden scene with a stone pathway winding through lush green grass and blooming hedges, with exactly 5 yellow tulips growing near a small wooden fence",
+    "constraints": [{"count": 5, "color": "yellow", "object": "tulip"}]
+  },
+  {
+    "id": "num_k1_03",
+    "k": 1,
+    "prompt": "A cozy reading nook in a living room with a comfortable armchair and soft ambient lighting from a nearby lamp, showing exactly 2 blue mugs on the side table",
+    "constraints": [{"count": 2, "color": "blue", "object": "mug"}]
+  },
+  {
+    "id": "num_k1_04",
+    "k": 1,
+    "prompt": "A rustic farmhouse dining table set with patterned placemats and a simple centerpiece of dried lavender, holding exactly 4 green pears in a ceramic bowl",
+    "constraints": [{"count": 4, "color": "green", "object": "pear"}]
+  },
+  {
+    "id": "num_k1_05",
+    "k": 1,
+    "prompt": "A tidy home office desk arranged with notebooks and pens beside a window overlooking a quiet neighborhood street, with exactly 1 orange pumpkin on the shelf",
+    "constraints": [{"count": 1, "color": "orange", "object": "pumpkin"}]
+  },
+  {
+    "id": "num_k1_06",
+    "k": 1,
+    "prompt": "A charming bakery display with glass cases and handwritten price tags on small chalkboard signs nearby, showing exactly 6 brown cookies on a white tray",
+    "constraints": [{"count": 6, "color": "brown", "object": "cookie"}]
+  },
+  {
+    "id": "num_k1_07",
+    "k": 1,
+    "prompt": "A sunlit balcony with potted herbs and a wrought iron railing overlooking a courtyard with old brick walls, featuring exactly 2 pink roses in a glass vase",
+    "constraints": [{"count": 2, "color": "pink", "object": "rose"}]
+  },
+  {
+    "id": "num_k1_08",
+    "k": 1,
+    "prompt": "A modern art studio with blank canvases leaning against the wall and scattered brushes on a paint-stained table, holding exactly 3 purple plums in a bowl",
+    "constraints": [{"count": 3, "color": "purple", "object": "plum"}]
+  },
+  {
+    "id": "num_k1_09",
+    "k": 1,
+    "prompt": "A children's playroom with colorful foam floor tiles and wooden shelves filled with storybooks and soft blankets, showing exactly 4 red balloons floating near the ceiling",
+    "constraints": [{"count": 4, "color": "red", "object": "balloon"}]
+  },
+  {
+    "id": "num_k1_10",
+    "k": 1,
+    "prompt": "A quaint breakfast table beside a bay window with sheer white curtains and morning light, featuring exactly 5 blue cups arranged on a small wooden shelf",
+    "constraints": [{"count": 5, "color": "blue", "object": "cup"}]
+  },
+  {
+    "id": "num_k2_01",
+    "k": 2,
+    "prompt": "A well-organized kitchen counter with natural lighting and a tiled backsplash behind it, with exactly 3 red apples and 2 green pears arranged on a wooden board",
+    "constraints": [{"count": 3, "color": "red", "object": "apple"}, {"count": 2, "color": "green", "object": "pear"}]
+  },
+  {
+    "id": "num_k2_02",
+    "k": 2,
+    "prompt": "A sunny park bench next to a flower garden with trimmed hedges along the path, showing exactly 4 yellow lemons and 1 orange tangerine in a paper bag",
+    "constraints": [{"count": 4, "color": "yellow", "object": "lemon"}, {"count": 1, "color": "orange", "object": "tangerine"}]
+  },
+  {
+    "id": "num_k2_03",
+    "k": 2,
+    "prompt": "A cozy living room with a brick fireplace and bookshelves along the walls, featuring exactly 2 white candles and 3 blue books on the mantelpiece",
+    "constraints": [{"count": 2, "color": "white", "object": "candle"}, {"count": 3, "color": "blue", "object": "book"}]
+  },
+  {
+    "id": "num_k2_04",
+    "k": 2,
+    "prompt": "A cheerful breakfast spread on a wooden table with a checkered tablecloth and fresh flowers, with exactly 5 brown muffins and 2 pink cupcakes on a platter",
+    "constraints": [{"count": 5, "color": "brown", "object": "muffin"}, {"count": 2, "color": "pink", "object": "cupcake"}]
+  },
+  {
+    "id": "num_k2_05",
+    "k": 2,
+    "prompt": "A colorful craft table in a bright room with scattered art supplies and paintbrushes, showing exactly 6 red crayons and 3 yellow pencils in a jar",
+    "constraints": [{"count": 6, "color": "red", "object": "crayon"}, {"count": 3, "color": "yellow", "object": "pencil"}]
+  },
+  {
+    "id": "num_k2_06",
+    "k": 2,
+    "prompt": "A garden patio with stone tiles and climbing vines on a wooden trellis behind the table, featuring exactly 4 purple plums and 2 green apples on a plate",
+    "constraints": [{"count": 4, "color": "purple", "object": "plum"}, {"count": 2, "color": "green", "object": "apple"}]
+  },
+  {
+    "id": "num_k2_07",
+    "k": 2,
+    "prompt": "A tidy classroom with a whiteboard and rows of desks arranged neatly by the windows, with exactly 1 red backpack and 3 blue folders on the front desk",
+    "constraints": [{"count": 1, "color": "red", "object": "backpack"}, {"count": 3, "color": "blue", "object": "folder"}]
+  },
+  {
+    "id": "num_k2_08",
+    "k": 2,
+    "prompt": "A festive table decorated with ribbons and confetti for a birthday celebration indoors, showing exactly 7 orange balloons and 2 green party hats on the table",
+    "constraints": [{"count": 7, "color": "orange", "object": "balloon"}, {"count": 2, "color": "green", "object": "party hat"}]
+  },
+  {
+    "id": "num_k2_09",
+    "k": 2,
+    "prompt": "A small produce stand at a farmers market with hand-painted signs and wooden crates, featuring exactly 3 yellow bananas and 5 red strawberries in a basket",
+    "constraints": [{"count": 3, "color": "yellow", "object": "banana"}, {"count": 5, "color": "red", "object": "strawberry"}]
+  },
+  {
+    "id": "num_k2_10",
+    "k": 2,
+    "prompt": "A bathroom vanity with a round mirror and marble countertop in soft warm lighting, with exactly 2 white bottles and 4 pink soap bars arranged neatly",
+    "constraints": [{"count": 2, "color": "white", "object": "bottle"}, {"count": 4, "color": "pink", "object": "soap bar"}]
+  },
+  {
+    "id": "num_k4_01",
+    "k": 4,
+    "prompt": "A large fruit basket on a dining table, with 3 red apples, 2 green pears, 5 yellow bananas, and 1 orange tangerine sitting together neatly",
+    "constraints": [{"count": 3, "color": "red", "object": "apple"}, {"count": 2, "color": "green", "object": "pear"}, {"count": 5, "color": "yellow", "object": "banana"}, {"count": 1, "color": "orange", "object": "tangerine"}]
+  },
+  {
+    "id": "num_k4_02",
+    "k": 4,
+    "prompt": "A cozy kitchen counter displaying 4 blue mugs, 2 white plates, 3 brown cookies, and 1 pink cupcake arranged for an afternoon snack",
+    "constraints": [{"count": 4, "color": "blue", "object": "mug"}, {"count": 2, "color": "white", "object": "plate"}, {"count": 3, "color": "brown", "object": "cookie"}, {"count": 1, "color": "pink", "object": "cupcake"}]
+  },
+  {
+    "id": "num_k4_03",
+    "k": 4,
+    "prompt": "A children's art desk with 6 red crayons, 2 yellow pencils, 3 green markers, and 1 blue paintbrush scattered across the surface",
+    "constraints": [{"count": 6, "color": "red", "object": "crayon"}, {"count": 2, "color": "yellow", "object": "pencil"}, {"count": 3, "color": "green", "object": "marker"}, {"count": 1, "color": "blue", "object": "paintbrush"}]
+  },
+  {
+    "id": "num_k4_04",
+    "k": 4,
+    "prompt": "A flower shop display showing 5 pink roses, 3 white lilies, 2 purple tulips, and 4 yellow sunflowers in separate glass vases",
+    "constraints": [{"count": 5, "color": "pink", "object": "rose"}, {"count": 3, "color": "white", "object": "lily"}, {"count": 2, "color": "purple", "object": "tulip"}, {"count": 4, "color": "yellow", "object": "sunflower"}]
+  },
+  {
+    "id": "num_k4_05",
+    "k": 4,
+    "prompt": "A party table set for a celebration, with 7 orange balloons, 2 green party hats, 3 red cups, and 1 blue gift box arranged on top",
+    "constraints": [{"count": 7, "color": "orange", "object": "balloon"}, {"count": 2, "color": "green", "object": "party hat"}, {"count": 3, "color": "red", "object": "cup"}, {"count": 1, "color": "blue", "object": "gift box"}]
+  },
+  {
+    "id": "num_k4_06",
+    "k": 4,
+    "prompt": "A study desk near a window, with 4 brown books, 1 red pen, 2 yellow sticky notes, and 3 white sheets of paper stacked together",
+    "constraints": [{"count": 4, "color": "brown", "object": "book"}, {"count": 1, "color": "red", "object": "pen"}, {"count": 2, "color": "yellow", "object": "sticky note"}, {"count": 3, "color": "white", "object": "sheet of paper"}]
+  },
+  {
+    "id": "num_k4_07",
+    "k": 4,
+    "prompt": "A garden scene with 2 red tomatoes, 3 green cucumbers, 1 yellow bell pepper, and 5 orange carrots laid out on a wooden bench",
+    "constraints": [{"count": 2, "color": "red", "object": "tomato"}, {"count": 3, "color": "green", "object": "cucumber"}, {"count": 1, "color": "yellow", "object": "bell pepper"}, {"count": 5, "color": "orange", "object": "carrot"}]
+  },
+  {
+    "id": "num_k4_08",
+    "k": 4,
+    "prompt": "A bathroom shelf holding 3 blue bottles, 2 pink soap bars, 1 white towel roll, and 4 green candles arranged in a row",
+    "constraints": [{"count": 3, "color": "blue", "object": "bottle"}, {"count": 2, "color": "pink", "object": "soap bar"}, {"count": 1, "color": "white", "object": "towel roll"}, {"count": 4, "color": "green", "object": "candle"}]
+  },
+  {
+    "id": "num_k4_09",
+    "k": 4,
+    "prompt": "A breakfast tray with 2 brown toast slices, 1 red apple, 3 yellow cheese cubes, and 4 green grapes clusters on a ceramic plate",
+    "constraints": [{"count": 2, "color": "brown", "object": "toast slice"}, {"count": 1, "color": "red", "object": "apple"}, {"count": 3, "color": "yellow", "object": "cheese cube"}, {"count": 4, "color": "green", "object": "grape cluster"}]
+  },
+  {
+    "id": "num_k4_10",
+    "k": 4,
+    "prompt": "A craft table with 5 purple buttons, 2 orange ribbons, 3 white beads, and 1 red spool of thread placed on a mat",
+    "constraints": [{"count": 5, "color": "purple", "object": "button"}, {"count": 2, "color": "orange", "object": "ribbon"}, {"count": 3, "color": "white", "object": "bead"}, {"count": 1, "color": "red", "object": "spool of thread"}]
+  },
+  {
+    "id": "num_k8_01",
+    "k": 8,
+    "prompt": "3 red apples, 2 green pears, 5 yellow bananas, 1 orange tangerine, 4 blue cups, 6 white plates, 2 pink candles, and 3 brown cookies on a large dining table",
+    "constraints": [{"count": 3, "color": "red", "object": "apple"}, {"count": 2, "color": "green", "object": "pear"}, {"count": 5, "color": "yellow", "object": "banana"}, {"count": 1, "color": "orange", "object": "tangerine"}, {"count": 4, "color": "blue", "object": "cup"}, {"count": 6, "color": "white", "object": "plate"}, {"count": 2, "color": "pink", "object": "candle"}, {"count": 3, "color": "brown", "object": "cookie"}]
+  },
+  {
+    "id": "num_k8_02",
+    "k": 8,
+    "prompt": "A kitchen counter with 2 red tomatoes, 3 green cucumbers, 1 yellow bell pepper, 4 orange carrots, 2 purple plums, 5 white eggs, 3 brown mushrooms, and 1 pink radish",
+    "constraints": [{"count": 2, "color": "red", "object": "tomato"}, {"count": 3, "color": "green", "object": "cucumber"}, {"count": 1, "color": "yellow", "object": "bell pepper"}, {"count": 4, "color": "orange", "object": "carrot"}, {"count": 2, "color": "purple", "object": "plum"}, {"count": 5, "color": "white", "object": "egg"}, {"count": 3, "color": "brown", "object": "mushroom"}, {"count": 1, "color": "pink", "object": "radish"}]
+  },
+  {
+    "id": "num_k8_03",
+    "k": 8,
+    "prompt": "A desk with 4 blue pens, 2 red notebooks, 3 yellow folders, 1 green stapler, 5 white envelopes, 2 orange sticky notes, 3 purple paperclips, and 1 black calculator",
+    "constraints": [{"count": 4, "color": "blue", "object": "pen"}, {"count": 2, "color": "red", "object": "notebook"}, {"count": 3, "color": "yellow", "object": "folder"}, {"count": 1, "color": "green", "object": "stapler"}, {"count": 5, "color": "white", "object": "envelope"}, {"count": 2, "color": "orange", "object": "sticky note"}, {"count": 3, "color": "purple", "object": "paperclip"}, {"count": 1, "color": "black", "object": "calculator"}]
+  },
+  {
+    "id": "num_k8_04",
+    "k": 8,
+    "prompt": "A party table with 6 red balloons, 3 blue cups, 2 green plates, 4 yellow napkins, 1 white cake, 5 orange candles, 2 pink streamers, and 3 purple confetti piles",
+    "constraints": [{"count": 6, "color": "red", "object": "balloon"}, {"count": 3, "color": "blue", "object": "cup"}, {"count": 2, "color": "green", "object": "plate"}, {"count": 4, "color": "yellow", "object": "napkin"}, {"count": 1, "color": "white", "object": "cake"}, {"count": 5, "color": "orange", "object": "candle"}, {"count": 2, "color": "pink", "object": "streamer"}, {"count": 3, "color": "purple", "object": "confetti pile"}]
+  },
+  {
+    "id": "num_k8_05",
+    "k": 8,
+    "prompt": "A garden bed with 3 red roses, 2 yellow tulips, 5 white daisies, 1 purple lavender bunch, 4 pink carnations, 2 orange marigolds, 3 blue forget-me-nots, and 1 green fern",
+    "constraints": [{"count": 3, "color": "red", "object": "rose"}, {"count": 2, "color": "yellow", "object": "tulip"}, {"count": 5, "color": "white", "object": "daisy"}, {"count": 1, "color": "purple", "object": "lavender bunch"}, {"count": 4, "color": "pink", "object": "carnation"}, {"count": 2, "color": "orange", "object": "marigold"}, {"count": 3, "color": "blue", "object": "forget-me-not"}, {"count": 1, "color": "green", "object": "fern"}]
+  },
+  {
+    "id": "num_k8_06",
+    "k": 8,
+    "prompt": "A toy shelf with 2 red cars, 3 blue trucks, 1 yellow bus, 4 green dinosaurs, 2 white robots, 5 orange blocks, 3 pink dolls, and 1 brown teddy bear",
+    "constraints": [{"count": 2, "color": "red", "object": "car"}, {"count": 3, "color": "blue", "object": "truck"}, {"count": 1, "color": "yellow", "object": "bus"}, {"count": 4, "color": "green", "object": "dinosaur"}, {"count": 2, "color": "white", "object": "robot"}, {"count": 5, "color": "orange", "object": "block"}, {"count": 3, "color": "pink", "object": "doll"}, {"count": 1, "color": "brown", "object": "teddy bear"}]
+  },
+  {
+    "id": "num_k8_07",
+    "k": 8,
+    "prompt": "A bakery window with 4 brown croissants, 3 white meringues, 2 pink macarons, 5 yellow lemon tarts, 1 red velvet cake, 3 green mint cookies, 2 orange muffins, and 1 blue cupcake",
+    "constraints": [{"count": 4, "color": "brown", "object": "croissant"}, {"count": 3, "color": "white", "object": "meringue"}, {"count": 2, "color": "pink", "object": "macaron"}, {"count": 5, "color": "yellow", "object": "lemon tart"}, {"count": 1, "color": "red", "object": "velvet cake"}, {"count": 3, "color": "green", "object": "mint cookie"}, {"count": 2, "color": "orange", "object": "muffin"}, {"count": 1, "color": "blue", "object": "cupcake"}]
+  },
+  {
+    "id": "num_k8_08",
+    "k": 8,
+    "prompt": "A craft box with 3 red buttons, 2 blue ribbons, 5 yellow beads, 1 green spool, 4 white feathers, 2 purple sequins, 3 orange felt squares, and 1 pink yarn ball",
+    "constraints": [{"count": 3, "color": "red", "object": "button"}, {"count": 2, "color": "blue", "object": "ribbon"}, {"count": 5, "color": "yellow", "object": "bead"}, {"count": 1, "color": "green", "object": "spool"}, {"count": 4, "color": "white", "object": "feather"}, {"count": 2, "color": "purple", "object": "sequin"}, {"count": 3, "color": "orange", "object": "felt square"}, {"count": 1, "color": "pink", "object": "yarn ball"}]
+  },
+  {
+    "id": "num_k8_09",
+    "k": 8,
+    "prompt": "A picnic blanket with 2 red apples, 3 yellow cheese slices, 1 green cucumber, 4 brown bread rolls, 5 white napkins, 2 orange juice boxes, 3 blue water bottles, and 1 pink strawberry",
+    "constraints": [{"count": 2, "color": "red", "object": "apple"}, {"count": 3, "color": "yellow", "object": "cheese slice"}, {"count": 1, "color": "green", "object": "cucumber"}, {"count": 4, "color": "brown", "object": "bread roll"}, {"count": 5, "color": "white", "object": "napkin"}, {"count": 2, "color": "orange", "object": "juice box"}, {"count": 3, "color": "blue", "object": "water bottle"}, {"count": 1, "color": "pink", "object": "strawberry"}]
+  },
+  {
+    "id": "num_k8_10",
+    "k": 8,
+    "prompt": "A bathroom counter with 3 white bottles, 2 blue soap bars, 4 green towels, 1 yellow sponge, 5 pink cotton balls, 2 orange candles, 3 purple hair ties, and 1 red toothbrush",
+    "constraints": [{"count": 3, "color": "white", "object": "bottle"}, {"count": 2, "color": "blue", "object": "soap bar"}, {"count": 4, "color": "green", "object": "towel"}, {"count": 1, "color": "yellow", "object": "sponge"}, {"count": 5, "color": "pink", "object": "cotton ball"}, {"count": 2, "color": "orange", "object": "candle"}, {"count": 3, "color": "purple", "object": "hair tie"}, {"count": 1, "color": "red", "object": "toothbrush"}]
+  }
+]
