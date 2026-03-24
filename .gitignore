@@ -16,3 +16,4 @@ compscale/analysis/figures/
 
 # API keys
 .env
+CLAUDE.md
