@@ -50,8 +50,7 @@ def main():
     print(f"Loading model: {args.model_id}")
     pipe = Flux2KleinPipeline.from_pretrained(
         args.model_id, torch_dtype=torch.bfloat16
-    )
-    pipe.enable_model_cpu_offload()
+    ).to("cuda")
     print("Model loaded.")
 
     prompts = json.loads(Path(args.prompts).read_text())
