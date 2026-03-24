@@ -36,7 +36,7 @@ def main():
     parser = argparse.ArgumentParser(description="VLM-based constraint verification")
     parser.add_argument(
         "--prompts",
-        default="compscale/benchmark/prompts/numeracy_pilot.json",
+        default="compscale/benchmark/prompts/numeracy_pilot_v2.json",
         help="Path to prompts JSON",
     )
     parser.add_argument(

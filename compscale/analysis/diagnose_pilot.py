@@ -17,7 +17,7 @@ def main():
 
     # Load prompts for context
     prompts = json.loads(
-        Path("compscale/benchmark/prompts/numeracy_pilot.json").read_text()
+        Path("compscale/benchmark/prompts/numeracy_pilot_v2.json").read_text()
     )
     prompt_lookup = {p["id"]: p for p in prompts}
 
