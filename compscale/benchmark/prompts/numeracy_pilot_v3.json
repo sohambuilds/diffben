@@ -1,0 +1,1412 @@
+[
+  {
+    "id": "num_k1_01",
+    "k": 1,
+    "type": "numeracy",
+    "scene_prefix": "A bright parking lot with trees along the edges and a clear sky overhead, featuring",
+    "constraints": [
+      {
+        "type": "numeracy",
+        "count": 2,
+        "color": "yellow",
+        "object": "sticky note",
+        "plural": "sticky notes"
+      }
+    ],
+    "prompt": "A bright parking lot with trees along the edges and a clear sky overhead, featuring two yellow sticky notes"
+  },
+  {
+    "id": "num_k1_02",
+    "k": 1,
+    "type": "numeracy",
+    "scene_prefix": "A home study lined with leather-bound books and a heavy wooden desk, featuring",
+    "constraints": [
+      {
+        "type": "numeracy",
+        "count": 1,
+        "color": "yellow",
+        "object": "tomato",
+        "plural": "tomatoes"
+      }
+    ],
+    "prompt": "A home study lined with leather-bound books and a heavy wooden desk, featuring one yellow tomato"
+  },
+  {
+    "id": "num_k1_03",
+    "k": 1,
+    "type": "numeracy",
+    "scene_prefix": "A sunny beach with golden sand and gentle waves under a bright sky, featuring",
+    "constraints": [
+      {
+        "type": "numeracy",
+        "count": 3,
+        "color": "green",
+        "object": "cucumber",
+        "plural": "cucumbers"
+      }
+    ],
+    "prompt": "A sunny beach with golden sand and gentle waves under a bright sky, featuring three green cucumbers"
+  },
+  {
+    "id": "num_k1_04",
+    "k": 1,
+    "type": "numeracy",
+    "scene_prefix": "A cozy living room with bookshelves along the walls and warm lighting, featuring",
+    "constraints": [
+      {
+        "type": "numeracy",
+        "count": 1,
+        "color": "orange",
+        "object": "tangerine",
+        "plural": "tangerines"
+      }
+    ],
+    "prompt": "A cozy living room with bookshelves along the walls and warm lighting, featuring one orange tangerine"
+  },
+  {
+    "id": "num_k1_05",
+    "k": 1,
+    "type": "numeracy",
+    "scene_prefix": "A school hallway with lockers on both sides and polished floors, featuring",
+    "constraints": [
+      {
+        "type": "numeracy",
+        "count": 3,
+        "color": "orange",
+        "object": "tangerine",
+        "plural": "tangerines"
+      }
+    ],
+    "prompt": "A school hallway with lockers on both sides and polished floors, featuring three orange tangerines"
+  },
+  {
+    "id": "num_k1_06",
+    "k": 1,
+    "type": "numeracy",
+    "scene_prefix": "A sunny beach with golden sand and gentle waves under a bright sky, featuring",
+    "constraints": [
+      {
+        "type": "numeracy",
+        "count": 1,
+        "color": "red",
+        "object": "backpack",
+        "plural": "backpacks"
+      }
+    ],
+    "prompt": "A sunny beach with golden sand and gentle waves under a bright sky, featuring one red backpack"
+  },
+  {
+    "id": "num_k1_07",
+    "k": 1,
+    "type": "numeracy",
+    "scene_prefix": "A craft room with shelves of supplies and a wide worktable under lamplight, featuring",
+    "constraints": [
+      {
+        "type": "numeracy",
+        "count": 2,
+        "color": "yellow",
+        "object": "bell pepper",
+        "plural": "bell peppers"
+      }
+    ],
+    "prompt": "A craft room with shelves of supplies and a wide worktable under lamplight, featuring two yellow bell peppers"
+  },
+  {
+    "id": "num_k1_08",
+    "k": 1,
+    "type": "numeracy",
+    "scene_prefix": "A craft room with shelves of supplies and a wide worktable under lamplight, featuring",
+    "constraints": [
+      {
+        "type": "numeracy",
+        "count": 2,
+        "color": "green",
+        "object": "pear",
+        "plural": "pears"
+      }
+    ],
+    "prompt": "A craft room with shelves of supplies and a wide worktable under lamplight, featuring two green pears"
+  },
+  {
+    "id": "num_k1_09",
+    "k": 1,
+    "type": "numeracy",
+    "scene_prefix": "A city sidewalk with tall buildings in the background and shop windows, featuring",
+    "constraints": [
+      {
+        "type": "numeracy",
+        "count": 1,
+        "color": "brown",
+        "object": "bottle",
+        "plural": "bottles"
+      }
+    ],
+    "prompt": "A city sidewalk with tall buildings in the background and shop windows, featuring one brown bottle"
+  },
+  {
+    "id": "num_k1_10",
+    "k": 1,
+    "type": "numeracy",
+    "scene_prefix": "A craft room with shelves of supplies and a wide worktable under lamplight, featuring",
+    "constraints": [
+      {
+        "type": "numeracy",
+        "count": 2,
+        "color": "pink",
+        "object": "cupcake",
+        "plural": "cupcakes"
+      }
+    ],
+    "prompt": "A craft room with shelves of supplies and a wide worktable under lamplight, featuring two pink cupcakes"
+  },
+  {
+    "id": "num_k2_01",
+    "k": 2,
+    "type": "numeracy",
+    "scene_prefix": "A charming garden with stepping stones and blooming flower beds, showing",
+    "constraints": [
+      {
+        "type": "numeracy",
+        "count": 3,
+        "color": "yellow",
+        "object": "macaron",
+        "plural": "macarons"
+      },
+      {
+        "type": "numeracy",
+        "count": 1,
+        "color": "blue",
+        "object": "stapler",
+        "plural": "staplers"
+      }
+    ],
+    "prompt": "A charming garden with stepping stones and blooming flower beds, showing three yellow macarons and one blue stapler"
+  },
+  {
+    "id": "num_k2_02",
+    "k": 2,
+    "type": "numeracy",
+    "scene_prefix": "A farmhouse porch with wooden railings and hanging planters, showing",
+    "constraints": [
+      {
+        "type": "numeracy",
+        "count": 3,
+        "color": "green",
+        "object": "cucumber",
+        "plural": "cucumbers"
+      },
+      {
+        "type": "numeracy",
+        "count": 1,
+        "color": "white",
+        "object": "towel roll",
+        "plural": "towel rolls"
+      }
+    ],
+    "prompt": "A farmhouse porch with wooden railings and hanging planters, showing three green cucumbers and one white towel roll"
+  },
+  {
+    "id": "num_k2_03",
+    "k": 2,
+    "type": "numeracy",
+    "scene_prefix": "A quiet residential street with brick houses and trimmed hedges, showing",
+    "constraints": [
+      {
+        "type": "numeracy",
+        "count": 3,
+        "color": "brown",
+        "object": "teddy bear",
+        "plural": "teddy bears"
+      },
+      {
+        "type": "numeracy",
+        "count": 2,
+        "color": "blue",
+        "object": "bus",
+        "plural": "buses"
+      }
+    ],
+    "prompt": "A quiet residential street with brick houses and trimmed hedges, showing three brown teddy bears and two blue buses"
+  },
+  {
+    "id": "num_k2_04",
+    "k": 2,
+    "type": "numeracy",
+    "scene_prefix": "A farmhouse porch with wooden railings and hanging planters, showing",
+    "constraints": [
+      {
+        "type": "numeracy",
+        "count": 2,
+        "color": "green",
+        "object": "sponge",
+        "plural": "sponges"
+      },
+      {
+        "type": "numeracy",
+        "count": 1,
+        "color": "orange",
+        "object": "tangerine",
+        "plural": "tangerines"
+      }
+    ],
+    "prompt": "A farmhouse porch with wooden railings and hanging planters, showing two green sponges and one orange tangerine"
+  },
+  {
+    "id": "num_k2_05",
+    "k": 2,
+    "type": "numeracy",
+    "scene_prefix": "A charming garden with stepping stones and blooming flower beds, showing",
+    "constraints": [
+      {
+        "type": "numeracy",
+        "count": 1,
+        "color": "white",
+        "object": "spool of thread",
+        "plural": "spools of thread"
+      },
+      {
+        "type": "numeracy",
+        "count": 1,
+        "color": "orange",
+        "object": "tangerine",
+        "plural": "tangerines"
+      }
+    ],
+    "prompt": "A charming garden with stepping stones and blooming flower beds, showing one white spool of thread and one orange tangerine"
+  },
+  {
+    "id": "num_k2_06",
+    "k": 2,
+    "type": "numeracy",
+    "scene_prefix": "A sunny beach with golden sand and gentle waves under a bright sky, showing",
+    "constraints": [
+      {
+        "type": "numeracy",
+        "count": 2,
+        "color": "red",
+        "object": "apple",
+        "plural": "apples"
+      },
+      {
+        "type": "numeracy",
+        "count": 3,
+        "color": "green",
+        "object": "cucumber",
+        "plural": "cucumbers"
+      }
+    ],
+    "prompt": "A sunny beach with golden sand and gentle waves under a bright sky, showing two red apples and three green cucumbers"
+  },
+  {
+    "id": "num_k2_07",
+    "k": 2,
+    "type": "numeracy",
+    "scene_prefix": "A quiet residential street with brick houses and trimmed hedges, showing",
+    "constraints": [
+      {
+        "type": "numeracy",
+        "count": 2,
+        "color": "red",
+        "object": "yarn ball",
+        "plural": "yarn balls"
+      },
+      {
+        "type": "numeracy",
+        "count": 2,
+        "color": "black",
+        "object": "stapler",
+        "plural": "staplers"
+      }
+    ],
+    "prompt": "A quiet residential street with brick houses and trimmed hedges, showing two red yarn balls and two black staplers"
+  },
+  {
+    "id": "num_k2_08",
+    "k": 2,
+    "type": "numeracy",
+    "scene_prefix": "A children's bedroom with patterned wallpaper and wooden shelves of toys, showing",
+    "constraints": [
+      {
+        "type": "numeracy",
+        "count": 3,
+        "color": "red",
+        "object": "tomato",
+        "plural": "tomatoes"
+      },
+      {
+        "type": "numeracy",
+        "count": 2,
+        "color": "yellow",
+        "object": "banana",
+        "plural": "bananas"
+      }
+    ],
+    "prompt": "A children's bedroom with patterned wallpaper and wooden shelves of toys, showing three red tomatoes and two yellow bananas"
+  },
+  {
+    "id": "num_k2_09",
+    "k": 2,
+    "type": "numeracy",
+    "scene_prefix": "A loft apartment with exposed brick walls and tall factory windows, showing",
+    "constraints": [
+      {
+        "type": "numeracy",
+        "count": 1,
+        "color": "yellow",
+        "object": "tomato",
+        "plural": "tomatoes"
+      },
+      {
+        "type": "numeracy",
+        "count": 1,
+        "color": "green",
+        "object": "cucumber",
+        "plural": "cucumbers"
+      }
+    ],
+    "prompt": "A loft apartment with exposed brick walls and tall factory windows, showing one yellow tomato and one green cucumber"
+  },
+  {
+    "id": "num_k2_10",
+    "k": 2,
+    "type": "numeracy",
+    "scene_prefix": "A home study lined with leather-bound books and a heavy wooden desk, showing",
+    "constraints": [
+      {
+        "type": "numeracy",
+        "count": 1,
+        "color": "white",
+        "object": "spool of thread",
+        "plural": "spools of thread"
+      },
+      {
+        "type": "numeracy",
+        "count": 2,
+        "color": "yellow",
+        "object": "gift box",
+        "plural": "gift boxes"
+      }
+    ],
+    "prompt": "A home study lined with leather-bound books and a heavy wooden desk, showing one white spool of thread and two yellow gift boxes"
+  },
+  {
+    "id": "num_k4_01",
+    "k": 4,
+    "type": "numeracy",
+    "scene_prefix": "A home study lined with leather-bound books and a heavy wooden desk containing",
+    "constraints": [
+      {
+        "type": "numeracy",
+        "count": 2,
+        "color": "green",
+        "object": "toothbrush",
+        "plural": "toothbrushes"
+      },
+      {
+        "type": "numeracy",
+        "count": 3,
+        "color": "green",
+        "object": "tomato",
+        "plural": "tomatoes"
+      },
+      {
+        "type": "numeracy",
+        "count": 2,
+        "color": "green",
+        "object": "banana",
+        "plural": "bananas"
+      },
+      {
+        "type": "numeracy",
+        "count": 2,
+        "color": "orange",
+        "object": "tangerine",
+        "plural": "tangerines"
+      }
+    ],
+    "prompt": "A home study lined with leather-bound books and a heavy wooden desk containing two green toothbrushes, three green tomatoes, two green bananas, and two orange tangerines"
+  },
+  {
+    "id": "num_k4_02",
+    "k": 4,
+    "type": "numeracy",
+    "scene_prefix": "A home study lined with leather-bound books and a heavy wooden desk containing",
+    "constraints": [
+      {
+        "type": "numeracy",
+        "count": 1,
+        "color": "green",
+        "object": "bell pepper",
+        "plural": "bell peppers"
+      },
+      {
+        "type": "numeracy",
+        "count": 1,
+        "color": "white",
+        "object": "mug",
+        "plural": "mugs"
+      },
+      {
+        "type": "numeracy",
+        "count": 1,
+        "color": "blue",
+        "object": "backpack",
+        "plural": "backpacks"
+      },
+      {
+        "type": "numeracy",
+        "count": 2,
+        "color": "brown",
+        "object": "bottle",
+        "plural": "bottles"
+      }
+    ],
+    "prompt": "A home study lined with leather-bound books and a heavy wooden desk containing one green bell pepper, one white mug, one blue backpack, and two brown bottles"
+  },
+  {
+    "id": "num_k4_03",
+    "k": 4,
+    "type": "numeracy",
+    "scene_prefix": "A sunny beach with golden sand and gentle waves under a bright sky containing",
+    "constraints": [
+      {
+        "type": "numeracy",
+        "count": 3,
+        "color": "red",
+        "object": "pen",
+        "plural": "pens"
+      },
+      {
+        "type": "numeracy",
+        "count": 2,
+        "color": "red",
+        "object": "bus",
+        "plural": "buses"
+      },
+      {
+        "type": "numeracy",
+        "count": 2,
+        "color": "white",
+        "object": "spool of thread",
+        "plural": "spools of thread"
+      },
+      {
+        "type": "numeracy",
+        "count": 2,
+        "color": "green",
+        "object": "apple",
+        "plural": "apples"
+      }
+    ],
+    "prompt": "A sunny beach with golden sand and gentle waves under a bright sky containing three red pens, two red buses, two white spools of thread, and two green apples"
+  },
+  {
+    "id": "num_k4_04",
+    "k": 4,
+    "type": "numeracy",
+    "scene_prefix": "A cafe interior with small round tables and chalkboard menus containing",
+    "constraints": [
+      {
+        "type": "numeracy",
+        "count": 1,
+        "color": "blue",
+        "object": "backpack",
+        "plural": "backpacks"
+      },
+      {
+        "type": "numeracy",
+        "count": 3,
+        "color": "black",
+        "object": "car",
+        "plural": "cars"
+      },
+      {
+        "type": "numeracy",
+        "count": 3,
+        "color": "blue",
+        "object": "mug",
+        "plural": "mugs"
+      },
+      {
+        "type": "numeracy",
+        "count": 3,
+        "color": "white",
+        "object": "gift box",
+        "plural": "gift boxes"
+      }
+    ],
+    "prompt": "A cafe interior with small round tables and chalkboard menus containing one blue backpack, three black cars, three blue mugs, and three white gift boxes"
+  },
+  {
+    "id": "num_k4_05",
+    "k": 4,
+    "type": "numeracy",
+    "scene_prefix": "A home study lined with leather-bound books and a heavy wooden desk containing",
+    "constraints": [
+      {
+        "type": "numeracy",
+        "count": 1,
+        "color": "green",
+        "object": "cucumber",
+        "plural": "cucumbers"
+      },
+      {
+        "type": "numeracy",
+        "count": 2,
+        "color": "green",
+        "object": "banana",
+        "plural": "bananas"
+      },
+      {
+        "type": "numeracy",
+        "count": 3,
+        "color": "white",
+        "object": "mushroom",
+        "plural": "mushrooms"
+      },
+      {
+        "type": "numeracy",
+        "count": 1,
+        "color": "orange",
+        "object": "pumpkin",
+        "plural": "pumpkins"
+      }
+    ],
+    "prompt": "A home study lined with leather-bound books and a heavy wooden desk containing one green cucumber, two green bananas, three white mushrooms, and one orange pumpkin"
+  },
+  {
+    "id": "num_k4_06",
+    "k": 4,
+    "type": "numeracy",
+    "scene_prefix": "A farmhouse porch with wooden railings and hanging planters containing",
+    "constraints": [
+      {
+        "type": "numeracy",
+        "count": 1,
+        "color": "orange",
+        "object": "tangerine",
+        "plural": "tangerines"
+      },
+      {
+        "type": "numeracy",
+        "count": 1,
+        "color": "white",
+        "object": "teddy bear",
+        "plural": "teddy bears"
+      },
+      {
+        "type": "numeracy",
+        "count": 1,
+        "color": "pink",
+        "object": "macaron",
+        "plural": "macarons"
+      },
+      {
+        "type": "numeracy",
+        "count": 1,
+        "color": "green",
+        "object": "banana",
+        "plural": "bananas"
+      }
+    ],
+    "prompt": "A farmhouse porch with wooden railings and hanging planters containing one orange tangerine, one white teddy bear, one pink macaron, and one green banana"
+  },
+  {
+    "id": "num_k4_07",
+    "k": 4,
+    "type": "numeracy",
+    "scene_prefix": "A quiet residential street with brick houses and trimmed hedges containing",
+    "constraints": [
+      {
+        "type": "numeracy",
+        "count": 3,
+        "color": "red",
+        "object": "spool of thread",
+        "plural": "spools of thread"
+      },
+      {
+        "type": "numeracy",
+        "count": 2,
+        "color": "yellow",
+        "object": "sponge",
+        "plural": "sponges"
+      },
+      {
+        "type": "numeracy",
+        "count": 1,
+        "color": "pink",
+        "object": "macaron",
+        "plural": "macarons"
+      },
+      {
+        "type": "numeracy",
+        "count": 3,
+        "color": "black",
+        "object": "backpack",
+        "plural": "backpacks"
+      }
+    ],
+    "prompt": "A quiet residential street with brick houses and trimmed hedges containing three red spools of thread, two yellow sponges, one pink macaron, and three black backpacks"
+  },
+  {
+    "id": "num_k4_08",
+    "k": 4,
+    "type": "numeracy",
+    "scene_prefix": "A charming garden with stepping stones and blooming flower beds containing",
+    "constraints": [
+      {
+        "type": "numeracy",
+        "count": 2,
+        "color": "green",
+        "object": "macaron",
+        "plural": "macarons"
+      },
+      {
+        "type": "numeracy",
+        "count": 2,
+        "color": "blue",
+        "object": "sponge",
+        "plural": "sponges"
+      },
+      {
+        "type": "numeracy",
+        "count": 2,
+        "color": "red",
+        "object": "stapler",
+        "plural": "staplers"
+      },
+      {
+        "type": "numeracy",
+        "count": 2,
+        "color": "blue",
+        "object": "towel roll",
+        "plural": "towel rolls"
+      }
+    ],
+    "prompt": "A charming garden with stepping stones and blooming flower beds containing two green macarons, two blue sponges, two red staplers, and two blue towel rolls"
+  },
+  {
+    "id": "num_k4_09",
+    "k": 4,
+    "type": "numeracy",
+    "scene_prefix": "A modern office with a large window and potted plants on the sill containing",
+    "constraints": [
+      {
+        "type": "numeracy",
+        "count": 3,
+        "color": "pink",
+        "object": "teddy bear",
+        "plural": "teddy bears"
+      },
+      {
+        "type": "numeracy",
+        "count": 3,
+        "color": "green",
+        "object": "sticky note",
+        "plural": "sticky notes"
+      },
+      {
+        "type": "numeracy",
+        "count": 2,
+        "color": "pink",
+        "object": "macaron",
+        "plural": "macarons"
+      },
+      {
+        "type": "numeracy",
+        "count": 3,
+        "color": "white",
+        "object": "car",
+        "plural": "cars"
+      }
+    ],
+    "prompt": "A modern office with a large window and potted plants on the sill containing three pink teddy bears, three green sticky notes, two pink macarons, and three white cars"
+  },
+  {
+    "id": "num_k4_10",
+    "k": 4,
+    "type": "numeracy",
+    "scene_prefix": "A children's bedroom with patterned wallpaper and wooden shelves of toys containing",
+    "constraints": [
+      {
+        "type": "numeracy",
+        "count": 3,
+        "color": "red",
+        "object": "tomato",
+        "plural": "tomatoes"
+      },
+      {
+        "type": "numeracy",
+        "count": 3,
+        "color": "green",
+        "object": "mug",
+        "plural": "mugs"
+      },
+      {
+        "type": "numeracy",
+        "count": 2,
+        "color": "brown",
+        "object": "cupcake",
+        "plural": "cupcakes"
+      },
+      {
+        "type": "numeracy",
+        "count": 1,
+        "color": "blue",
+        "object": "toothbrush",
+        "plural": "toothbrushes"
+      }
+    ],
+    "prompt": "A children's bedroom with patterned wallpaper and wooden shelves of toys containing three red tomatoes, three green mugs, two brown cupcakes, and one blue toothbrush"
+  },
+  {
+    "id": "num_k8_01",
+    "k": 8,
+    "type": "numeracy",
+    "scene_prefix": "A scene with",
+    "constraints": [
+      {
+        "type": "numeracy",
+        "count": 3,
+        "color": "black",
+        "object": "calculator",
+        "plural": "calculators"
+      },
+      {
+        "type": "numeracy",
+        "count": 1,
+        "color": "yellow",
+        "object": "gift box",
+        "plural": "gift boxes"
+      },
+      {
+        "type": "numeracy",
+        "count": 1,
+        "color": "yellow",
+        "object": "sponge",
+        "plural": "sponges"
+      },
+      {
+        "type": "numeracy",
+        "count": 1,
+        "color": "green",
+        "object": "macaron",
+        "plural": "macarons"
+      },
+      {
+        "type": "numeracy",
+        "count": 1,
+        "color": "blue",
+        "object": "pen",
+        "plural": "pens"
+      },
+      {
+        "type": "numeracy",
+        "count": 2,
+        "color": "yellow",
+        "object": "banana",
+        "plural": "bananas"
+      },
+      {
+        "type": "numeracy",
+        "count": 2,
+        "color": "white",
+        "object": "cupcake",
+        "plural": "cupcakes"
+      },
+      {
+        "type": "numeracy",
+        "count": 2,
+        "color": "yellow",
+        "object": "folder",
+        "plural": "folders"
+      }
+    ],
+    "prompt": "A scene with three black calculators, one yellow gift box, one yellow sponge, one green macaron, one blue pen, two yellow bananas, two white cupcakes, and two yellow folders"
+  },
+  {
+    "id": "num_k8_02",
+    "k": 8,
+    "type": "numeracy",
+    "scene_prefix": "A scene with",
+    "constraints": [
+      {
+        "type": "numeracy",
+        "count": 2,
+        "color": "black",
+        "object": "calculator",
+        "plural": "calculators"
+      },
+      {
+        "type": "numeracy",
+        "count": 2,
+        "color": "blue",
+        "object": "bus",
+        "plural": "buses"
+      },
+      {
+        "type": "numeracy",
+        "count": 1,
+        "color": "green",
+        "object": "sponge",
+        "plural": "sponges"
+      },
+      {
+        "type": "numeracy",
+        "count": 3,
+        "color": "green",
+        "object": "yarn ball",
+        "plural": "yarn balls"
+      },
+      {
+        "type": "numeracy",
+        "count": 3,
+        "color": "orange",
+        "object": "pumpkin",
+        "plural": "pumpkins"
+      },
+      {
+        "type": "numeracy",
+        "count": 3,
+        "color": "pink",
+        "object": "sticky note",
+        "plural": "sticky notes"
+      },
+      {
+        "type": "numeracy",
+        "count": 2,
+        "color": "blue",
+        "object": "gift box",
+        "plural": "gift boxes"
+      },
+      {
+        "type": "numeracy",
+        "count": 2,
+        "color": "green",
+        "object": "toothbrush",
+        "plural": "toothbrushes"
+      }
+    ],
+    "prompt": "A scene with two black calculators, two blue buses, one green sponge, three green yarn balls, three orange pumpkins, three pink sticky notes, two blue gift boxes, and two green toothbrushes"
+  },
+  {
+    "id": "num_k8_03",
+    "k": 8,
+    "type": "numeracy",
+    "scene_prefix": "A scene with",
+    "constraints": [
+      {
+        "type": "numeracy",
+        "count": 1,
+        "color": "green",
+        "object": "apple",
+        "plural": "apples"
+      },
+      {
+        "type": "numeracy",
+        "count": 1,
+        "color": "orange",
+        "object": "pumpkin",
+        "plural": "pumpkins"
+      },
+      {
+        "type": "numeracy",
+        "count": 1,
+        "color": "blue",
+        "object": "yarn ball",
+        "plural": "yarn balls"
+      },
+      {
+        "type": "numeracy",
+        "count": 1,
+        "color": "red",
+        "object": "candle",
+        "plural": "candles"
+      },
+      {
+        "type": "numeracy",
+        "count": 2,
+        "color": "blue",
+        "object": "backpack",
+        "plural": "backpacks"
+      },
+      {
+        "type": "numeracy",
+        "count": 1,
+        "color": "black",
+        "object": "pen",
+        "plural": "pens"
+      },
+      {
+        "type": "numeracy",
+        "count": 3,
+        "color": "green",
+        "object": "banana",
+        "plural": "bananas"
+      },
+      {
+        "type": "numeracy",
+        "count": 2,
+        "color": "green",
+        "object": "folder",
+        "plural": "folders"
+      }
+    ],
+    "prompt": "A scene with one green apple, one orange pumpkin, one blue yarn ball, one red candle, two blue backpacks, one black pen, three green bananas, and two green folders"
+  },
+  {
+    "id": "num_k8_04",
+    "k": 8,
+    "type": "numeracy",
+    "scene_prefix": "A scene with",
+    "constraints": [
+      {
+        "type": "numeracy",
+        "count": 1,
+        "color": "white",
+        "object": "teddy bear",
+        "plural": "teddy bears"
+      },
+      {
+        "type": "numeracy",
+        "count": 3,
+        "color": "pink",
+        "object": "sticky note",
+        "plural": "sticky notes"
+      },
+      {
+        "type": "numeracy",
+        "count": 1,
+        "color": "yellow",
+        "object": "sponge",
+        "plural": "sponges"
+      },
+      {
+        "type": "numeracy",
+        "count": 1,
+        "color": "blue",
+        "object": "bottle",
+        "plural": "bottles"
+      },
+      {
+        "type": "numeracy",
+        "count": 1,
+        "color": "blue",
+        "object": "gift box",
+        "plural": "gift boxes"
+      },
+      {
+        "type": "numeracy",
+        "count": 2,
+        "color": "black",
+        "object": "backpack",
+        "plural": "backpacks"
+      },
+      {
+        "type": "numeracy",
+        "count": 3,
+        "color": "green",
+        "object": "apple",
+        "plural": "apples"
+      },
+      {
+        "type": "numeracy",
+        "count": 1,
+        "color": "white",
+        "object": "mug",
+        "plural": "mugs"
+      }
+    ],
+    "prompt": "A scene with one white teddy bear, three pink sticky notes, one yellow sponge, one blue bottle, one blue gift box, two black backpacks, three green apples, and one white mug"
+  },
+  {
+    "id": "num_k8_05",
+    "k": 8,
+    "type": "numeracy",
+    "scene_prefix": "A scene with",
+    "constraints": [
+      {
+        "type": "numeracy",
+        "count": 2,
+        "color": "white",
+        "object": "calculator",
+        "plural": "calculators"
+      },
+      {
+        "type": "numeracy",
+        "count": 1,
+        "color": "white",
+        "object": "mug",
+        "plural": "mugs"
+      },
+      {
+        "type": "numeracy",
+        "count": 3,
+        "color": "orange",
+        "object": "tangerine",
+        "plural": "tangerines"
+      },
+      {
+        "type": "numeracy",
+        "count": 3,
+        "color": "white",
+        "object": "spool of thread",
+        "plural": "spools of thread"
+      },
+      {
+        "type": "numeracy",
+        "count": 3,
+        "color": "clear",
+        "object": "bottle",
+        "plural": "bottles"
+      },
+      {
+        "type": "numeracy",
+        "count": 2,
+        "color": "white",
+        "object": "car",
+        "plural": "cars"
+      },
+      {
+        "type": "numeracy",
+        "count": 2,
+        "color": "red",
+        "object": "pen",
+        "plural": "pens"
+      },
+      {
+        "type": "numeracy",
+        "count": 2,
+        "color": "red",
+        "object": "bus",
+        "plural": "buses"
+      }
+    ],
+    "prompt": "A scene with two white calculators, one white mug, three orange tangerines, three white spools of thread, three clear bottles, two white cars, two red pens, and two red buses"
+  },
+  {
+    "id": "num_k8_06",
+    "k": 8,
+    "type": "numeracy",
+    "scene_prefix": "A scene with",
+    "constraints": [
+      {
+        "type": "numeracy",
+        "count": 1,
+        "color": "red",
+        "object": "backpack",
+        "plural": "backpacks"
+      },
+      {
+        "type": "numeracy",
+        "count": 1,
+        "color": "brown",
+        "object": "teddy bear",
+        "plural": "teddy bears"
+      },
+      {
+        "type": "numeracy",
+        "count": 1,
+        "color": "blue",
+        "object": "bus",
+        "plural": "buses"
+      },
+      {
+        "type": "numeracy",
+        "count": 2,
+        "color": "pink",
+        "object": "macaron",
+        "plural": "macarons"
+      },
+      {
+        "type": "numeracy",
+        "count": 3,
+        "color": "green",
+        "object": "cucumber",
+        "plural": "cucumbers"
+      },
+      {
+        "type": "numeracy",
+        "count": 2,
+        "color": "white",
+        "object": "candle",
+        "plural": "candles"
+      },
+      {
+        "type": "numeracy",
+        "count": 2,
+        "color": "green",
+        "object": "folder",
+        "plural": "folders"
+      },
+      {
+        "type": "numeracy",
+        "count": 3,
+        "color": "yellow",
+        "object": "banana",
+        "plural": "bananas"
+      }
+    ],
+    "prompt": "A scene with one red backpack, one brown teddy bear, one blue bus, two pink macarons, three green cucumbers, two white candles, two green folders, and three yellow bananas"
+  },
+  {
+    "id": "num_k8_07",
+    "k": 8,
+    "type": "numeracy",
+    "scene_prefix": "A scene with",
+    "constraints": [
+      {
+        "type": "numeracy",
+        "count": 2,
+        "color": "blue",
+        "object": "mug",
+        "plural": "mugs"
+      },
+      {
+        "type": "numeracy",
+        "count": 3,
+        "color": "pink",
+        "object": "toothbrush",
+        "plural": "toothbrushes"
+      },
+      {
+        "type": "numeracy",
+        "count": 3,
+        "color": "red",
+        "object": "tomato",
+        "plural": "tomatoes"
+      },
+      {
+        "type": "numeracy",
+        "count": 3,
+        "color": "pink",
+        "object": "towel roll",
+        "plural": "towel rolls"
+      },
+      {
+        "type": "numeracy",
+        "count": 2,
+        "color": "green",
+        "object": "pear",
+        "plural": "pears"
+      },
+      {
+        "type": "numeracy",
+        "count": 2,
+        "color": "blue",
+        "object": "sponge",
+        "plural": "sponges"
+      },
+      {
+        "type": "numeracy",
+        "count": 2,
+        "color": "green",
+        "object": "sticky note",
+        "plural": "sticky notes"
+      },
+      {
+        "type": "numeracy",
+        "count": 1,
+        "color": "orange",
+        "object": "tangerine",
+        "plural": "tangerines"
+      }
+    ],
+    "prompt": "A scene with two blue mugs, three pink toothbrushes, three red tomatoes, three pink towel rolls, two green pears, two blue sponges, two green sticky notes, and one orange tangerine"
+  },
+  {
+    "id": "num_k8_08",
+    "k": 8,
+    "type": "numeracy",
+    "scene_prefix": "A scene with",
+    "constraints": [
+      {
+        "type": "numeracy",
+        "count": 2,
+        "color": "white",
+        "object": "calculator",
+        "plural": "calculators"
+      },
+      {
+        "type": "numeracy",
+        "count": 3,
+        "color": "yellow",
+        "object": "folder",
+        "plural": "folders"
+      },
+      {
+        "type": "numeracy",
+        "count": 3,
+        "color": "pink",
+        "object": "cupcake",
+        "plural": "cupcakes"
+      },
+      {
+        "type": "numeracy",
+        "count": 1,
+        "color": "yellow",
+        "object": "tomato",
+        "plural": "tomatoes"
+      },
+      {
+        "type": "numeracy",
+        "count": 1,
+        "color": "pink",
+        "object": "towel roll",
+        "plural": "towel rolls"
+      },
+      {
+        "type": "numeracy",
+        "count": 2,
+        "color": "pink",
+        "object": "sticky note",
+        "plural": "sticky notes"
+      },
+      {
+        "type": "numeracy",
+        "count": 2,
+        "color": "green",
+        "object": "banana",
+        "plural": "bananas"
+      },
+      {
+        "type": "numeracy",
+        "count": 1,
+        "color": "white",
+        "object": "mushroom",
+        "plural": "mushrooms"
+      }
+    ],
+    "prompt": "A scene with two white calculators, three yellow folders, three pink cupcakes, one yellow tomato, one pink towel roll, two pink sticky notes, two green bananas, and one white mushroom"
+  },
+  {
+    "id": "num_k8_09",
+    "k": 8,
+    "type": "numeracy",
+    "scene_prefix": "A scene with",
+    "constraints": [
+      {
+        "type": "numeracy",
+        "count": 2,
+        "color": "yellow",
+        "object": "bell pepper",
+        "plural": "bell peppers"
+      },
+      {
+        "type": "numeracy",
+        "count": 2,
+        "color": "white",
+        "object": "gift box",
+        "plural": "gift boxes"
+      },
+      {
+        "type": "numeracy",
+        "count": 2,
+        "color": "black",
+        "object": "mug",
+        "plural": "mugs"
+      },
+      {
+        "type": "numeracy",
+        "count": 2,
+        "color": "blue",
+        "object": "calculator",
+        "plural": "calculators"
+      },
+      {
+        "type": "numeracy",
+        "count": 1,
+        "color": "pink",
+        "object": "sticky note",
+        "plural": "sticky notes"
+      },
+      {
+        "type": "numeracy",
+        "count": 1,
+        "color": "pink",
+        "object": "macaron",
+        "plural": "macarons"
+      },
+      {
+        "type": "numeracy",
+        "count": 2,
+        "color": "yellow",
+        "object": "folder",
+        "plural": "folders"
+      },
+      {
+        "type": "numeracy",
+        "count": 1,
+        "color": "green",
+        "object": "banana",
+        "plural": "bananas"
+      }
+    ],
+    "prompt": "A scene with two yellow bell peppers, two white gift boxes, two black mugs, two blue calculators, one pink sticky note, one pink macaron, two yellow folders, and one green banana"
+  },
+  {
+    "id": "num_k8_10",
+    "k": 8,
+    "type": "numeracy",
+    "scene_prefix": "A scene with",
+    "constraints": [
+      {
+        "type": "numeracy",
+        "count": 2,
+        "color": "yellow",
+        "object": "car",
+        "plural": "cars"
+      },
+      {
+        "type": "numeracy",
+        "count": 1,
+        "color": "orange",
+        "object": "tangerine",
+        "plural": "tangerines"
+      },
+      {
+        "type": "numeracy",
+        "count": 1,
+        "color": "pink",
+        "object": "toothbrush",
+        "plural": "toothbrushes"
+      },
+      {
+        "type": "numeracy",
+        "count": 2,
+        "color": "red",
+        "object": "mug",
+        "plural": "mugs"
+      },
+      {
+        "type": "numeracy",
+        "count": 1,
+        "color": "yellow",
+        "object": "yarn ball",
+        "plural": "yarn balls"
+      },
+      {
+        "type": "numeracy",
+        "count": 2,
+        "color": "red",
+        "object": "mushroom",
+        "plural": "mushrooms"
+      },
+      {
+        "type": "numeracy",
+        "count": 2,
+        "color": "pink",
+        "object": "sticky note",
+        "plural": "sticky notes"
+      },
+      {
+        "type": "numeracy",
+        "count": 2,
+        "color": "black",
+        "object": "spool of thread",
+        "plural": "spools of thread"
+      }
+    ],
+    "prompt": "A scene with two yellow cars, one orange tangerine, one pink toothbrush, two red mugs, one yellow yarn ball, two red mushrooms, two pink sticky notes, and two black spools of thread"
+  }
+]

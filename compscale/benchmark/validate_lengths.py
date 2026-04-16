@@ -93,7 +93,15 @@ def summarize(records):
 
 
 def apply_gate(summary, gate_ratio=MEDIAN_RATIO_GATE):
-    """For each type, check median(k=8) / median(k=1) <= gate_ratio."""
+    """For each type, check that median token count at k=8 and k=1 agree
+    within ``gate_ratio`` in either direction.
+
+    Bidirectional gate: ratio in [1/gate_ratio, gate_ratio]. This catches both
+    (a) k=8 ballooning longer than k=1 (the DetailMaster confound) AND
+    (b) k=1 being padded so heavily it exceeds k=8 (the inverse confound —
+    also compromises the scaling analysis)."""
+    lo = 1.0 / gate_ratio
+    hi = gate_ratio
     gate_results = {}
     for t, by_k in summary.items():
         if "1" not in by_k or "8" not in by_k:
@@ -102,12 +110,14 @@ def apply_gate(summary, gate_ratio=MEDIAN_RATIO_GATE):
         med1 = by_k["1"]["median"]
         med8 = by_k["8"]["median"]
         ratio = med8 / med1 if med1 > 0 else float("inf")
+        status = "pass" if (lo <= ratio <= hi) else "fail"
         gate_results[t] = {
             "median_k1": med1,
             "median_k8": med8,
             "ratio_k8_over_k1": round(ratio, 3),
             "gate_ratio": gate_ratio,
-            "status": "pass" if ratio <= gate_ratio else "fail",
+            "allowed_range": [round(lo, 3), round(hi, 3)],
+            "status": status,
         }
     return gate_results
 
@@ -219,7 +229,11 @@ def main():
                 f"min={stats['min']} max={stats['max']}"
             )
 
-    print("\nGate results (median k=8 / median k=1 <= {:.2f}):".format(args.gate_ratio))
+    lo = 1.0 / args.gate_ratio
+    hi = args.gate_ratio
+    print(
+        "\nGate results (median k=8 / median k=1 in [{:.2f}, {:.2f}]):".format(lo, hi)
+    )
     for t, g in gates.items():
         status = g.get("status", "unknown")
         if status == "pass" or status == "fail":

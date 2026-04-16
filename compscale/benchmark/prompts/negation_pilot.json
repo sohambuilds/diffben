@@ -1,0 +1,1112 @@
+[
+  {
+    "id": "neg_k1_01",
+    "k": 1,
+    "type": "negation",
+    "scene_prefix": "a modern office room with large windows and light gray walls, with",
+    "constraints": [
+      {
+        "type": "negation",
+        "object": "whiteboard",
+        "scene": "office"
+      }
+    ],
+    "prompt": "a modern office room with large windows and light gray walls, with no whiteboard"
+  },
+  {
+    "id": "neg_k1_02",
+    "k": 1,
+    "type": "negation",
+    "scene_prefix": "a clean workstation in an open-plan office, with",
+    "constraints": [
+      {
+        "type": "negation",
+        "object": "potted plant",
+        "scene": "office"
+      }
+    ],
+    "prompt": "a clean workstation in an open-plan office, with no potted plant"
+  },
+  {
+    "id": "neg_k1_03",
+    "k": 1,
+    "type": "negation",
+    "scene_prefix": "a bright modern kitchen with wooden cabinets, with",
+    "constraints": [
+      {
+        "type": "negation",
+        "object": "microwave",
+        "scene": "kitchen"
+      }
+    ],
+    "prompt": "a bright modern kitchen with wooden cabinets, with no microwave"
+  },
+  {
+    "id": "neg_k1_04",
+    "k": 1,
+    "type": "negation",
+    "scene_prefix": "a public park on a sunny weekend morning, with",
+    "constraints": [
+      {
+        "type": "negation",
+        "object": "fountain",
+        "scene": "park"
+      }
+    ],
+    "prompt": "a public park on a sunny weekend morning, with no fountain"
+  },
+  {
+    "id": "neg_k1_05",
+    "k": 1,
+    "type": "negation",
+    "scene_prefix": "a neat bedroom with cream walls and patterned linens, with",
+    "constraints": [
+      {
+        "type": "negation",
+        "object": "fan",
+        "scene": "bedroom"
+      }
+    ],
+    "prompt": "a neat bedroom with cream walls and patterned linens, with no fan"
+  },
+  {
+    "id": "neg_k1_06",
+    "k": 1,
+    "type": "negation",
+    "scene_prefix": "a bright corporate meeting room, with",
+    "constraints": [
+      {
+        "type": "negation",
+        "object": "bulletin board",
+        "scene": "office"
+      }
+    ],
+    "prompt": "a bright corporate meeting room, with no bulletin board"
+  },
+  {
+    "id": "neg_k1_07",
+    "k": 1,
+    "type": "negation",
+    "scene_prefix": "a residential street lined with trees, with",
+    "constraints": [
+      {
+        "type": "negation",
+        "object": "bicycle",
+        "scene": "street"
+      }
+    ],
+    "prompt": "a residential street lined with trees, with no bicycle"
+  },
+  {
+    "id": "neg_k1_08",
+    "k": 1,
+    "type": "negation",
+    "scene_prefix": "a residential street lined with trees, with",
+    "constraints": [
+      {
+        "type": "negation",
+        "object": "motorcycle",
+        "scene": "street"
+      }
+    ],
+    "prompt": "a residential street lined with trees, with no motorcycle"
+  },
+  {
+    "id": "neg_k1_09",
+    "k": 1,
+    "type": "negation",
+    "scene_prefix": "a bedroom with soft morning light and pale blue walls, with",
+    "constraints": [
+      {
+        "type": "negation",
+        "object": "chair",
+        "scene": "bedroom"
+      }
+    ],
+    "prompt": "a bedroom with soft morning light and pale blue walls, with no chair"
+  },
+  {
+    "id": "neg_k1_10",
+    "k": 1,
+    "type": "negation",
+    "scene_prefix": "a kitchen with marble countertops and warm afternoon light, with",
+    "constraints": [
+      {
+        "type": "negation",
+        "object": "kettle",
+        "scene": "kitchen"
+      }
+    ],
+    "prompt": "a kitchen with marble countertops and warm afternoon light, with no kettle"
+  },
+  {
+    "id": "neg_k2_01",
+    "k": 2,
+    "type": "negation",
+    "scene_prefix": "a quiet suburban street in the late afternoon, containing",
+    "constraints": [
+      {
+        "type": "negation",
+        "object": "newspaper stand",
+        "scene": "street"
+      },
+      {
+        "type": "negation",
+        "object": "trash can",
+        "scene": "street"
+      }
+    ],
+    "prompt": "a quiet suburban street in the late afternoon, containing no newspaper stand and no trash can"
+  },
+  {
+    "id": "neg_k2_02",
+    "k": 2,
+    "type": "negation",
+    "scene_prefix": "a cozy kitchen with tiled floors and a sunny window, containing",
+    "constraints": [
+      {
+        "type": "negation",
+        "object": "cutting board",
+        "scene": "kitchen"
+      },
+      {
+        "type": "negation",
+        "object": "microwave",
+        "scene": "kitchen"
+      }
+    ],
+    "prompt": "a cozy kitchen with tiled floors and a sunny window, containing no cutting board and no microwave"
+  },
+  {
+    "id": "neg_k2_03",
+    "k": 2,
+    "type": "negation",
+    "scene_prefix": "a bright corporate meeting room, containing",
+    "constraints": [
+      {
+        "type": "negation",
+        "object": "clock",
+        "scene": "office"
+      },
+      {
+        "type": "negation",
+        "object": "bulletin board",
+        "scene": "office"
+      }
+    ],
+    "prompt": "a bright corporate meeting room, containing no clock and no bulletin board"
+  },
+  {
+    "id": "neg_k2_04",
+    "k": 2,
+    "type": "negation",
+    "scene_prefix": "a neat bedroom with cream walls and patterned linens, containing",
+    "constraints": [
+      {
+        "type": "negation",
+        "object": "fan",
+        "scene": "bedroom"
+      },
+      {
+        "type": "negation",
+        "object": "rug",
+        "scene": "bedroom"
+      }
+    ],
+    "prompt": "a neat bedroom with cream walls and patterned linens, containing no fan and no rug"
+  },
+  {
+    "id": "neg_k2_05",
+    "k": 2,
+    "type": "negation",
+    "scene_prefix": "a kitchen with marble countertops and warm afternoon light, containing",
+    "constraints": [
+      {
+        "type": "negation",
+        "object": "paper towel holder",
+        "scene": "kitchen"
+      },
+      {
+        "type": "negation",
+        "object": "knife block",
+        "scene": "kitchen"
+      }
+    ],
+    "prompt": "a kitchen with marble countertops and warm afternoon light, containing no paper towel holder and no knife block"
+  },
+  {
+    "id": "neg_k2_06",
+    "k": 2,
+    "type": "negation",
+    "scene_prefix": "a modern office room with large windows and light gray walls, containing",
+    "constraints": [
+      {
+        "type": "negation",
+        "object": "bulletin board",
+        "scene": "office"
+      },
+      {
+        "type": "negation",
+        "object": "lamp",
+        "scene": "office"
+      }
+    ],
+    "prompt": "a modern office room with large windows and light gray walls, containing no bulletin board and no lamp"
+  },
+  {
+    "id": "neg_k2_07",
+    "k": 2,
+    "type": "negation",
+    "scene_prefix": "a residential street lined with trees, containing",
+    "constraints": [
+      {
+        "type": "negation",
+        "object": "fire hydrant",
+        "scene": "street"
+      },
+      {
+        "type": "negation",
+        "object": "newspaper stand",
+        "scene": "street"
+      }
+    ],
+    "prompt": "a residential street lined with trees, containing no fire hydrant and no newspaper stand"
+  },
+  {
+    "id": "neg_k2_08",
+    "k": 2,
+    "type": "negation",
+    "scene_prefix": "a clean workstation in an open-plan office, containing",
+    "constraints": [
+      {
+        "type": "negation",
+        "object": "clock",
+        "scene": "office"
+      },
+      {
+        "type": "negation",
+        "object": "filing cabinet",
+        "scene": "office"
+      }
+    ],
+    "prompt": "a clean workstation in an open-plan office, containing no clock and no filing cabinet"
+  },
+  {
+    "id": "neg_k2_09",
+    "k": 2,
+    "type": "negation",
+    "scene_prefix": "a small private office with a wooden desk, containing",
+    "constraints": [
+      {
+        "type": "negation",
+        "object": "chair",
+        "scene": "office"
+      },
+      {
+        "type": "negation",
+        "object": "computer monitor",
+        "scene": "office"
+      }
+    ],
+    "prompt": "a small private office with a wooden desk, containing no chair and no computer monitor"
+  },
+  {
+    "id": "neg_k2_10",
+    "k": 2,
+    "type": "negation",
+    "scene_prefix": "a narrow city street with cobblestone pavement, containing",
+    "constraints": [
+      {
+        "type": "negation",
+        "object": "car",
+        "scene": "street"
+      },
+      {
+        "type": "negation",
+        "object": "bench",
+        "scene": "street"
+      }
+    ],
+    "prompt": "a narrow city street with cobblestone pavement, containing no car and no bench"
+  },
+  {
+    "id": "neg_k4_01",
+    "k": 4,
+    "type": "negation",
+    "scene_prefix": "a cozy kitchen with tiled floors and a sunny window, containing",
+    "constraints": [
+      {
+        "type": "negation",
+        "object": "dishwasher",
+        "scene": "kitchen"
+      },
+      {
+        "type": "negation",
+        "object": "coffee maker",
+        "scene": "kitchen"
+      },
+      {
+        "type": "negation",
+        "object": "blender",
+        "scene": "kitchen"
+      },
+      {
+        "type": "negation",
+        "object": "cutting board",
+        "scene": "kitchen"
+      }
+    ],
+    "prompt": "a cozy kitchen with tiled floors and a sunny window, containing no dishwasher, no coffee maker, no blender, and no cutting board"
+  },
+  {
+    "id": "neg_k4_02",
+    "k": 4,
+    "type": "negation",
+    "scene_prefix": "a cozy kitchen with tiled floors and a sunny window, containing",
+    "constraints": [
+      {
+        "type": "negation",
+        "object": "dishwasher",
+        "scene": "kitchen"
+      },
+      {
+        "type": "negation",
+        "object": "microwave",
+        "scene": "kitchen"
+      },
+      {
+        "type": "negation",
+        "object": "blender",
+        "scene": "kitchen"
+      },
+      {
+        "type": "negation",
+        "object": "refrigerator",
+        "scene": "kitchen"
+      }
+    ],
+    "prompt": "a cozy kitchen with tiled floors and a sunny window, containing no dishwasher, no microwave, no blender, and no refrigerator"
+  },
+  {
+    "id": "neg_k4_03",
+    "k": 4,
+    "type": "negation",
+    "scene_prefix": "a modern office room with large windows and light gray walls, containing",
+    "constraints": [
+      {
+        "type": "negation",
+        "object": "lamp",
+        "scene": "office"
+      },
+      {
+        "type": "negation",
+        "object": "chair",
+        "scene": "office"
+      },
+      {
+        "type": "negation",
+        "object": "filing cabinet",
+        "scene": "office"
+      },
+      {
+        "type": "negation",
+        "object": "printer",
+        "scene": "office"
+      }
+    ],
+    "prompt": "a modern office room with large windows and light gray walls, containing no lamp, no chair, no filing cabinet, and no printer"
+  },
+  {
+    "id": "neg_k4_04",
+    "k": 4,
+    "type": "negation",
+    "scene_prefix": "a small bedroom with wooden flooring and a tall window, containing",
+    "constraints": [
+      {
+        "type": "negation",
+        "object": "laundry basket",
+        "scene": "bedroom"
+      },
+      {
+        "type": "negation",
+        "object": "lamp",
+        "scene": "bedroom"
+      },
+      {
+        "type": "negation",
+        "object": "wardrobe",
+        "scene": "bedroom"
+      },
+      {
+        "type": "negation",
+        "object": "mirror",
+        "scene": "bedroom"
+      }
+    ],
+    "prompt": "a small bedroom with wooden flooring and a tall window, containing no laundry basket, no lamp, no wardrobe, and no mirror"
+  },
+  {
+    "id": "neg_k4_05",
+    "k": 4,
+    "type": "negation",
+    "scene_prefix": "a cozy kitchen with tiled floors and a sunny window, containing",
+    "constraints": [
+      {
+        "type": "negation",
+        "object": "microwave",
+        "scene": "kitchen"
+      },
+      {
+        "type": "negation",
+        "object": "refrigerator",
+        "scene": "kitchen"
+      },
+      {
+        "type": "negation",
+        "object": "cutting board",
+        "scene": "kitchen"
+      },
+      {
+        "type": "negation",
+        "object": "kettle",
+        "scene": "kitchen"
+      }
+    ],
+    "prompt": "a cozy kitchen with tiled floors and a sunny window, containing no microwave, no refrigerator, no cutting board, and no kettle"
+  },
+  {
+    "id": "neg_k4_06",
+    "k": 4,
+    "type": "negation",
+    "scene_prefix": "a small bedroom with wooden flooring and a tall window, containing",
+    "constraints": [
+      {
+        "type": "negation",
+        "object": "lamp",
+        "scene": "bedroom"
+      },
+      {
+        "type": "negation",
+        "object": "mirror",
+        "scene": "bedroom"
+      },
+      {
+        "type": "negation",
+        "object": "painting",
+        "scene": "bedroom"
+      },
+      {
+        "type": "negation",
+        "object": "laundry basket",
+        "scene": "bedroom"
+      }
+    ],
+    "prompt": "a small bedroom with wooden flooring and a tall window, containing no lamp, no mirror, no painting, and no laundry basket"
+  },
+  {
+    "id": "neg_k4_07",
+    "k": 4,
+    "type": "negation",
+    "scene_prefix": "a cozy kitchen with tiled floors and a sunny window, containing",
+    "constraints": [
+      {
+        "type": "negation",
+        "object": "spice rack",
+        "scene": "kitchen"
+      },
+      {
+        "type": "negation",
+        "object": "fruit bowl",
+        "scene": "kitchen"
+      },
+      {
+        "type": "negation",
+        "object": "microwave",
+        "scene": "kitchen"
+      },
+      {
+        "type": "negation",
+        "object": "kettle",
+        "scene": "kitchen"
+      }
+    ],
+    "prompt": "a cozy kitchen with tiled floors and a sunny window, containing no spice rack, no fruit bowl, no microwave, and no kettle"
+  },
+  {
+    "id": "neg_k4_08",
+    "k": 4,
+    "type": "negation",
+    "scene_prefix": "a small private office with a wooden desk, containing",
+    "constraints": [
+      {
+        "type": "negation",
+        "object": "bookshelf",
+        "scene": "office"
+      },
+      {
+        "type": "negation",
+        "object": "bulletin board",
+        "scene": "office"
+      },
+      {
+        "type": "negation",
+        "object": "potted plant",
+        "scene": "office"
+      },
+      {
+        "type": "negation",
+        "object": "telephone",
+        "scene": "office"
+      }
+    ],
+    "prompt": "a small private office with a wooden desk, containing no bookshelf, no bulletin board, no potted plant, and no telephone"
+  },
+  {
+    "id": "neg_k4_09",
+    "k": 4,
+    "type": "negation",
+    "scene_prefix": "a modern office room with large windows and light gray walls, containing",
+    "constraints": [
+      {
+        "type": "negation",
+        "object": "coffee mug",
+        "scene": "office"
+      },
+      {
+        "type": "negation",
+        "object": "potted plant",
+        "scene": "office"
+      },
+      {
+        "type": "negation",
+        "object": "whiteboard",
+        "scene": "office"
+      },
+      {
+        "type": "negation",
+        "object": "chair",
+        "scene": "office"
+      }
+    ],
+    "prompt": "a modern office room with large windows and light gray walls, containing no coffee mug, no potted plant, no whiteboard, and no chair"
+  },
+  {
+    "id": "neg_k4_10",
+    "k": 4,
+    "type": "negation",
+    "scene_prefix": "a bedroom with soft morning light and pale blue walls, containing",
+    "constraints": [
+      {
+        "type": "negation",
+        "object": "painting",
+        "scene": "bedroom"
+      },
+      {
+        "type": "negation",
+        "object": "plant",
+        "scene": "bedroom"
+      },
+      {
+        "type": "negation",
+        "object": "nightstand",
+        "scene": "bedroom"
+      },
+      {
+        "type": "negation",
+        "object": "fan",
+        "scene": "bedroom"
+      }
+    ],
+    "prompt": "a bedroom with soft morning light and pale blue walls, containing no painting, no plant, no nightstand, and no fan"
+  },
+  {
+    "id": "neg_k8_01",
+    "k": 8,
+    "type": "negation",
+    "scene_prefix": "a cozy kitchen with tiled floors and a sunny window, containing",
+    "constraints": [
+      {
+        "type": "negation",
+        "object": "coffee maker",
+        "scene": "kitchen"
+      },
+      {
+        "type": "negation",
+        "object": "toaster",
+        "scene": "kitchen"
+      },
+      {
+        "type": "negation",
+        "object": "kettle",
+        "scene": "kitchen"
+      },
+      {
+        "type": "negation",
+        "object": "spice rack",
+        "scene": "kitchen"
+      },
+      {
+        "type": "negation",
+        "object": "dishwasher",
+        "scene": "kitchen"
+      },
+      {
+        "type": "negation",
+        "object": "microwave",
+        "scene": "kitchen"
+      },
+      {
+        "type": "negation",
+        "object": "refrigerator",
+        "scene": "kitchen"
+      },
+      {
+        "type": "negation",
+        "object": "cutting board",
+        "scene": "kitchen"
+      }
+    ],
+    "prompt": "a cozy kitchen with tiled floors and a sunny window, containing no coffee maker, no toaster, no kettle, no spice rack, no dishwasher, no microwave, no refrigerator, and no cutting board"
+  },
+  {
+    "id": "neg_k8_02",
+    "k": 8,
+    "type": "negation",
+    "scene_prefix": "a wide open park under a clear blue sky, containing",
+    "constraints": [
+      {
+        "type": "negation",
+        "object": "fountain",
+        "scene": "park"
+      },
+      {
+        "type": "negation",
+        "object": "picnic table",
+        "scene": "park"
+      },
+      {
+        "type": "negation",
+        "object": "slide",
+        "scene": "park"
+      },
+      {
+        "type": "negation",
+        "object": "dog",
+        "scene": "park"
+      },
+      {
+        "type": "negation",
+        "object": "trash can",
+        "scene": "park"
+      },
+      {
+        "type": "negation",
+        "object": "swing set",
+        "scene": "park"
+      },
+      {
+        "type": "negation",
+        "object": "kite",
+        "scene": "park"
+      },
+      {
+        "type": "negation",
+        "object": "statue",
+        "scene": "park"
+      }
+    ],
+    "prompt": "a wide open park under a clear blue sky, containing no fountain, no picnic table, no slide, no dog, no trash can, no swing set, no kite, and no statue"
+  },
+  {
+    "id": "neg_k8_03",
+    "k": 8,
+    "type": "negation",
+    "scene_prefix": "a neat bedroom with cream walls and patterned linens, containing",
+    "constraints": [
+      {
+        "type": "negation",
+        "object": "chair",
+        "scene": "bedroom"
+      },
+      {
+        "type": "negation",
+        "object": "alarm clock",
+        "scene": "bedroom"
+      },
+      {
+        "type": "negation",
+        "object": "nightstand",
+        "scene": "bedroom"
+      },
+      {
+        "type": "negation",
+        "object": "wardrobe",
+        "scene": "bedroom"
+      },
+      {
+        "type": "negation",
+        "object": "painting",
+        "scene": "bedroom"
+      },
+      {
+        "type": "negation",
+        "object": "laundry basket",
+        "scene": "bedroom"
+      },
+      {
+        "type": "negation",
+        "object": "lamp",
+        "scene": "bedroom"
+      },
+      {
+        "type": "negation",
+        "object": "fan",
+        "scene": "bedroom"
+      }
+    ],
+    "prompt": "a neat bedroom with cream walls and patterned linens, containing no chair, no alarm clock, no nightstand, no wardrobe, no painting, no laundry basket, no lamp, and no fan"
+  },
+  {
+    "id": "neg_k8_04",
+    "k": 8,
+    "type": "negation",
+    "scene_prefix": "a bright corporate meeting room, containing",
+    "constraints": [
+      {
+        "type": "negation",
+        "object": "bookshelf",
+        "scene": "office"
+      },
+      {
+        "type": "negation",
+        "object": "chair",
+        "scene": "office"
+      },
+      {
+        "type": "negation",
+        "object": "telephone",
+        "scene": "office"
+      },
+      {
+        "type": "negation",
+        "object": "filing cabinet",
+        "scene": "office"
+      },
+      {
+        "type": "negation",
+        "object": "clock",
+        "scene": "office"
+      },
+      {
+        "type": "negation",
+        "object": "printer",
+        "scene": "office"
+      },
+      {
+        "type": "negation",
+        "object": "bulletin board",
+        "scene": "office"
+      },
+      {
+        "type": "negation",
+        "object": "coffee mug",
+        "scene": "office"
+      }
+    ],
+    "prompt": "a bright corporate meeting room, containing no bookshelf, no chair, no telephone, no filing cabinet, no clock, no printer, no bulletin board, and no coffee mug"
+  },
+  {
+    "id": "neg_k8_05",
+    "k": 8,
+    "type": "negation",
+    "scene_prefix": "a cozy kitchen with tiled floors and a sunny window, containing",
+    "constraints": [
+      {
+        "type": "negation",
+        "object": "kettle",
+        "scene": "kitchen"
+      },
+      {
+        "type": "negation",
+        "object": "refrigerator",
+        "scene": "kitchen"
+      },
+      {
+        "type": "negation",
+        "object": "spice rack",
+        "scene": "kitchen"
+      },
+      {
+        "type": "negation",
+        "object": "blender",
+        "scene": "kitchen"
+      },
+      {
+        "type": "negation",
+        "object": "toaster",
+        "scene": "kitchen"
+      },
+      {
+        "type": "negation",
+        "object": "microwave",
+        "scene": "kitchen"
+      },
+      {
+        "type": "negation",
+        "object": "cutting board",
+        "scene": "kitchen"
+      },
+      {
+        "type": "negation",
+        "object": "knife block",
+        "scene": "kitchen"
+      }
+    ],
+    "prompt": "a cozy kitchen with tiled floors and a sunny window, containing no kettle, no refrigerator, no spice rack, no blender, no toaster, no microwave, no cutting board, and no knife block"
+  },
+  {
+    "id": "neg_k8_06",
+    "k": 8,
+    "type": "negation",
+    "scene_prefix": "a kitchen with marble countertops and warm afternoon light, containing",
+    "constraints": [
+      {
+        "type": "negation",
+        "object": "microwave",
+        "scene": "kitchen"
+      },
+      {
+        "type": "negation",
+        "object": "knife block",
+        "scene": "kitchen"
+      },
+      {
+        "type": "negation",
+        "object": "cutting board",
+        "scene": "kitchen"
+      },
+      {
+        "type": "negation",
+        "object": "spice rack",
+        "scene": "kitchen"
+      },
+      {
+        "type": "negation",
+        "object": "refrigerator",
+        "scene": "kitchen"
+      },
+      {
+        "type": "negation",
+        "object": "dishwasher",
+        "scene": "kitchen"
+      },
+      {
+        "type": "negation",
+        "object": "toaster",
+        "scene": "kitchen"
+      },
+      {
+        "type": "negation",
+        "object": "blender",
+        "scene": "kitchen"
+      }
+    ],
+    "prompt": "a kitchen with marble countertops and warm afternoon light, containing no microwave, no knife block, no cutting board, no spice rack, no refrigerator, no dishwasher, no toaster, and no blender"
+  },
+  {
+    "id": "neg_k8_07",
+    "k": 8,
+    "type": "negation",
+    "scene_prefix": "a neat bedroom with cream walls and patterned linens, containing",
+    "constraints": [
+      {
+        "type": "negation",
+        "object": "laundry basket",
+        "scene": "bedroom"
+      },
+      {
+        "type": "negation",
+        "object": "bookshelf",
+        "scene": "bedroom"
+      },
+      {
+        "type": "negation",
+        "object": "wardrobe",
+        "scene": "bedroom"
+      },
+      {
+        "type": "negation",
+        "object": "alarm clock",
+        "scene": "bedroom"
+      },
+      {
+        "type": "negation",
+        "object": "nightstand",
+        "scene": "bedroom"
+      },
+      {
+        "type": "negation",
+        "object": "mirror",
+        "scene": "bedroom"
+      },
+      {
+        "type": "negation",
+        "object": "plant",
+        "scene": "bedroom"
+      },
+      {
+        "type": "negation",
+        "object": "fan",
+        "scene": "bedroom"
+      }
+    ],
+    "prompt": "a neat bedroom with cream walls and patterned linens, containing no laundry basket, no bookshelf, no wardrobe, no alarm clock, no nightstand, no mirror, no plant, and no fan"
+  },
+  {
+    "id": "neg_k8_08",
+    "k": 8,
+    "type": "negation",
+    "scene_prefix": "a neighborhood park with benches and flower beds, containing",
+    "constraints": [
+      {
+        "type": "negation",
+        "object": "bench",
+        "scene": "park"
+      },
+      {
+        "type": "negation",
+        "object": "statue",
+        "scene": "park"
+      },
+      {
+        "type": "negation",
+        "object": "swing set",
+        "scene": "park"
+      },
+      {
+        "type": "negation",
+        "object": "fountain",
+        "scene": "park"
+      },
+      {
+        "type": "negation",
+        "object": "lamppost",
+        "scene": "park"
+      },
+      {
+        "type": "negation",
+        "object": "trash bin",
+        "scene": "park"
+      },
+      {
+        "type": "negation",
+        "object": "picnic table",
+        "scene": "park"
+      },
+      {
+        "type": "negation",
+        "object": "dog",
+        "scene": "park"
+      }
+    ],
+    "prompt": "a neighborhood park with benches and flower beds, containing no bench, no statue, no swing set, no fountain, no lamppost, no trash bin, no picnic table, and no dog"
+  },
+  {
+    "id": "neg_k8_09",
+    "k": 8,
+    "type": "negation",
+    "scene_prefix": "a bedroom with soft morning light and pale blue walls, containing",
+    "constraints": [
+      {
+        "type": "negation",
+        "object": "bookshelf",
+        "scene": "bedroom"
+      },
+      {
+        "type": "negation",
+        "object": "plant",
+        "scene": "bedroom"
+      },
+      {
+        "type": "negation",
+        "object": "mirror",
+        "scene": "bedroom"
+      },
+      {
+        "type": "negation",
+        "object": "laundry basket",
+        "scene": "bedroom"
+      },
+      {
+        "type": "negation",
+        "object": "nightstand",
+        "scene": "bedroom"
+      },
+      {
+        "type": "negation",
+        "object": "alarm clock",
+        "scene": "bedroom"
+      },
+      {
+        "type": "negation",
+        "object": "wardrobe",
+        "scene": "bedroom"
+      },
+      {
+        "type": "negation",
+        "object": "fan",
+        "scene": "bedroom"
+      }
+    ],
+    "prompt": "a bedroom with soft morning light and pale blue walls, containing no bookshelf, no plant, no mirror, no laundry basket, no nightstand, no alarm clock, no wardrobe, and no fan"
+  },
+  {
+    "id": "neg_k8_10",
+    "k": 8,
+    "type": "negation",
+    "scene_prefix": "a neat bedroom with cream walls and patterned linens, containing",
+    "constraints": [
+      {
+        "type": "negation",
+        "object": "mirror",
+        "scene": "bedroom"
+      },
+      {
+        "type": "negation",
+        "object": "plant",
+        "scene": "bedroom"
+      },
+      {
+        "type": "negation",
+        "object": "bookshelf",
+        "scene": "bedroom"
+      },
+      {
+        "type": "negation",
+        "object": "wardrobe",
+        "scene": "bedroom"
+      },
+      {
+        "type": "negation",
+        "object": "painting",
+        "scene": "bedroom"
+      },
+      {
+        "type": "negation",
+        "object": "alarm clock",
+        "scene": "bedroom"
+      },
+      {
+        "type": "negation",
+        "object": "chair",
+        "scene": "bedroom"
+      },
+      {
+        "type": "negation",
+        "object": "rug",
+        "scene": "bedroom"
+      }
+    ],
+    "prompt": "a neat bedroom with cream walls and patterned linens, containing no mirror, no plant, no bookshelf, no wardrobe, no painting, no alarm clock, no chair, and no rug"
+  }
+]

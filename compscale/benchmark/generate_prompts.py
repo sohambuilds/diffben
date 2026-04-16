@@ -46,23 +46,110 @@ ATTR_OBJECTS = [
     "watering can", "helmet", "bench", "stool",
 ]
 
-ATTR_SCENES = [
-    "A bright parking lot with trees along the edges and a clear sky overhead",
-    "A cozy living room with bookshelves along the walls and warm lighting",
-    "A quiet residential street with brick houses and trimmed hedges",
-    "A tidy kitchen with marble surfaces and wooden cabinets in afternoon light",
-    "A modern office with a large window and potted plants on the sill",
-    "A charming garden with stepping stones and blooming flower beds",
-    "A children's bedroom with patterned wallpaper and wooden shelves of toys",
-    "A city sidewalk with tall buildings in the background and shop windows",
-    "A sunny beach with golden sand and gentle waves under a bright sky",
-    "A farmhouse porch with wooden railings and hanging planters",
-    "A home study lined with leather-bound books and a heavy wooden desk",
-    "A craft room with shelves of supplies and a wide worktable under lamplight",
-    "A loft apartment with exposed brick walls and tall factory windows",
-    "A school hallway with lockers on both sides and polished floors",
-    "A cafe interior with small round tables and chalkboard menus",
+
+# --- Scene framing banks ------------------------------------------------
+#
+# The gate in Module 3 requires median token count at k=8 to be within 1.5x of
+# median at k=1 per type. Because each additional constraint clause is ~3-7
+# tokens, raw prompts trend 10 tokens at k=1 to 50+ tokens at k=8 without
+# framing, which blows the gate. To hold token length roughly constant across
+# k, we pad low-k prompts heavily (a long preamble AND a trailing descriptor)
+# and strip padding as k increases. Prefixes / suffixes are hand-authored at
+# four length tiers and picked deterministically per-prompt.
+#
+# Token counts below are Mistral-Nemo-Base-2407 approximations.
+
+# Long preamble (~24-28 tokens). Uses a scene-qualifier placeholder ``{scene}``
+# so both generic prompts ("a spacious room") and negation prompts (using the
+# ontology scene name like "kitchen" or "bedroom") can share the same bank.
+HEAVY_PREFIX_TEMPLATES = [
+    "In a warmly lit {scene} with hardwood floors, tall windows dressed in sheer curtains, and potted plants arranged near the far wall, the scene captures",
+    "Inside a bright modern {scene} with soft ambient lighting, minimalist furniture clustered near the center, and wide pale walls throughout the frame, the view features",
+    "In a quiet afternoon {scene} with warm natural light streaming through a window, subtle shadows across the floor, and a few small ornaments on nearby surfaces, the image presents",
+    "Within a spacious well-kept {scene} with pale neutral walls, wide plank flooring, and gentle diffuse lighting that softens every edge in the composition, the frame depicts",
+    "Inside a tidy comfortable {scene} with wooden furnishings arranged along the walls, a patterned rug underfoot, and daylight pouring in from a tall window, the arrangement shows",
 ]
+
+# Medium preamble (~15-17 tokens).
+MEDIUM_PREFIX_TEMPLATES = [
+    "In a bright airy {scene} with light flooring and gentle overhead sunlight, the scene shows",
+    "Inside a tidy modern {scene} with pale walls and clean architectural lines, the frame features",
+    "In a cozy afternoon {scene} with soft ambient lighting and a warm palette, the view presents",
+    "Within a minimalist {scene} with neutral finishes and abundant natural light, the image includes",
+    "Inside a welcoming {scene} with wooden accents and a quiet domestic mood, the composition depicts",
+]
+
+# Short preamble (~7-9 tokens).
+SHORT_PREFIX_TEMPLATES = [
+    "In a bright {scene} the scene shows",
+    "Inside a cozy {scene} the view features",
+    "In a tidy {scene} the frame contains",
+    "Within a modern {scene} the composition has",
+    "Inside a warm {scene} the image presents",
+]
+
+# Minimal preamble (~3-5 tokens).
+MINIMAL_PREFIX_TEMPLATES = [
+    "A {scene} with",
+    "In the {scene}:",
+    "Inside the {scene},",
+    "A {scene} containing",
+]
+
+# Long trailing descriptor (~11-14 tokens).
+HEAVY_SUFFIXES = [
+    ", captured in gentle afternoon light with soft dust motes drifting through the air",
+    ", rendered in warm natural tones with a shallow depth of field throughout the composition",
+    ", bathed in the golden glow of late afternoon sunlight streaming through tall windows",
+    ", framed against a pale neutral background with diffused overhead lighting from above",
+    ", illuminated by even diffused light from clerestory windows high on the opposite wall",
+]
+
+# Medium trailing descriptor (~5-7 tokens).
+MEDIUM_SUFFIXES = [
+    ", softly lit in warm tones",
+    ", against a pale neutral backdrop",
+    ", captured with shallow depth of field",
+    ", in diffused afternoon light",
+    ", with a gently blurred background",
+]
+
+# Scene qualifiers used to fill the ``{scene}`` placeholder for the three
+# types that don't carry an ontology-level scene name (attribute / numeracy /
+# spatial). Negation uses its ontology scene names directly instead.
+GENERIC_SCENE_QUALIFIERS = [
+    "living room", "kitchen", "studio space", "bedroom", "office",
+    "sunroom", "loft interior", "dining room", "reading nook",
+    "hallway", "workshop", "garden room", "parlor",
+]
+
+
+_FRAMING_BY_K = {
+    1: ("heavy", "heavy"),
+    2: ("medium", "medium"),
+    4: ("short", ""),
+    8: ("minimal", ""),
+}
+
+
+def _pick_framing(rng, k, scene_qualifier):
+    """Return (scene_prefix, scene_suffix) tuned to k and filled with scene_qualifier."""
+    prefix_level, suffix_level = _FRAMING_BY_K[k]
+    prefix_bank = {
+        "heavy": HEAVY_PREFIX_TEMPLATES,
+        "medium": MEDIUM_PREFIX_TEMPLATES,
+        "short": SHORT_PREFIX_TEMPLATES,
+        "minimal": MINIMAL_PREFIX_TEMPLATES,
+    }[prefix_level]
+    prefix = rng.choice(prefix_bank).format(scene=scene_qualifier)
+
+    if suffix_level == "heavy":
+        suffix = rng.choice(HEAVY_SUFFIXES)
+    elif suffix_level == "medium":
+        suffix = rng.choice(MEDIUM_SUFFIXES)
+    else:
+        suffix = ""
+    return prefix, suffix
 
 
 def _load_ontology():
@@ -70,18 +157,6 @@ def _load_ontology():
     neg = json.loads((ONTOLOGY_DIR / "negation_targets.json").read_text())
     spat = json.loads((ONTOLOGY_DIR / "spatial_objects.json").read_text())
     return count, neg, spat
-
-
-def _attr_scene_prefix(rng, k):
-    scene = rng.choice(ATTR_SCENES)
-    if k == 1:
-        return f"{scene}, featuring"
-    if k == 2:
-        return f"{scene}, showing"
-    if k == 4:
-        short = scene.split(",")[0]
-        return f"{short} containing"
-    return "A scene with"
 
 
 def _join_clauses(clauses):
@@ -110,9 +185,9 @@ def clause_for(constraint):
     raise ValueError(f"Unknown constraint type: {t}")
 
 
-def render_prompt(scene_prefix, constraints):
+def render_prompt(scene_prefix, constraints, scene_suffix=""):
     clauses = [clause_for(c) for c in constraints]
-    return f"{scene_prefix} {_join_clauses(clauses)}"
+    return f"{scene_prefix} {_join_clauses(clauses)}{scene_suffix}"
 
 
 # --- Attribute binding --------------------------------------------------
@@ -129,14 +204,16 @@ def _attr_constraint(rng, used_objects):
 def build_attribute_prompt(rng, k, idx):
     used = set()
     cs = [_attr_constraint(rng, used) for _ in range(k)]
-    scene_prefix = _attr_scene_prefix(rng, k)
+    scene_qualifier = rng.choice(GENERIC_SCENE_QUALIFIERS)
+    scene_prefix, scene_suffix = _pick_framing(rng, k, scene_qualifier)
     return {
         "id": f"attr_k{k}_{idx:02d}",
         "k": k,
         "type": "attribute",
         "scene_prefix": scene_prefix,
+        "scene_suffix": scene_suffix,
         "constraints": cs,
-        "prompt": render_prompt(scene_prefix, cs),
+        "prompt": render_prompt(scene_prefix, cs, scene_suffix),
     }
 
 
@@ -146,18 +223,17 @@ def build_attribute_prompt(rng, k, idx):
 def build_negation_prompt(rng, k, idx, neg_ontology):
     scene_name = rng.choice(list(neg_ontology["scenes"].keys()))
     scene_info = neg_ontology["scenes"][scene_name]
-    filler_phrase = rng.choice(scene_info["scene_filler_phrases"])
     targets = rng.sample(scene_info["valid_negation_targets"], k=k)
     cs = [{"type": "negation", "object": t, "scene": scene_name} for t in targets]
-    joiner = "with" if k == 1 else "containing"
-    scene_prefix = f"{filler_phrase}, {joiner}"
+    scene_prefix, scene_suffix = _pick_framing(rng, k, scene_name)
     return {
         "id": f"neg_k{k}_{idx:02d}",
         "k": k,
         "type": "negation",
         "scene_prefix": scene_prefix,
+        "scene_suffix": scene_suffix,
         "constraints": cs,
-        "prompt": render_prompt(scene_prefix, cs),
+        "prompt": render_prompt(scene_prefix, cs, scene_suffix),
     }
 
 
@@ -196,19 +272,16 @@ def build_spatial_prompt(rng, k, idx, spat_ontology):
             "object_b": b["object"],
         })
 
-    if k == 1:
-        scene_prefix = "A simple indoor scene showing"
-    elif k == 2:
-        scene_prefix = "An indoor scene showing"
-    else:
-        scene_prefix = "A scene with"
+    scene_qualifier = rng.choice(GENERIC_SCENE_QUALIFIERS)
+    scene_prefix, scene_suffix = _pick_framing(rng, k, scene_qualifier)
     return {
         "id": f"spat_k{k}_{idx:02d}",
         "k": k,
         "type": "spatial",
         "scene_prefix": scene_prefix,
+        "scene_suffix": scene_suffix,
         "constraints": cs,
-        "prompt": render_prompt(scene_prefix, cs),
+        "prompt": render_prompt(scene_prefix, cs, scene_suffix),
     }
 
 
@@ -234,48 +307,17 @@ def _num_constraint(rng, used_objects, count_ontology):
 def build_numeracy_prompt(rng, k, idx, count_ontology):
     used = set()
     cs = [_num_constraint(rng, used, count_ontology) for _ in range(k)]
-    scene_prefix = _attr_scene_prefix(rng, k)
+    scene_qualifier = rng.choice(GENERIC_SCENE_QUALIFIERS)
+    scene_prefix, scene_suffix = _pick_framing(rng, k, scene_qualifier)
     return {
         "id": f"num_k{k}_{idx:02d}",
         "k": k,
         "type": "numeracy",
         "scene_prefix": scene_prefix,
+        "scene_suffix": scene_suffix,
         "constraints": cs,
-        "prompt": render_prompt(scene_prefix, cs),
+        "prompt": render_prompt(scene_prefix, cs, scene_suffix),
     }
-
-
-# --- Order permutation pilot -------------------------------------------
-
-
-def build_permutations(base_prompts, rng, n_perms=3):
-    """For each base prompt, produce n_perms reshufflings of the constraint
-    clauses. Scene-setting text is preserved; only constraint order changes."""
-    out = []
-    for base in base_prompts:
-        constraints = base["constraints"]
-        scene_prefix = base["scene_prefix"]
-        seen_orders = {tuple(range(len(constraints)))}
-        for p_idx in range(n_perms):
-            order = list(range(len(constraints)))
-            for _ in range(20):
-                rng.shuffle(order)
-                if tuple(order) not in seen_orders:
-                    seen_orders.add(tuple(order))
-                    break
-            reordered = [constraints[i] for i in order]
-            out.append({
-                "id": f"{base['id']}_perm{p_idx}",
-                "base_id": base["id"],
-                "permutation_idx": p_idx,
-                "order": order,
-                "k": base["k"],
-                "type": base["type"],
-                "scene_prefix": scene_prefix,
-                "constraints": reordered,
-                "prompt": render_prompt(scene_prefix, reordered),
-            })
-    return out
 
 
 # --- Driver -------------------------------------------------------------

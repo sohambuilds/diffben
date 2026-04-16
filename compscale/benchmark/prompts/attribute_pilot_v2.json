@@ -1,0 +1,2222 @@
+[
+  {
+    "id": "attr_k1_01",
+    "k": 1,
+    "type": "attribute",
+    "scene_prefix": "A craft room with shelves of supplies and a wide worktable under lamplight, featuring",
+    "constraints": [
+      {
+        "type": "attribute",
+        "color": "black",
+        "object": "bicycle"
+      }
+    ],
+    "prompt": "A craft room with shelves of supplies and a wide worktable under lamplight, featuring a black bicycle"
+  },
+  {
+    "id": "attr_k1_02",
+    "k": 1,
+    "type": "attribute",
+    "scene_prefix": "A charming garden with stepping stones and blooming flower beds, featuring",
+    "constraints": [
+      {
+        "type": "attribute",
+        "color": "orange",
+        "object": "rug"
+      }
+    ],
+    "prompt": "A charming garden with stepping stones and blooming flower beds, featuring a orange rug"
+  },
+  {
+    "id": "attr_k1_03",
+    "k": 1,
+    "type": "attribute",
+    "scene_prefix": "A farmhouse porch with wooden railings and hanging planters, featuring",
+    "constraints": [
+      {
+        "type": "attribute",
+        "color": "orange",
+        "object": "armchair"
+      }
+    ],
+    "prompt": "A farmhouse porch with wooden railings and hanging planters, featuring a orange armchair"
+  },
+  {
+    "id": "attr_k1_04",
+    "k": 1,
+    "type": "attribute",
+    "scene_prefix": "A bright parking lot with trees along the edges and a clear sky overhead, featuring",
+    "constraints": [
+      {
+        "type": "attribute",
+        "color": "brown",
+        "object": "bench"
+      }
+    ],
+    "prompt": "A bright parking lot with trees along the edges and a clear sky overhead, featuring a brown bench"
+  },
+  {
+    "id": "attr_k1_05",
+    "k": 1,
+    "type": "attribute",
+    "scene_prefix": "A farmhouse porch with wooden railings and hanging planters, featuring",
+    "constraints": [
+      {
+        "type": "attribute",
+        "color": "pink",
+        "object": "stool"
+      }
+    ],
+    "prompt": "A farmhouse porch with wooden railings and hanging planters, featuring a pink stool"
+  },
+  {
+    "id": "attr_k1_06",
+    "k": 1,
+    "type": "attribute",
+    "scene_prefix": "A school hallway with lockers on both sides and polished floors, featuring",
+    "constraints": [
+      {
+        "type": "attribute",
+        "color": "brown",
+        "object": "vase"
+      }
+    ],
+    "prompt": "A school hallway with lockers on both sides and polished floors, featuring a brown vase"
+  },
+  {
+    "id": "attr_k1_07",
+    "k": 1,
+    "type": "attribute",
+    "scene_prefix": "A quiet residential street with brick houses and trimmed hedges, featuring",
+    "constraints": [
+      {
+        "type": "attribute",
+        "color": "pink",
+        "object": "towel"
+      }
+    ],
+    "prompt": "A quiet residential street with brick houses and trimmed hedges, featuring a pink towel"
+  },
+  {
+    "id": "attr_k1_08",
+    "k": 1,
+    "type": "attribute",
+    "scene_prefix": "A school hallway with lockers on both sides and polished floors, featuring",
+    "constraints": [
+      {
+        "type": "attribute",
+        "color": "blue",
+        "object": "bus"
+      }
+    ],
+    "prompt": "A school hallway with lockers on both sides and polished floors, featuring a blue bus"
+  },
+  {
+    "id": "attr_k1_09",
+    "k": 1,
+    "type": "attribute",
+    "scene_prefix": "A quiet residential street with brick houses and trimmed hedges, featuring",
+    "constraints": [
+      {
+        "type": "attribute",
+        "color": "pink",
+        "object": "lamp"
+      }
+    ],
+    "prompt": "A quiet residential street with brick houses and trimmed hedges, featuring a pink lamp"
+  },
+  {
+    "id": "attr_k1_10",
+    "k": 1,
+    "type": "attribute",
+    "scene_prefix": "A sunny beach with golden sand and gentle waves under a bright sky, featuring",
+    "constraints": [
+      {
+        "type": "attribute",
+        "color": "green",
+        "object": "armchair"
+      }
+    ],
+    "prompt": "A sunny beach with golden sand and gentle waves under a bright sky, featuring a green armchair"
+  },
+  {
+    "id": "attr_k1_11",
+    "k": 1,
+    "type": "attribute",
+    "scene_prefix": "A loft apartment with exposed brick walls and tall factory windows, featuring",
+    "constraints": [
+      {
+        "type": "attribute",
+        "color": "green",
+        "object": "bench"
+      }
+    ],
+    "prompt": "A loft apartment with exposed brick walls and tall factory windows, featuring a green bench"
+  },
+  {
+    "id": "attr_k1_12",
+    "k": 1,
+    "type": "attribute",
+    "scene_prefix": "A sunny beach with golden sand and gentle waves under a bright sky, featuring",
+    "constraints": [
+      {
+        "type": "attribute",
+        "color": "brown",
+        "object": "teddy bear"
+      }
+    ],
+    "prompt": "A sunny beach with golden sand and gentle waves under a bright sky, featuring a brown teddy bear"
+  },
+  {
+    "id": "attr_k1_13",
+    "k": 1,
+    "type": "attribute",
+    "scene_prefix": "A quiet residential street with brick houses and trimmed hedges, featuring",
+    "constraints": [
+      {
+        "type": "attribute",
+        "color": "brown",
+        "object": "suitcase"
+      }
+    ],
+    "prompt": "A quiet residential street with brick houses and trimmed hedges, featuring a brown suitcase"
+  },
+  {
+    "id": "attr_k1_14",
+    "k": 1,
+    "type": "attribute",
+    "scene_prefix": "A bright parking lot with trees along the edges and a clear sky overhead, featuring",
+    "constraints": [
+      {
+        "type": "attribute",
+        "color": "blue",
+        "object": "teddy bear"
+      }
+    ],
+    "prompt": "A bright parking lot with trees along the edges and a clear sky overhead, featuring a blue teddy bear"
+  },
+  {
+    "id": "attr_k1_15",
+    "k": 1,
+    "type": "attribute",
+    "scene_prefix": "A bright parking lot with trees along the edges and a clear sky overhead, featuring",
+    "constraints": [
+      {
+        "type": "attribute",
+        "color": "green",
+        "object": "bus"
+      }
+    ],
+    "prompt": "A bright parking lot with trees along the edges and a clear sky overhead, featuring a green bus"
+  },
+  {
+    "id": "attr_k1_16",
+    "k": 1,
+    "type": "attribute",
+    "scene_prefix": "A modern office with a large window and potted plants on the sill, featuring",
+    "constraints": [
+      {
+        "type": "attribute",
+        "color": "black",
+        "object": "mug"
+      }
+    ],
+    "prompt": "A modern office with a large window and potted plants on the sill, featuring a black mug"
+  },
+  {
+    "id": "attr_k1_17",
+    "k": 1,
+    "type": "attribute",
+    "scene_prefix": "A farmhouse porch with wooden railings and hanging planters, featuring",
+    "constraints": [
+      {
+        "type": "attribute",
+        "color": "purple",
+        "object": "motorcycle"
+      }
+    ],
+    "prompt": "A farmhouse porch with wooden railings and hanging planters, featuring a purple motorcycle"
+  },
+  {
+    "id": "attr_k1_18",
+    "k": 1,
+    "type": "attribute",
+    "scene_prefix": "A home study lined with leather-bound books and a heavy wooden desk, featuring",
+    "constraints": [
+      {
+        "type": "attribute",
+        "color": "brown",
+        "object": "armchair"
+      }
+    ],
+    "prompt": "A home study lined with leather-bound books and a heavy wooden desk, featuring a brown armchair"
+  },
+  {
+    "id": "attr_k1_19",
+    "k": 1,
+    "type": "attribute",
+    "scene_prefix": "A school hallway with lockers on both sides and polished floors, featuring",
+    "constraints": [
+      {
+        "type": "attribute",
+        "color": "blue",
+        "object": "bus"
+      }
+    ],
+    "prompt": "A school hallway with lockers on both sides and polished floors, featuring a blue bus"
+  },
+  {
+    "id": "attr_k1_20",
+    "k": 1,
+    "type": "attribute",
+    "scene_prefix": "A charming garden with stepping stones and blooming flower beds, featuring",
+    "constraints": [
+      {
+        "type": "attribute",
+        "color": "white",
+        "object": "watering can"
+      }
+    ],
+    "prompt": "A charming garden with stepping stones and blooming flower beds, featuring a white watering can"
+  },
+  {
+    "id": "attr_k2_01",
+    "k": 2,
+    "type": "attribute",
+    "scene_prefix": "A loft apartment with exposed brick walls and tall factory windows, showing",
+    "constraints": [
+      {
+        "type": "attribute",
+        "color": "green",
+        "object": "basket"
+      },
+      {
+        "type": "attribute",
+        "color": "blue",
+        "object": "cushion"
+      }
+    ],
+    "prompt": "A loft apartment with exposed brick walls and tall factory windows, showing a green basket and a blue cushion"
+  },
+  {
+    "id": "attr_k2_02",
+    "k": 2,
+    "type": "attribute",
+    "scene_prefix": "A craft room with shelves of supplies and a wide worktable under lamplight, showing",
+    "constraints": [
+      {
+        "type": "attribute",
+        "color": "red",
+        "object": "chair"
+      },
+      {
+        "type": "attribute",
+        "color": "white",
+        "object": "suitcase"
+      }
+    ],
+    "prompt": "A craft room with shelves of supplies and a wide worktable under lamplight, showing a red chair and a white suitcase"
+  },
+  {
+    "id": "attr_k2_03",
+    "k": 2,
+    "type": "attribute",
+    "scene_prefix": "A home study lined with leather-bound books and a heavy wooden desk, showing",
+    "constraints": [
+      {
+        "type": "attribute",
+        "color": "brown",
+        "object": "plate"
+      },
+      {
+        "type": "attribute",
+        "color": "purple",
+        "object": "motorcycle"
+      }
+    ],
+    "prompt": "A home study lined with leather-bound books and a heavy wooden desk, showing a brown plate and a purple motorcycle"
+  },
+  {
+    "id": "attr_k2_04",
+    "k": 2,
+    "type": "attribute",
+    "scene_prefix": "A craft room with shelves of supplies and a wide worktable under lamplight, showing",
+    "constraints": [
+      {
+        "type": "attribute",
+        "color": "black",
+        "object": "lamp"
+      },
+      {
+        "type": "attribute",
+        "color": "white",
+        "object": "stool"
+      }
+    ],
+    "prompt": "A craft room with shelves of supplies and a wide worktable under lamplight, showing a black lamp and a white stool"
+  },
+  {
+    "id": "attr_k2_05",
+    "k": 2,
+    "type": "attribute",
+    "scene_prefix": "A farmhouse porch with wooden railings and hanging planters, showing",
+    "constraints": [
+      {
+        "type": "attribute",
+        "color": "red",
+        "object": "towel"
+      },
+      {
+        "type": "attribute",
+        "color": "pink",
+        "object": "bench"
+      }
+    ],
+    "prompt": "A farmhouse porch with wooden railings and hanging planters, showing a red towel and a pink bench"
+  },
+  {
+    "id": "attr_k2_06",
+    "k": 2,
+    "type": "attribute",
+    "scene_prefix": "A school hallway with lockers on both sides and polished floors, showing",
+    "constraints": [
+      {
+        "type": "attribute",
+        "color": "white",
+        "object": "sofa"
+      },
+      {
+        "type": "attribute",
+        "color": "blue",
+        "object": "rug"
+      }
+    ],
+    "prompt": "A school hallway with lockers on both sides and polished floors, showing a white sofa and a blue rug"
+  },
+  {
+    "id": "attr_k2_07",
+    "k": 2,
+    "type": "attribute",
+    "scene_prefix": "A craft room with shelves of supplies and a wide worktable under lamplight, showing",
+    "constraints": [
+      {
+        "type": "attribute",
+        "color": "brown",
+        "object": "rug"
+      },
+      {
+        "type": "attribute",
+        "color": "blue",
+        "object": "chair"
+      }
+    ],
+    "prompt": "A craft room with shelves of supplies and a wide worktable under lamplight, showing a brown rug and a blue chair"
+  },
+  {
+    "id": "attr_k2_08",
+    "k": 2,
+    "type": "attribute",
+    "scene_prefix": "A bright parking lot with trees along the edges and a clear sky overhead, showing",
+    "constraints": [
+      {
+        "type": "attribute",
+        "color": "orange",
+        "object": "towel"
+      },
+      {
+        "type": "attribute",
+        "color": "green",
+        "object": "bicycle"
+      }
+    ],
+    "prompt": "A bright parking lot with trees along the edges and a clear sky overhead, showing a orange towel and a green bicycle"
+  },
+  {
+    "id": "attr_k2_09",
+    "k": 2,
+    "type": "attribute",
+    "scene_prefix": "A loft apartment with exposed brick walls and tall factory windows, showing",
+    "constraints": [
+      {
+        "type": "attribute",
+        "color": "blue",
+        "object": "armchair"
+      },
+      {
+        "type": "attribute",
+        "color": "red",
+        "object": "rug"
+      }
+    ],
+    "prompt": "A loft apartment with exposed brick walls and tall factory windows, showing a blue armchair and a red rug"
+  },
+  {
+    "id": "attr_k2_10",
+    "k": 2,
+    "type": "attribute",
+    "scene_prefix": "A cafe interior with small round tables and chalkboard menus, showing",
+    "constraints": [
+      {
+        "type": "attribute",
+        "color": "blue",
+        "object": "desk"
+      },
+      {
+        "type": "attribute",
+        "color": "black",
+        "object": "stool"
+      }
+    ],
+    "prompt": "A cafe interior with small round tables and chalkboard menus, showing a blue desk and a black stool"
+  },
+  {
+    "id": "attr_k2_11",
+    "k": 2,
+    "type": "attribute",
+    "scene_prefix": "A craft room with shelves of supplies and a wide worktable under lamplight, showing",
+    "constraints": [
+      {
+        "type": "attribute",
+        "color": "white",
+        "object": "watering can"
+      },
+      {
+        "type": "attribute",
+        "color": "blue",
+        "object": "teddy bear"
+      }
+    ],
+    "prompt": "A craft room with shelves of supplies and a wide worktable under lamplight, showing a white watering can and a blue teddy bear"
+  },
+  {
+    "id": "attr_k2_12",
+    "k": 2,
+    "type": "attribute",
+    "scene_prefix": "A tidy kitchen with marble surfaces and wooden cabinets in afternoon light, showing",
+    "constraints": [
+      {
+        "type": "attribute",
+        "color": "blue",
+        "object": "bicycle"
+      },
+      {
+        "type": "attribute",
+        "color": "pink",
+        "object": "bottle"
+      }
+    ],
+    "prompt": "A tidy kitchen with marble surfaces and wooden cabinets in afternoon light, showing a blue bicycle and a pink bottle"
+  },
+  {
+    "id": "attr_k2_13",
+    "k": 2,
+    "type": "attribute",
+    "scene_prefix": "A children's bedroom with patterned wallpaper and wooden shelves of toys, showing",
+    "constraints": [
+      {
+        "type": "attribute",
+        "color": "black",
+        "object": "hat"
+      },
+      {
+        "type": "attribute",
+        "color": "white",
+        "object": "towel"
+      }
+    ],
+    "prompt": "A children's bedroom with patterned wallpaper and wooden shelves of toys, showing a black hat and a white towel"
+  },
+  {
+    "id": "attr_k2_14",
+    "k": 2,
+    "type": "attribute",
+    "scene_prefix": "A quiet residential street with brick houses and trimmed hedges, showing",
+    "constraints": [
+      {
+        "type": "attribute",
+        "color": "red",
+        "object": "shelf"
+      },
+      {
+        "type": "attribute",
+        "color": "purple",
+        "object": "plate"
+      }
+    ],
+    "prompt": "A quiet residential street with brick houses and trimmed hedges, showing a red shelf and a purple plate"
+  },
+  {
+    "id": "attr_k2_15",
+    "k": 2,
+    "type": "attribute",
+    "scene_prefix": "A tidy kitchen with marble surfaces and wooden cabinets in afternoon light, showing",
+    "constraints": [
+      {
+        "type": "attribute",
+        "color": "red",
+        "object": "bowl"
+      },
+      {
+        "type": "attribute",
+        "color": "black",
+        "object": "backpack"
+      }
+    ],
+    "prompt": "A tidy kitchen with marble surfaces and wooden cabinets in afternoon light, showing a red bowl and a black backpack"
+  },
+  {
+    "id": "attr_k2_16",
+    "k": 2,
+    "type": "attribute",
+    "scene_prefix": "A school hallway with lockers on both sides and polished floors, showing",
+    "constraints": [
+      {
+        "type": "attribute",
+        "color": "yellow",
+        "object": "shelf"
+      },
+      {
+        "type": "attribute",
+        "color": "pink",
+        "object": "kettle"
+      }
+    ],
+    "prompt": "A school hallway with lockers on both sides and polished floors, showing a yellow shelf and a pink kettle"
+  },
+  {
+    "id": "attr_k2_17",
+    "k": 2,
+    "type": "attribute",
+    "scene_prefix": "A sunny beach with golden sand and gentle waves under a bright sky, showing",
+    "constraints": [
+      {
+        "type": "attribute",
+        "color": "yellow",
+        "object": "teddy bear"
+      },
+      {
+        "type": "attribute",
+        "color": "orange",
+        "object": "bus"
+      }
+    ],
+    "prompt": "A sunny beach with golden sand and gentle waves under a bright sky, showing a yellow teddy bear and a orange bus"
+  },
+  {
+    "id": "attr_k2_18",
+    "k": 2,
+    "type": "attribute",
+    "scene_prefix": "A sunny beach with golden sand and gentle waves under a bright sky, showing",
+    "constraints": [
+      {
+        "type": "attribute",
+        "color": "blue",
+        "object": "bus"
+      },
+      {
+        "type": "attribute",
+        "color": "red",
+        "object": "truck"
+      }
+    ],
+    "prompt": "A sunny beach with golden sand and gentle waves under a bright sky, showing a blue bus and a red truck"
+  },
+  {
+    "id": "attr_k2_19",
+    "k": 2,
+    "type": "attribute",
+    "scene_prefix": "A charming garden with stepping stones and blooming flower beds, showing",
+    "constraints": [
+      {
+        "type": "attribute",
+        "color": "purple",
+        "object": "stool"
+      },
+      {
+        "type": "attribute",
+        "color": "brown",
+        "object": "lamp"
+      }
+    ],
+    "prompt": "A charming garden with stepping stones and blooming flower beds, showing a purple stool and a brown lamp"
+  },
+  {
+    "id": "attr_k2_20",
+    "k": 2,
+    "type": "attribute",
+    "scene_prefix": "A loft apartment with exposed brick walls and tall factory windows, showing",
+    "constraints": [
+      {
+        "type": "attribute",
+        "color": "yellow",
+        "object": "umbrella"
+      },
+      {
+        "type": "attribute",
+        "color": "orange",
+        "object": "cushion"
+      }
+    ],
+    "prompt": "A loft apartment with exposed brick walls and tall factory windows, showing a yellow umbrella and a orange cushion"
+  },
+  {
+    "id": "attr_k4_01",
+    "k": 4,
+    "type": "attribute",
+    "scene_prefix": "A farmhouse porch with wooden railings and hanging planters containing",
+    "constraints": [
+      {
+        "type": "attribute",
+        "color": "green",
+        "object": "hat"
+      },
+      {
+        "type": "attribute",
+        "color": "red",
+        "object": "backpack"
+      },
+      {
+        "type": "attribute",
+        "color": "yellow",
+        "object": "bus"
+      },
+      {
+        "type": "attribute",
+        "color": "brown",
+        "object": "motorcycle"
+      }
+    ],
+    "prompt": "A farmhouse porch with wooden railings and hanging planters containing a green hat, a red backpack, a yellow bus, and a brown motorcycle"
+  },
+  {
+    "id": "attr_k4_02",
+    "k": 4,
+    "type": "attribute",
+    "scene_prefix": "A cozy living room with bookshelves along the walls and warm lighting containing",
+    "constraints": [
+      {
+        "type": "attribute",
+        "color": "yellow",
+        "object": "scarf"
+      },
+      {
+        "type": "attribute",
+        "color": "pink",
+        "object": "teddy bear"
+      },
+      {
+        "type": "attribute",
+        "color": "red",
+        "object": "bus"
+      },
+      {
+        "type": "attribute",
+        "color": "pink",
+        "object": "armchair"
+      }
+    ],
+    "prompt": "A cozy living room with bookshelves along the walls and warm lighting containing a yellow scarf, a pink teddy bear, a red bus, and a pink armchair"
+  },
+  {
+    "id": "attr_k4_03",
+    "k": 4,
+    "type": "attribute",
+    "scene_prefix": "A craft room with shelves of supplies and a wide worktable under lamplight containing",
+    "constraints": [
+      {
+        "type": "attribute",
+        "color": "white",
+        "object": "desk"
+      },
+      {
+        "type": "attribute",
+        "color": "purple",
+        "object": "umbrella"
+      },
+      {
+        "type": "attribute",
+        "color": "purple",
+        "object": "motorcycle"
+      },
+      {
+        "type": "attribute",
+        "color": "green",
+        "object": "chair"
+      }
+    ],
+    "prompt": "A craft room with shelves of supplies and a wide worktable under lamplight containing a white desk, a purple umbrella, a purple motorcycle, and a green chair"
+  },
+  {
+    "id": "attr_k4_04",
+    "k": 4,
+    "type": "attribute",
+    "scene_prefix": "A school hallway with lockers on both sides and polished floors containing",
+    "constraints": [
+      {
+        "type": "attribute",
+        "color": "yellow",
+        "object": "backpack"
+      },
+      {
+        "type": "attribute",
+        "color": "red",
+        "object": "umbrella"
+      },
+      {
+        "type": "attribute",
+        "color": "black",
+        "object": "bicycle"
+      },
+      {
+        "type": "attribute",
+        "color": "black",
+        "object": "book"
+      }
+    ],
+    "prompt": "A school hallway with lockers on both sides and polished floors containing a yellow backpack, a red umbrella, a black bicycle, and a black book"
+  },
+  {
+    "id": "attr_k4_05",
+    "k": 4,
+    "type": "attribute",
+    "scene_prefix": "A city sidewalk with tall buildings in the background and shop windows containing",
+    "constraints": [
+      {
+        "type": "attribute",
+        "color": "orange",
+        "object": "motorcycle"
+      },
+      {
+        "type": "attribute",
+        "color": "green",
+        "object": "shelf"
+      },
+      {
+        "type": "attribute",
+        "color": "yellow",
+        "object": "plate"
+      },
+      {
+        "type": "attribute",
+        "color": "yellow",
+        "object": "car"
+      }
+    ],
+    "prompt": "A city sidewalk with tall buildings in the background and shop windows containing a orange motorcycle, a green shelf, a yellow plate, and a yellow car"
+  },
+  {
+    "id": "attr_k4_06",
+    "k": 4,
+    "type": "attribute",
+    "scene_prefix": "A cafe interior with small round tables and chalkboard menus containing",
+    "constraints": [
+      {
+        "type": "attribute",
+        "color": "black",
+        "object": "rug"
+      },
+      {
+        "type": "attribute",
+        "color": "black",
+        "object": "watering can"
+      },
+      {
+        "type": "attribute",
+        "color": "orange",
+        "object": "teddy bear"
+      },
+      {
+        "type": "attribute",
+        "color": "black",
+        "object": "backpack"
+      }
+    ],
+    "prompt": "A cafe interior with small round tables and chalkboard menus containing a black rug, a black watering can, a orange teddy bear, and a black backpack"
+  },
+  {
+    "id": "attr_k4_07",
+    "k": 4,
+    "type": "attribute",
+    "scene_prefix": "A farmhouse porch with wooden railings and hanging planters containing",
+    "constraints": [
+      {
+        "type": "attribute",
+        "color": "purple",
+        "object": "bench"
+      },
+      {
+        "type": "attribute",
+        "color": "pink",
+        "object": "towel"
+      },
+      {
+        "type": "attribute",
+        "color": "brown",
+        "object": "umbrella"
+      },
+      {
+        "type": "attribute",
+        "color": "yellow",
+        "object": "bicycle"
+      }
+    ],
+    "prompt": "A farmhouse porch with wooden railings and hanging planters containing a purple bench, a pink towel, a brown umbrella, and a yellow bicycle"
+  },
+  {
+    "id": "attr_k4_08",
+    "k": 4,
+    "type": "attribute",
+    "scene_prefix": "A tidy kitchen with marble surfaces and wooden cabinets in afternoon light containing",
+    "constraints": [
+      {
+        "type": "attribute",
+        "color": "brown",
+        "object": "rug"
+      },
+      {
+        "type": "attribute",
+        "color": "blue",
+        "object": "truck"
+      },
+      {
+        "type": "attribute",
+        "color": "blue",
+        "object": "towel"
+      },
+      {
+        "type": "attribute",
+        "color": "yellow",
+        "object": "bench"
+      }
+    ],
+    "prompt": "A tidy kitchen with marble surfaces and wooden cabinets in afternoon light containing a brown rug, a blue truck, a blue towel, and a yellow bench"
+  },
+  {
+    "id": "attr_k4_09",
+    "k": 4,
+    "type": "attribute",
+    "scene_prefix": "A modern office with a large window and potted plants on the sill containing",
+    "constraints": [
+      {
+        "type": "attribute",
+        "color": "brown",
+        "object": "bowl"
+      },
+      {
+        "type": "attribute",
+        "color": "black",
+        "object": "bus"
+      },
+      {
+        "type": "attribute",
+        "color": "orange",
+        "object": "armchair"
+      },
+      {
+        "type": "attribute",
+        "color": "pink",
+        "object": "suitcase"
+      }
+    ],
+    "prompt": "A modern office with a large window and potted plants on the sill containing a brown bowl, a black bus, a orange armchair, and a pink suitcase"
+  },
+  {
+    "id": "attr_k4_10",
+    "k": 4,
+    "type": "attribute",
+    "scene_prefix": "A cozy living room with bookshelves along the walls and warm lighting containing",
+    "constraints": [
+      {
+        "type": "attribute",
+        "color": "white",
+        "object": "motorcycle"
+      },
+      {
+        "type": "attribute",
+        "color": "orange",
+        "object": "helmet"
+      },
+      {
+        "type": "attribute",
+        "color": "black",
+        "object": "vase"
+      },
+      {
+        "type": "attribute",
+        "color": "green",
+        "object": "umbrella"
+      }
+    ],
+    "prompt": "A cozy living room with bookshelves along the walls and warm lighting containing a white motorcycle, a orange helmet, a black vase, and a green umbrella"
+  },
+  {
+    "id": "attr_k4_11",
+    "k": 4,
+    "type": "attribute",
+    "scene_prefix": "A charming garden with stepping stones and blooming flower beds containing",
+    "constraints": [
+      {
+        "type": "attribute",
+        "color": "white",
+        "object": "chair"
+      },
+      {
+        "type": "attribute",
+        "color": "white",
+        "object": "shelf"
+      },
+      {
+        "type": "attribute",
+        "color": "pink",
+        "object": "bus"
+      },
+      {
+        "type": "attribute",
+        "color": "orange",
+        "object": "hat"
+      }
+    ],
+    "prompt": "A charming garden with stepping stones and blooming flower beds containing a white chair, a white shelf, a pink bus, and a orange hat"
+  },
+  {
+    "id": "attr_k4_12",
+    "k": 4,
+    "type": "attribute",
+    "scene_prefix": "A tidy kitchen with marble surfaces and wooden cabinets in afternoon light containing",
+    "constraints": [
+      {
+        "type": "attribute",
+        "color": "yellow",
+        "object": "notebook"
+      },
+      {
+        "type": "attribute",
+        "color": "orange",
+        "object": "backpack"
+      },
+      {
+        "type": "attribute",
+        "color": "white",
+        "object": "sofa"
+      },
+      {
+        "type": "attribute",
+        "color": "pink",
+        "object": "mug"
+      }
+    ],
+    "prompt": "A tidy kitchen with marble surfaces and wooden cabinets in afternoon light containing a yellow notebook, a orange backpack, a white sofa, and a pink mug"
+  },
+  {
+    "id": "attr_k4_13",
+    "k": 4,
+    "type": "attribute",
+    "scene_prefix": "A tidy kitchen with marble surfaces and wooden cabinets in afternoon light containing",
+    "constraints": [
+      {
+        "type": "attribute",
+        "color": "purple",
+        "object": "book"
+      },
+      {
+        "type": "attribute",
+        "color": "green",
+        "object": "bus"
+      },
+      {
+        "type": "attribute",
+        "color": "green",
+        "object": "mug"
+      },
+      {
+        "type": "attribute",
+        "color": "green",
+        "object": "basket"
+      }
+    ],
+    "prompt": "A tidy kitchen with marble surfaces and wooden cabinets in afternoon light containing a purple book, a green bus, a green mug, and a green basket"
+  },
+  {
+    "id": "attr_k4_14",
+    "k": 4,
+    "type": "attribute",
+    "scene_prefix": "A quiet residential street with brick houses and trimmed hedges containing",
+    "constraints": [
+      {
+        "type": "attribute",
+        "color": "green",
+        "object": "cushion"
+      },
+      {
+        "type": "attribute",
+        "color": "black",
+        "object": "kettle"
+      },
+      {
+        "type": "attribute",
+        "color": "orange",
+        "object": "helmet"
+      },
+      {
+        "type": "attribute",
+        "color": "purple",
+        "object": "bottle"
+      }
+    ],
+    "prompt": "A quiet residential street with brick houses and trimmed hedges containing a green cushion, a black kettle, a orange helmet, and a purple bottle"
+  },
+  {
+    "id": "attr_k4_15",
+    "k": 4,
+    "type": "attribute",
+    "scene_prefix": "A loft apartment with exposed brick walls and tall factory windows containing",
+    "constraints": [
+      {
+        "type": "attribute",
+        "color": "blue",
+        "object": "umbrella"
+      },
+      {
+        "type": "attribute",
+        "color": "green",
+        "object": "teddy bear"
+      },
+      {
+        "type": "attribute",
+        "color": "pink",
+        "object": "bus"
+      },
+      {
+        "type": "attribute",
+        "color": "purple",
+        "object": "mug"
+      }
+    ],
+    "prompt": "A loft apartment with exposed brick walls and tall factory windows containing a blue umbrella, a green teddy bear, a pink bus, and a purple mug"
+  },
+  {
+    "id": "attr_k4_16",
+    "k": 4,
+    "type": "attribute",
+    "scene_prefix": "A children's bedroom with patterned wallpaper and wooden shelves of toys containing",
+    "constraints": [
+      {
+        "type": "attribute",
+        "color": "blue",
+        "object": "umbrella"
+      },
+      {
+        "type": "attribute",
+        "color": "brown",
+        "object": "rug"
+      },
+      {
+        "type": "attribute",
+        "color": "purple",
+        "object": "teddy bear"
+      },
+      {
+        "type": "attribute",
+        "color": "red",
+        "object": "kettle"
+      }
+    ],
+    "prompt": "A children's bedroom with patterned wallpaper and wooden shelves of toys containing a blue umbrella, a brown rug, a purple teddy bear, and a red kettle"
+  },
+  {
+    "id": "attr_k4_17",
+    "k": 4,
+    "type": "attribute",
+    "scene_prefix": "A city sidewalk with tall buildings in the background and shop windows containing",
+    "constraints": [
+      {
+        "type": "attribute",
+        "color": "orange",
+        "object": "basket"
+      },
+      {
+        "type": "attribute",
+        "color": "purple",
+        "object": "bench"
+      },
+      {
+        "type": "attribute",
+        "color": "blue",
+        "object": "chair"
+      },
+      {
+        "type": "attribute",
+        "color": "orange",
+        "object": "car"
+      }
+    ],
+    "prompt": "A city sidewalk with tall buildings in the background and shop windows containing a orange basket, a purple bench, a blue chair, and a orange car"
+  },
+  {
+    "id": "attr_k4_18",
+    "k": 4,
+    "type": "attribute",
+    "scene_prefix": "A children's bedroom with patterned wallpaper and wooden shelves of toys containing",
+    "constraints": [
+      {
+        "type": "attribute",
+        "color": "black",
+        "object": "motorcycle"
+      },
+      {
+        "type": "attribute",
+        "color": "yellow",
+        "object": "lamp"
+      },
+      {
+        "type": "attribute",
+        "color": "blue",
+        "object": "umbrella"
+      },
+      {
+        "type": "attribute",
+        "color": "purple",
+        "object": "teddy bear"
+      }
+    ],
+    "prompt": "A children's bedroom with patterned wallpaper and wooden shelves of toys containing a black motorcycle, a yellow lamp, a blue umbrella, and a purple teddy bear"
+  },
+  {
+    "id": "attr_k4_19",
+    "k": 4,
+    "type": "attribute",
+    "scene_prefix": "A cafe interior with small round tables and chalkboard menus containing",
+    "constraints": [
+      {
+        "type": "attribute",
+        "color": "green",
+        "object": "helmet"
+      },
+      {
+        "type": "attribute",
+        "color": "white",
+        "object": "plate"
+      },
+      {
+        "type": "attribute",
+        "color": "blue",
+        "object": "car"
+      },
+      {
+        "type": "attribute",
+        "color": "white",
+        "object": "rug"
+      }
+    ],
+    "prompt": "A cafe interior with small round tables and chalkboard menus containing a green helmet, a white plate, a blue car, and a white rug"
+  },
+  {
+    "id": "attr_k4_20",
+    "k": 4,
+    "type": "attribute",
+    "scene_prefix": "A school hallway with lockers on both sides and polished floors containing",
+    "constraints": [
+      {
+        "type": "attribute",
+        "color": "blue",
+        "object": "bicycle"
+      },
+      {
+        "type": "attribute",
+        "color": "green",
+        "object": "desk"
+      },
+      {
+        "type": "attribute",
+        "color": "white",
+        "object": "car"
+      },
+      {
+        "type": "attribute",
+        "color": "white",
+        "object": "cushion"
+      }
+    ],
+    "prompt": "A school hallway with lockers on both sides and polished floors containing a blue bicycle, a green desk, a white car, and a white cushion"
+  },
+  {
+    "id": "attr_k8_01",
+    "k": 8,
+    "type": "attribute",
+    "scene_prefix": "A scene with",
+    "constraints": [
+      {
+        "type": "attribute",
+        "color": "pink",
+        "object": "lamp"
+      },
+      {
+        "type": "attribute",
+        "color": "red",
+        "object": "helmet"
+      },
+      {
+        "type": "attribute",
+        "color": "blue",
+        "object": "car"
+      },
+      {
+        "type": "attribute",
+        "color": "blue",
+        "object": "rug"
+      },
+      {
+        "type": "attribute",
+        "color": "brown",
+        "object": "cushion"
+      },
+      {
+        "type": "attribute",
+        "color": "yellow",
+        "object": "mug"
+      },
+      {
+        "type": "attribute",
+        "color": "pink",
+        "object": "bicycle"
+      },
+      {
+        "type": "attribute",
+        "color": "blue",
+        "object": "bus"
+      }
+    ],
+    "prompt": "A scene with a pink lamp, a red helmet, a blue car, a blue rug, a brown cushion, a yellow mug, a pink bicycle, and a blue bus"
+  },
+  {
+    "id": "attr_k8_02",
+    "k": 8,
+    "type": "attribute",
+    "scene_prefix": "A scene with",
+    "constraints": [
+      {
+        "type": "attribute",
+        "color": "red",
+        "object": "notebook"
+      },
+      {
+        "type": "attribute",
+        "color": "brown",
+        "object": "motorcycle"
+      },
+      {
+        "type": "attribute",
+        "color": "purple",
+        "object": "watering can"
+      },
+      {
+        "type": "attribute",
+        "color": "yellow",
+        "object": "vase"
+      },
+      {
+        "type": "attribute",
+        "color": "black",
+        "object": "rug"
+      },
+      {
+        "type": "attribute",
+        "color": "brown",
+        "object": "bottle"
+      },
+      {
+        "type": "attribute",
+        "color": "green",
+        "object": "armchair"
+      },
+      {
+        "type": "attribute",
+        "color": "white",
+        "object": "scarf"
+      }
+    ],
+    "prompt": "A scene with a red notebook, a brown motorcycle, a purple watering can, a yellow vase, a black rug, a brown bottle, a green armchair, and a white scarf"
+  },
+  {
+    "id": "attr_k8_03",
+    "k": 8,
+    "type": "attribute",
+    "scene_prefix": "A scene with",
+    "constraints": [
+      {
+        "type": "attribute",
+        "color": "pink",
+        "object": "scarf"
+      },
+      {
+        "type": "attribute",
+        "color": "orange",
+        "object": "desk"
+      },
+      {
+        "type": "attribute",
+        "color": "brown",
+        "object": "plate"
+      },
+      {
+        "type": "attribute",
+        "color": "yellow",
+        "object": "hat"
+      },
+      {
+        "type": "attribute",
+        "color": "pink",
+        "object": "backpack"
+      },
+      {
+        "type": "attribute",
+        "color": "orange",
+        "object": "vase"
+      },
+      {
+        "type": "attribute",
+        "color": "red",
+        "object": "stool"
+      },
+      {
+        "type": "attribute",
+        "color": "green",
+        "object": "book"
+      }
+    ],
+    "prompt": "A scene with a pink scarf, a orange desk, a brown plate, a yellow hat, a pink backpack, a orange vase, a red stool, and a green book"
+  },
+  {
+    "id": "attr_k8_04",
+    "k": 8,
+    "type": "attribute",
+    "scene_prefix": "A scene with",
+    "constraints": [
+      {
+        "type": "attribute",
+        "color": "brown",
+        "object": "bicycle"
+      },
+      {
+        "type": "attribute",
+        "color": "blue",
+        "object": "bowl"
+      },
+      {
+        "type": "attribute",
+        "color": "orange",
+        "object": "bus"
+      },
+      {
+        "type": "attribute",
+        "color": "orange",
+        "object": "motorcycle"
+      },
+      {
+        "type": "attribute",
+        "color": "blue",
+        "object": "armchair"
+      },
+      {
+        "type": "attribute",
+        "color": "black",
+        "object": "car"
+      },
+      {
+        "type": "attribute",
+        "color": "purple",
+        "object": "basket"
+      },
+      {
+        "type": "attribute",
+        "color": "pink",
+        "object": "shelf"
+      }
+    ],
+    "prompt": "A scene with a brown bicycle, a blue bowl, a orange bus, a orange motorcycle, a blue armchair, a black car, a purple basket, and a pink shelf"
+  },
+  {
+    "id": "attr_k8_05",
+    "k": 8,
+    "type": "attribute",
+    "scene_prefix": "A scene with",
+    "constraints": [
+      {
+        "type": "attribute",
+        "color": "red",
+        "object": "bench"
+      },
+      {
+        "type": "attribute",
+        "color": "white",
+        "object": "backpack"
+      },
+      {
+        "type": "attribute",
+        "color": "blue",
+        "object": "plate"
+      },
+      {
+        "type": "attribute",
+        "color": "blue",
+        "object": "kettle"
+      },
+      {
+        "type": "attribute",
+        "color": "red",
+        "object": "motorcycle"
+      },
+      {
+        "type": "attribute",
+        "color": "brown",
+        "object": "chair"
+      },
+      {
+        "type": "attribute",
+        "color": "blue",
+        "object": "bicycle"
+      },
+      {
+        "type": "attribute",
+        "color": "red",
+        "object": "book"
+      }
+    ],
+    "prompt": "A scene with a red bench, a white backpack, a blue plate, a blue kettle, a red motorcycle, a brown chair, a blue bicycle, and a red book"
+  },
+  {
+    "id": "attr_k8_06",
+    "k": 8,
+    "type": "attribute",
+    "scene_prefix": "A scene with",
+    "constraints": [
+      {
+        "type": "attribute",
+        "color": "yellow",
+        "object": "motorcycle"
+      },
+      {
+        "type": "attribute",
+        "color": "purple",
+        "object": "lamp"
+      },
+      {
+        "type": "attribute",
+        "color": "pink",
+        "object": "notebook"
+      },
+      {
+        "type": "attribute",
+        "color": "purple",
+        "object": "basket"
+      },
+      {
+        "type": "attribute",
+        "color": "white",
+        "object": "car"
+      },
+      {
+        "type": "attribute",
+        "color": "brown",
+        "object": "scarf"
+      },
+      {
+        "type": "attribute",
+        "color": "white",
+        "object": "kettle"
+      },
+      {
+        "type": "attribute",
+        "color": "pink",
+        "object": "bowl"
+      }
+    ],
+    "prompt": "A scene with a yellow motorcycle, a purple lamp, a pink notebook, a purple basket, a white car, a brown scarf, a white kettle, and a pink bowl"
+  },
+  {
+    "id": "attr_k8_07",
+    "k": 8,
+    "type": "attribute",
+    "scene_prefix": "A scene with",
+    "constraints": [
+      {
+        "type": "attribute",
+        "color": "orange",
+        "object": "truck"
+      },
+      {
+        "type": "attribute",
+        "color": "red",
+        "object": "armchair"
+      },
+      {
+        "type": "attribute",
+        "color": "red",
+        "object": "desk"
+      },
+      {
+        "type": "attribute",
+        "color": "red",
+        "object": "bicycle"
+      },
+      {
+        "type": "attribute",
+        "color": "black",
+        "object": "umbrella"
+      },
+      {
+        "type": "attribute",
+        "color": "purple",
+        "object": "plate"
+      },
+      {
+        "type": "attribute",
+        "color": "red",
+        "object": "kettle"
+      },
+      {
+        "type": "attribute",
+        "color": "orange",
+        "object": "suitcase"
+      }
+    ],
+    "prompt": "A scene with a orange truck, a red armchair, a red desk, a red bicycle, a black umbrella, a purple plate, a red kettle, and a orange suitcase"
+  },
+  {
+    "id": "attr_k8_08",
+    "k": 8,
+    "type": "attribute",
+    "scene_prefix": "A scene with",
+    "constraints": [
+      {
+        "type": "attribute",
+        "color": "blue",
+        "object": "bicycle"
+      },
+      {
+        "type": "attribute",
+        "color": "black",
+        "object": "scarf"
+      },
+      {
+        "type": "attribute",
+        "color": "black",
+        "object": "towel"
+      },
+      {
+        "type": "attribute",
+        "color": "white",
+        "object": "hat"
+      },
+      {
+        "type": "attribute",
+        "color": "white",
+        "object": "bus"
+      },
+      {
+        "type": "attribute",
+        "color": "yellow",
+        "object": "truck"
+      },
+      {
+        "type": "attribute",
+        "color": "blue",
+        "object": "chair"
+      },
+      {
+        "type": "attribute",
+        "color": "white",
+        "object": "umbrella"
+      }
+    ],
+    "prompt": "A scene with a blue bicycle, a black scarf, a black towel, a white hat, a white bus, a yellow truck, a blue chair, and a white umbrella"
+  },
+  {
+    "id": "attr_k8_09",
+    "k": 8,
+    "type": "attribute",
+    "scene_prefix": "A scene with",
+    "constraints": [
+      {
+        "type": "attribute",
+        "color": "black",
+        "object": "basket"
+      },
+      {
+        "type": "attribute",
+        "color": "orange",
+        "object": "lamp"
+      },
+      {
+        "type": "attribute",
+        "color": "purple",
+        "object": "bowl"
+      },
+      {
+        "type": "attribute",
+        "color": "blue",
+        "object": "sofa"
+      },
+      {
+        "type": "attribute",
+        "color": "pink",
+        "object": "suitcase"
+      },
+      {
+        "type": "attribute",
+        "color": "orange",
+        "object": "umbrella"
+      },
+      {
+        "type": "attribute",
+        "color": "yellow",
+        "object": "armchair"
+      },
+      {
+        "type": "attribute",
+        "color": "brown",
+        "object": "towel"
+      }
+    ],
+    "prompt": "A scene with a black basket, a orange lamp, a purple bowl, a blue sofa, a pink suitcase, a orange umbrella, a yellow armchair, and a brown towel"
+  },
+  {
+    "id": "attr_k8_10",
+    "k": 8,
+    "type": "attribute",
+    "scene_prefix": "A scene with",
+    "constraints": [
+      {
+        "type": "attribute",
+        "color": "black",
+        "object": "suitcase"
+      },
+      {
+        "type": "attribute",
+        "color": "pink",
+        "object": "stool"
+      },
+      {
+        "type": "attribute",
+        "color": "white",
+        "object": "bus"
+      },
+      {
+        "type": "attribute",
+        "color": "black",
+        "object": "plate"
+      },
+      {
+        "type": "attribute",
+        "color": "brown",
+        "object": "motorcycle"
+      },
+      {
+        "type": "attribute",
+        "color": "purple",
+        "object": "chair"
+      },
+      {
+        "type": "attribute",
+        "color": "orange",
+        "object": "towel"
+      },
+      {
+        "type": "attribute",
+        "color": "purple",
+        "object": "helmet"
+      }
+    ],
+    "prompt": "A scene with a black suitcase, a pink stool, a white bus, a black plate, a brown motorcycle, a purple chair, a orange towel, and a purple helmet"
+  },
+  {
+    "id": "attr_k8_11",
+    "k": 8,
+    "type": "attribute",
+    "scene_prefix": "A scene with",
+    "constraints": [
+      {
+        "type": "attribute",
+        "color": "black",
+        "object": "helmet"
+      },
+      {
+        "type": "attribute",
+        "color": "pink",
+        "object": "teddy bear"
+      },
+      {
+        "type": "attribute",
+        "color": "red",
+        "object": "basket"
+      },
+      {
+        "type": "attribute",
+        "color": "red",
+        "object": "car"
+      },
+      {
+        "type": "attribute",
+        "color": "black",
+        "object": "armchair"
+      },
+      {
+        "type": "attribute",
+        "color": "white",
+        "object": "cushion"
+      },
+      {
+        "type": "attribute",
+        "color": "white",
+        "object": "shelf"
+      },
+      {
+        "type": "attribute",
+        "color": "purple",
+        "object": "sofa"
+      }
+    ],
+    "prompt": "A scene with a black helmet, a pink teddy bear, a red basket, a red car, a black armchair, a white cushion, a white shelf, and a purple sofa"
+  },
+  {
+    "id": "attr_k8_12",
+    "k": 8,
+    "type": "attribute",
+    "scene_prefix": "A scene with",
+    "constraints": [
+      {
+        "type": "attribute",
+        "color": "orange",
+        "object": "stool"
+      },
+      {
+        "type": "attribute",
+        "color": "brown",
+        "object": "scarf"
+      },
+      {
+        "type": "attribute",
+        "color": "black",
+        "object": "car"
+      },
+      {
+        "type": "attribute",
+        "color": "yellow",
+        "object": "helmet"
+      },
+      {
+        "type": "attribute",
+        "color": "white",
+        "object": "book"
+      },
+      {
+        "type": "attribute",
+        "color": "brown",
+        "object": "mug"
+      },
+      {
+        "type": "attribute",
+        "color": "red",
+        "object": "towel"
+      },
+      {
+        "type": "attribute",
+        "color": "purple",
+        "object": "desk"
+      }
+    ],
+    "prompt": "A scene with a orange stool, a brown scarf, a black car, a yellow helmet, a white book, a brown mug, a red towel, and a purple desk"
+  },
+  {
+    "id": "attr_k8_13",
+    "k": 8,
+    "type": "attribute",
+    "scene_prefix": "A scene with",
+    "constraints": [
+      {
+        "type": "attribute",
+        "color": "red",
+        "object": "plate"
+      },
+      {
+        "type": "attribute",
+        "color": "green",
+        "object": "chair"
+      },
+      {
+        "type": "attribute",
+        "color": "blue",
+        "object": "helmet"
+      },
+      {
+        "type": "attribute",
+        "color": "white",
+        "object": "backpack"
+      },
+      {
+        "type": "attribute",
+        "color": "green",
+        "object": "cushion"
+      },
+      {
+        "type": "attribute",
+        "color": "yellow",
+        "object": "teddy bear"
+      },
+      {
+        "type": "attribute",
+        "color": "blue",
+        "object": "car"
+      },
+      {
+        "type": "attribute",
+        "color": "black",
+        "object": "mug"
+      }
+    ],
+    "prompt": "A scene with a red plate, a green chair, a blue helmet, a white backpack, a green cushion, a yellow teddy bear, a blue car, and a black mug"
+  },
+  {
+    "id": "attr_k8_14",
+    "k": 8,
+    "type": "attribute",
+    "scene_prefix": "A scene with",
+    "constraints": [
+      {
+        "type": "attribute",
+        "color": "purple",
+        "object": "basket"
+      },
+      {
+        "type": "attribute",
+        "color": "green",
+        "object": "bicycle"
+      },
+      {
+        "type": "attribute",
+        "color": "pink",
+        "object": "bus"
+      },
+      {
+        "type": "attribute",
+        "color": "purple",
+        "object": "plate"
+      },
+      {
+        "type": "attribute",
+        "color": "brown",
+        "object": "hat"
+      },
+      {
+        "type": "attribute",
+        "color": "purple",
+        "object": "armchair"
+      },
+      {
+        "type": "attribute",
+        "color": "white",
+        "object": "stool"
+      },
+      {
+        "type": "attribute",
+        "color": "blue",
+        "object": "helmet"
+      }
+    ],
+    "prompt": "A scene with a purple basket, a green bicycle, a pink bus, a purple plate, a brown hat, a purple armchair, a white stool, and a blue helmet"
+  },
+  {
+    "id": "attr_k8_15",
+    "k": 8,
+    "type": "attribute",
+    "scene_prefix": "A scene with",
+    "constraints": [
+      {
+        "type": "attribute",
+        "color": "white",
+        "object": "basket"
+      },
+      {
+        "type": "attribute",
+        "color": "orange",
+        "object": "sofa"
+      },
+      {
+        "type": "attribute",
+        "color": "blue",
+        "object": "notebook"
+      },
+      {
+        "type": "attribute",
+        "color": "blue",
+        "object": "scarf"
+      },
+      {
+        "type": "attribute",
+        "color": "green",
+        "object": "motorcycle"
+      },
+      {
+        "type": "attribute",
+        "color": "pink",
+        "object": "suitcase"
+      },
+      {
+        "type": "attribute",
+        "color": "white",
+        "object": "plate"
+      },
+      {
+        "type": "attribute",
+        "color": "red",
+        "object": "mug"
+      }
+    ],
+    "prompt": "A scene with a white basket, a orange sofa, a blue notebook, a blue scarf, a green motorcycle, a pink suitcase, a white plate, and a red mug"
+  },
+  {
+    "id": "attr_k8_16",
+    "k": 8,
+    "type": "attribute",
+    "scene_prefix": "A scene with",
+    "constraints": [
+      {
+        "type": "attribute",
+        "color": "orange",
+        "object": "rug"
+      },
+      {
+        "type": "attribute",
+        "color": "white",
+        "object": "vase"
+      },
+      {
+        "type": "attribute",
+        "color": "brown",
+        "object": "basket"
+      },
+      {
+        "type": "attribute",
+        "color": "green",
+        "object": "car"
+      },
+      {
+        "type": "attribute",
+        "color": "yellow",
+        "object": "helmet"
+      },
+      {
+        "type": "attribute",
+        "color": "white",
+        "object": "armchair"
+      },
+      {
+        "type": "attribute",
+        "color": "purple",
+        "object": "bus"
+      },
+      {
+        "type": "attribute",
+        "color": "red",
+        "object": "book"
+      }
+    ],
+    "prompt": "A scene with a orange rug, a white vase, a brown basket, a green car, a yellow helmet, a white armchair, a purple bus, and a red book"
+  },
+  {
+    "id": "attr_k8_17",
+    "k": 8,
+    "type": "attribute",
+    "scene_prefix": "A scene with",
+    "constraints": [
+      {
+        "type": "attribute",
+        "color": "black",
+        "object": "desk"
+      },
+      {
+        "type": "attribute",
+        "color": "yellow",
+        "object": "mug"
+      },
+      {
+        "type": "attribute",
+        "color": "pink",
+        "object": "armchair"
+      },
+      {
+        "type": "attribute",
+        "color": "brown",
+        "object": "notebook"
+      },
+      {
+        "type": "attribute",
+        "color": "pink",
+        "object": "book"
+      },
+      {
+        "type": "attribute",
+        "color": "yellow",
+        "object": "bowl"
+      },
+      {
+        "type": "attribute",
+        "color": "yellow",
+        "object": "scarf"
+      },
+      {
+        "type": "attribute",
+        "color": "yellow",
+        "object": "kettle"
+      }
+    ],
+    "prompt": "A scene with a black desk, a yellow mug, a pink armchair, a brown notebook, a pink book, a yellow bowl, a yellow scarf, and a yellow kettle"
+  },
+  {
+    "id": "attr_k8_18",
+    "k": 8,
+    "type": "attribute",
+    "scene_prefix": "A scene with",
+    "constraints": [
+      {
+        "type": "attribute",
+        "color": "black",
+        "object": "sofa"
+      },
+      {
+        "type": "attribute",
+        "color": "blue",
+        "object": "desk"
+      },
+      {
+        "type": "attribute",
+        "color": "orange",
+        "object": "helmet"
+      },
+      {
+        "type": "attribute",
+        "color": "white",
+        "object": "teddy bear"
+      },
+      {
+        "type": "attribute",
+        "color": "pink",
+        "object": "bus"
+      },
+      {
+        "type": "attribute",
+        "color": "red",
+        "object": "truck"
+      },
+      {
+        "type": "attribute",
+        "color": "white",
+        "object": "bowl"
+      },
+      {
+        "type": "attribute",
+        "color": "black",
+        "object": "rug"
+      }
+    ],
+    "prompt": "A scene with a black sofa, a blue desk, a orange helmet, a white teddy bear, a pink bus, a red truck, a white bowl, and a black rug"
+  },
+  {
+    "id": "attr_k8_19",
+    "k": 8,
+    "type": "attribute",
+    "scene_prefix": "A scene with",
+    "constraints": [
+      {
+        "type": "attribute",
+        "color": "brown",
+        "object": "teddy bear"
+      },
+      {
+        "type": "attribute",
+        "color": "brown",
+        "object": "bicycle"
+      },
+      {
+        "type": "attribute",
+        "color": "red",
+        "object": "plate"
+      },
+      {
+        "type": "attribute",
+        "color": "orange",
+        "object": "truck"
+      },
+      {
+        "type": "attribute",
+        "color": "blue",
+        "object": "backpack"
+      },
+      {
+        "type": "attribute",
+        "color": "green",
+        "object": "rug"
+      },
+      {
+        "type": "attribute",
+        "color": "brown",
+        "object": "bus"
+      },
+      {
+        "type": "attribute",
+        "color": "white",
+        "object": "notebook"
+      }
+    ],
+    "prompt": "A scene with a brown teddy bear, a brown bicycle, a red plate, a orange truck, a blue backpack, a green rug, a brown bus, and a white notebook"
+  },
+  {
+    "id": "attr_k8_20",
+    "k": 8,
+    "type": "attribute",
+    "scene_prefix": "A scene with",
+    "constraints": [
+      {
+        "type": "attribute",
+        "color": "blue",
+        "object": "backpack"
+      },
+      {
+        "type": "attribute",
+        "color": "red",
+        "object": "book"
+      },
+      {
+        "type": "attribute",
+        "color": "blue",
+        "object": "bottle"
+      },
+      {
+        "type": "attribute",
+        "color": "yellow",
+        "object": "basket"
+      },
+      {
+        "type": "attribute",
+        "color": "orange",
+        "object": "mug"
+      },
+      {
+        "type": "attribute",
+        "color": "pink",
+        "object": "vase"
+      },
+      {
+        "type": "attribute",
+        "color": "purple",
+        "object": "stool"
+      },
+      {
+        "type": "attribute",
+        "color": "white",
+        "object": "scarf"
+      }
+    ],
+    "prompt": "A scene with a blue backpack, a red book, a blue bottle, a yellow basket, a orange mug, a pink vase, a purple stool, and a white scarf"
+  }
+]

@@ -1,0 +1,1262 @@
+[
+  {
+    "id": "spat_k1_01",
+    "k": 1,
+    "type": "spatial",
+    "scene_prefix": "A simple indoor scene showing",
+    "constraints": [
+      {
+        "type": "spatial",
+        "object_a": "bowl",
+        "relation": "to the right of",
+        "object_b": "rug"
+      }
+    ],
+    "prompt": "A simple indoor scene showing a bowl to the right of a rug"
+  },
+  {
+    "id": "spat_k1_02",
+    "k": 1,
+    "type": "spatial",
+    "scene_prefix": "A simple indoor scene showing",
+    "constraints": [
+      {
+        "type": "spatial",
+        "object_a": "bowl",
+        "relation": "to the left of",
+        "object_b": "desk"
+      }
+    ],
+    "prompt": "A simple indoor scene showing a bowl to the left of a desk"
+  },
+  {
+    "id": "spat_k1_03",
+    "k": 1,
+    "type": "spatial",
+    "scene_prefix": "A simple indoor scene showing",
+    "constraints": [
+      {
+        "type": "spatial",
+        "object_a": "pillow",
+        "relation": "on",
+        "object_b": "table"
+      }
+    ],
+    "prompt": "A simple indoor scene showing a pillow on a table"
+  },
+  {
+    "id": "spat_k1_04",
+    "k": 1,
+    "type": "spatial",
+    "scene_prefix": "A simple indoor scene showing",
+    "constraints": [
+      {
+        "type": "spatial",
+        "object_a": "clock",
+        "relation": "on",
+        "object_b": "table"
+      }
+    ],
+    "prompt": "A simple indoor scene showing a clock on a table"
+  },
+  {
+    "id": "spat_k1_05",
+    "k": 1,
+    "type": "spatial",
+    "scene_prefix": "A simple indoor scene showing",
+    "constraints": [
+      {
+        "type": "spatial",
+        "object_a": "plate",
+        "relation": "to the left of",
+        "object_b": "desk"
+      }
+    ],
+    "prompt": "A simple indoor scene showing a plate to the left of a desk"
+  },
+  {
+    "id": "spat_k1_06",
+    "k": 1,
+    "type": "spatial",
+    "scene_prefix": "A simple indoor scene showing",
+    "constraints": [
+      {
+        "type": "spatial",
+        "object_a": "dog",
+        "relation": "under",
+        "object_b": "desk"
+      }
+    ],
+    "prompt": "A simple indoor scene showing a dog under a desk"
+  },
+  {
+    "id": "spat_k1_07",
+    "k": 1,
+    "type": "spatial",
+    "scene_prefix": "A simple indoor scene showing",
+    "constraints": [
+      {
+        "type": "spatial",
+        "object_a": "bowl",
+        "relation": "under",
+        "object_b": "shelf"
+      }
+    ],
+    "prompt": "A simple indoor scene showing a bowl under a shelf"
+  },
+  {
+    "id": "spat_k1_08",
+    "k": 1,
+    "type": "spatial",
+    "scene_prefix": "A simple indoor scene showing",
+    "constraints": [
+      {
+        "type": "spatial",
+        "object_a": "ball",
+        "relation": "next to",
+        "object_b": "desk"
+      }
+    ],
+    "prompt": "A simple indoor scene showing a ball next to a desk"
+  },
+  {
+    "id": "spat_k1_09",
+    "k": 1,
+    "type": "spatial",
+    "scene_prefix": "A simple indoor scene showing",
+    "constraints": [
+      {
+        "type": "spatial",
+        "object_a": "ball",
+        "relation": "on",
+        "object_b": "shelf"
+      }
+    ],
+    "prompt": "A simple indoor scene showing a ball on a shelf"
+  },
+  {
+    "id": "spat_k1_10",
+    "k": 1,
+    "type": "spatial",
+    "scene_prefix": "A simple indoor scene showing",
+    "constraints": [
+      {
+        "type": "spatial",
+        "object_a": "dog",
+        "relation": "to the left of",
+        "object_b": "shelf"
+      }
+    ],
+    "prompt": "A simple indoor scene showing a dog to the left of a shelf"
+  },
+  {
+    "id": "spat_k2_01",
+    "k": 2,
+    "type": "spatial",
+    "scene_prefix": "An indoor scene showing",
+    "constraints": [
+      {
+        "type": "spatial",
+        "object_a": "bowl",
+        "relation": "to the left of",
+        "object_b": "mat"
+      },
+      {
+        "type": "spatial",
+        "object_a": "book",
+        "relation": "on",
+        "object_b": "box"
+      }
+    ],
+    "prompt": "An indoor scene showing a bowl to the left of a mat and a book on a box"
+  },
+  {
+    "id": "spat_k2_02",
+    "k": 2,
+    "type": "spatial",
+    "scene_prefix": "An indoor scene showing",
+    "constraints": [
+      {
+        "type": "spatial",
+        "object_a": "cat",
+        "relation": "to the left of",
+        "object_b": "mat"
+      },
+      {
+        "type": "spatial",
+        "object_a": "ball",
+        "relation": "next to",
+        "object_b": "sofa"
+      }
+    ],
+    "prompt": "An indoor scene showing a cat to the left of a mat and a ball next to a sofa"
+  },
+  {
+    "id": "spat_k2_03",
+    "k": 2,
+    "type": "spatial",
+    "scene_prefix": "An indoor scene showing",
+    "constraints": [
+      {
+        "type": "spatial",
+        "object_a": "dog",
+        "relation": "to the left of",
+        "object_b": "box"
+      },
+      {
+        "type": "spatial",
+        "object_a": "chair",
+        "relation": "under",
+        "object_b": "mat"
+      }
+    ],
+    "prompt": "An indoor scene showing a dog to the left of a box and a chair under a mat"
+  },
+  {
+    "id": "spat_k2_04",
+    "k": 2,
+    "type": "spatial",
+    "scene_prefix": "An indoor scene showing",
+    "constraints": [
+      {
+        "type": "spatial",
+        "object_a": "cat",
+        "relation": "to the right of",
+        "object_b": "bed"
+      },
+      {
+        "type": "spatial",
+        "object_a": "teddy bear",
+        "relation": "under",
+        "object_b": "mat"
+      }
+    ],
+    "prompt": "An indoor scene showing a cat to the right of a bed and a teddy bear under a mat"
+  },
+  {
+    "id": "spat_k2_05",
+    "k": 2,
+    "type": "spatial",
+    "scene_prefix": "An indoor scene showing",
+    "constraints": [
+      {
+        "type": "spatial",
+        "object_a": "ball",
+        "relation": "to the right of",
+        "object_b": "rug"
+      },
+      {
+        "type": "spatial",
+        "object_a": "mug",
+        "relation": "next to",
+        "object_b": "basket"
+      }
+    ],
+    "prompt": "An indoor scene showing a ball to the right of a rug and a mug next to a basket"
+  },
+  {
+    "id": "spat_k2_06",
+    "k": 2,
+    "type": "spatial",
+    "scene_prefix": "An indoor scene showing",
+    "constraints": [
+      {
+        "type": "spatial",
+        "object_a": "bird",
+        "relation": "to the right of",
+        "object_b": "basket"
+      },
+      {
+        "type": "spatial",
+        "object_a": "dog",
+        "relation": "next to",
+        "object_b": "table"
+      }
+    ],
+    "prompt": "An indoor scene showing a bird to the right of a basket and a dog next to a table"
+  },
+  {
+    "id": "spat_k2_07",
+    "k": 2,
+    "type": "spatial",
+    "scene_prefix": "An indoor scene showing",
+    "constraints": [
+      {
+        "type": "spatial",
+        "object_a": "hat",
+        "relation": "to the left of",
+        "object_b": "basket"
+      },
+      {
+        "type": "spatial",
+        "object_a": "pillow",
+        "relation": "under",
+        "object_b": "sofa"
+      }
+    ],
+    "prompt": "An indoor scene showing a hat to the left of a basket and a pillow under a sofa"
+  },
+  {
+    "id": "spat_k2_08",
+    "k": 2,
+    "type": "spatial",
+    "scene_prefix": "An indoor scene showing",
+    "constraints": [
+      {
+        "type": "spatial",
+        "object_a": "bottle",
+        "relation": "next to",
+        "object_b": "table"
+      },
+      {
+        "type": "spatial",
+        "object_a": "plate",
+        "relation": "to the right of",
+        "object_b": "desk"
+      }
+    ],
+    "prompt": "An indoor scene showing a bottle next to a table and a plate to the right of a desk"
+  },
+  {
+    "id": "spat_k2_09",
+    "k": 2,
+    "type": "spatial",
+    "scene_prefix": "An indoor scene showing",
+    "constraints": [
+      {
+        "type": "spatial",
+        "object_a": "book",
+        "relation": "next to",
+        "object_b": "table"
+      },
+      {
+        "type": "spatial",
+        "object_a": "laptop",
+        "relation": "next to",
+        "object_b": "rug"
+      }
+    ],
+    "prompt": "An indoor scene showing a book next to a table and a laptop next to a rug"
+  },
+  {
+    "id": "spat_k2_10",
+    "k": 2,
+    "type": "spatial",
+    "scene_prefix": "An indoor scene showing",
+    "constraints": [
+      {
+        "type": "spatial",
+        "object_a": "bowl",
+        "relation": "to the right of",
+        "object_b": "box"
+      },
+      {
+        "type": "spatial",
+        "object_a": "lamp",
+        "relation": "to the left of",
+        "object_b": "mat"
+      }
+    ],
+    "prompt": "An indoor scene showing a bowl to the right of a box and a lamp to the left of a mat"
+  },
+  {
+    "id": "spat_k4_01",
+    "k": 4,
+    "type": "spatial",
+    "scene_prefix": "A scene with",
+    "constraints": [
+      {
+        "type": "spatial",
+        "object_a": "chair",
+        "relation": "under",
+        "object_b": "basket"
+      },
+      {
+        "type": "spatial",
+        "object_a": "vase",
+        "relation": "under",
+        "object_b": "table"
+      },
+      {
+        "type": "spatial",
+        "object_a": "cat",
+        "relation": "to the left of",
+        "object_b": "bed"
+      },
+      {
+        "type": "spatial",
+        "object_a": "shoe",
+        "relation": "to the left of",
+        "object_b": "mug"
+      }
+    ],
+    "prompt": "A scene with a chair under a basket, a vase under a table, a cat to the left of a bed, and a shoe to the left of a mug"
+  },
+  {
+    "id": "spat_k4_02",
+    "k": 4,
+    "type": "spatial",
+    "scene_prefix": "A scene with",
+    "constraints": [
+      {
+        "type": "spatial",
+        "object_a": "laptop",
+        "relation": "on",
+        "object_b": "bed"
+      },
+      {
+        "type": "spatial",
+        "object_a": "bird",
+        "relation": "under",
+        "object_b": "desk"
+      },
+      {
+        "type": "spatial",
+        "object_a": "ball",
+        "relation": "under",
+        "object_b": "sofa"
+      },
+      {
+        "type": "spatial",
+        "object_a": "book",
+        "relation": "inside",
+        "object_b": "basket"
+      }
+    ],
+    "prompt": "A scene with a laptop on a bed, a bird under a desk, a ball under a sofa, and a book inside a basket"
+  },
+  {
+    "id": "spat_k4_03",
+    "k": 4,
+    "type": "spatial",
+    "scene_prefix": "A scene with",
+    "constraints": [
+      {
+        "type": "spatial",
+        "object_a": "apple",
+        "relation": "to the right of",
+        "object_b": "sofa"
+      },
+      {
+        "type": "spatial",
+        "object_a": "ball",
+        "relation": "under",
+        "object_b": "box"
+      },
+      {
+        "type": "spatial",
+        "object_a": "shoe",
+        "relation": "on",
+        "object_b": "cat"
+      },
+      {
+        "type": "spatial",
+        "object_a": "backpack",
+        "relation": "behind",
+        "object_b": "bed"
+      }
+    ],
+    "prompt": "A scene with a apple to the right of a sofa, a ball under a box, a shoe on a cat, and a backpack behind a bed"
+  },
+  {
+    "id": "spat_k4_04",
+    "k": 4,
+    "type": "spatial",
+    "scene_prefix": "A scene with",
+    "constraints": [
+      {
+        "type": "spatial",
+        "object_a": "chair",
+        "relation": "to the left of",
+        "object_b": "mat"
+      },
+      {
+        "type": "spatial",
+        "object_a": "clock",
+        "relation": "to the right of",
+        "object_b": "bed"
+      },
+      {
+        "type": "spatial",
+        "object_a": "shoe",
+        "relation": "on",
+        "object_b": "table"
+      },
+      {
+        "type": "spatial",
+        "object_a": "teddy bear",
+        "relation": "on",
+        "object_b": "sofa"
+      }
+    ],
+    "prompt": "A scene with a chair to the left of a mat, a clock to the right of a bed, a shoe on a table, and a teddy bear on a sofa"
+  },
+  {
+    "id": "spat_k4_05",
+    "k": 4,
+    "type": "spatial",
+    "scene_prefix": "A scene with",
+    "constraints": [
+      {
+        "type": "spatial",
+        "object_a": "teddy bear",
+        "relation": "under",
+        "object_b": "table"
+      },
+      {
+        "type": "spatial",
+        "object_a": "laptop",
+        "relation": "under",
+        "object_b": "sofa"
+      },
+      {
+        "type": "spatial",
+        "object_a": "dog",
+        "relation": "on",
+        "object_b": "bird"
+      },
+      {
+        "type": "spatial",
+        "object_a": "ball",
+        "relation": "next to",
+        "object_b": "mat"
+      }
+    ],
+    "prompt": "A scene with a teddy bear under a table, a laptop under a sofa, a dog on a bird, and a ball next to a mat"
+  },
+  {
+    "id": "spat_k4_06",
+    "k": 4,
+    "type": "spatial",
+    "scene_prefix": "A scene with",
+    "constraints": [
+      {
+        "type": "spatial",
+        "object_a": "pillow",
+        "relation": "next to",
+        "object_b": "box"
+      },
+      {
+        "type": "spatial",
+        "object_a": "ball",
+        "relation": "to the right of",
+        "object_b": "table"
+      },
+      {
+        "type": "spatial",
+        "object_a": "vase",
+        "relation": "to the right of",
+        "object_b": "basket"
+      },
+      {
+        "type": "spatial",
+        "object_a": "dog",
+        "relation": "to the right of",
+        "object_b": "clock"
+      }
+    ],
+    "prompt": "A scene with a pillow next to a box, a ball to the right of a table, a vase to the right of a basket, and a dog to the right of a clock"
+  },
+  {
+    "id": "spat_k4_07",
+    "k": 4,
+    "type": "spatial",
+    "scene_prefix": "A scene with",
+    "constraints": [
+      {
+        "type": "spatial",
+        "object_a": "apple",
+        "relation": "on",
+        "object_b": "table"
+      },
+      {
+        "type": "spatial",
+        "object_a": "backpack",
+        "relation": "on",
+        "object_b": "mat"
+      },
+      {
+        "type": "spatial",
+        "object_a": "laptop",
+        "relation": "to the right of",
+        "object_b": "mug"
+      },
+      {
+        "type": "spatial",
+        "object_a": "ball",
+        "relation": "on",
+        "object_b": "bowl"
+      }
+    ],
+    "prompt": "A scene with a apple on a table, a backpack on a mat, a laptop to the right of a mug, and a ball on a bowl"
+  },
+  {
+    "id": "spat_k4_08",
+    "k": 4,
+    "type": "spatial",
+    "scene_prefix": "A scene with",
+    "constraints": [
+      {
+        "type": "spatial",
+        "object_a": "ball",
+        "relation": "under",
+        "object_b": "mat"
+      },
+      {
+        "type": "spatial",
+        "object_a": "bird",
+        "relation": "next to",
+        "object_b": "box"
+      },
+      {
+        "type": "spatial",
+        "object_a": "mug",
+        "relation": "next to",
+        "object_b": "sofa"
+      },
+      {
+        "type": "spatial",
+        "object_a": "lamp",
+        "relation": "to the right of",
+        "object_b": "rug"
+      }
+    ],
+    "prompt": "A scene with a ball under a mat, a bird next to a box, a mug next to a sofa, and a lamp to the right of a rug"
+  },
+  {
+    "id": "spat_k4_09",
+    "k": 4,
+    "type": "spatial",
+    "scene_prefix": "A scene with",
+    "constraints": [
+      {
+        "type": "spatial",
+        "object_a": "bird",
+        "relation": "under",
+        "object_b": "table"
+      },
+      {
+        "type": "spatial",
+        "object_a": "pillow",
+        "relation": "next to",
+        "object_b": "mat"
+      },
+      {
+        "type": "spatial",
+        "object_a": "bottle",
+        "relation": "next to",
+        "object_b": "bed"
+      },
+      {
+        "type": "spatial",
+        "object_a": "ball",
+        "relation": "next to",
+        "object_b": "vase"
+      }
+    ],
+    "prompt": "A scene with a bird under a table, a pillow next to a mat, a bottle next to a bed, and a ball next to a vase"
+  },
+  {
+    "id": "spat_k4_10",
+    "k": 4,
+    "type": "spatial",
+    "scene_prefix": "A scene with",
+    "constraints": [
+      {
+        "type": "spatial",
+        "object_a": "apple",
+        "relation": "on",
+        "object_b": "bed"
+      },
+      {
+        "type": "spatial",
+        "object_a": "lamp",
+        "relation": "on",
+        "object_b": "desk"
+      },
+      {
+        "type": "spatial",
+        "object_a": "laptop",
+        "relation": "to the right of",
+        "object_b": "dog"
+      },
+      {
+        "type": "spatial",
+        "object_a": "bird",
+        "relation": "behind",
+        "object_b": "rug"
+      }
+    ],
+    "prompt": "A scene with a apple on a bed, a lamp on a desk, a laptop to the right of a dog, and a bird behind a rug"
+  },
+  {
+    "id": "spat_k8_01",
+    "k": 8,
+    "type": "spatial",
+    "scene_prefix": "A scene with",
+    "constraints": [
+      {
+        "type": "spatial",
+        "object_a": "hat",
+        "relation": "to the left of",
+        "object_b": "mat"
+      },
+      {
+        "type": "spatial",
+        "object_a": "teddy bear",
+        "relation": "to the left of",
+        "object_b": "sofa"
+      },
+      {
+        "type": "spatial",
+        "object_a": "bowl",
+        "relation": "to the right of",
+        "object_b": "cat"
+      },
+      {
+        "type": "spatial",
+        "object_a": "ball",
+        "relation": "to the right of",
+        "object_b": "bottle"
+      },
+      {
+        "type": "spatial",
+        "object_a": "backpack",
+        "relation": "under",
+        "object_b": "clock"
+      },
+      {
+        "type": "spatial",
+        "object_a": "laptop",
+        "relation": "to the left of",
+        "object_b": "mug"
+      },
+      {
+        "type": "spatial",
+        "object_a": "shoe",
+        "relation": "inside",
+        "object_b": "box"
+      },
+      {
+        "type": "spatial",
+        "object_a": "bird",
+        "relation": "behind",
+        "object_b": "book"
+      }
+    ],
+    "prompt": "A scene with a hat to the left of a mat, a teddy bear to the left of a sofa, a bowl to the right of a cat, a ball to the right of a bottle, a backpack under a clock, a laptop to the left of a mug, a shoe inside a box, and a bird behind a book"
+  },
+  {
+    "id": "spat_k8_02",
+    "k": 8,
+    "type": "spatial",
+    "scene_prefix": "A scene with",
+    "constraints": [
+      {
+        "type": "spatial",
+        "object_a": "backpack",
+        "relation": "next to",
+        "object_b": "bed"
+      },
+      {
+        "type": "spatial",
+        "object_a": "pillow",
+        "relation": "to the right of",
+        "object_b": "shelf"
+      },
+      {
+        "type": "spatial",
+        "object_a": "book",
+        "relation": "to the right of",
+        "object_b": "laptop"
+      },
+      {
+        "type": "spatial",
+        "object_a": "bottle",
+        "relation": "under",
+        "object_b": "hat"
+      },
+      {
+        "type": "spatial",
+        "object_a": "bowl",
+        "relation": "to the left of",
+        "object_b": "chair"
+      },
+      {
+        "type": "spatial",
+        "object_a": "clock",
+        "relation": "in front of",
+        "object_b": "cat"
+      },
+      {
+        "type": "spatial",
+        "object_a": "dog",
+        "relation": "to the right of",
+        "object_b": "plate"
+      },
+      {
+        "type": "spatial",
+        "object_a": "shoe",
+        "relation": "inside",
+        "object_b": "desk"
+      }
+    ],
+    "prompt": "A scene with a backpack next to a bed, a pillow to the right of a shelf, a book to the right of a laptop, a bottle under a hat, a bowl to the left of a chair, a clock in front of a cat, a dog to the right of a plate, and a shoe inside a desk"
+  },
+  {
+    "id": "spat_k8_03",
+    "k": 8,
+    "type": "spatial",
+    "scene_prefix": "A scene with",
+    "constraints": [
+      {
+        "type": "spatial",
+        "object_a": "backpack",
+        "relation": "to the left of",
+        "object_b": "shelf"
+      },
+      {
+        "type": "spatial",
+        "object_a": "dog",
+        "relation": "to the left of",
+        "object_b": "rug"
+      },
+      {
+        "type": "spatial",
+        "object_a": "chair",
+        "relation": "next to",
+        "object_b": "lamp"
+      },
+      {
+        "type": "spatial",
+        "object_a": "ball",
+        "relation": "to the left of",
+        "object_b": "bird"
+      },
+      {
+        "type": "spatial",
+        "object_a": "apple",
+        "relation": "next to",
+        "object_b": "sofa"
+      },
+      {
+        "type": "spatial",
+        "object_a": "laptop",
+        "relation": "in front of",
+        "object_b": "plate"
+      },
+      {
+        "type": "spatial",
+        "object_a": "hat",
+        "relation": "behind",
+        "object_b": "shoe"
+      },
+      {
+        "type": "spatial",
+        "object_a": "book",
+        "relation": "to the left of",
+        "object_b": "bottle"
+      }
+    ],
+    "prompt": "A scene with a backpack to the left of a shelf, a dog to the left of a rug, a chair next to a lamp, a ball to the left of a bird, a apple next to a sofa, a laptop in front of a plate, a hat behind a shoe, and a book to the left of a bottle"
+  },
+  {
+    "id": "spat_k8_04",
+    "k": 8,
+    "type": "spatial",
+    "scene_prefix": "A scene with",
+    "constraints": [
+      {
+        "type": "spatial",
+        "object_a": "book",
+        "relation": "to the right of",
+        "object_b": "rug"
+      },
+      {
+        "type": "spatial",
+        "object_a": "plate",
+        "relation": "on",
+        "object_b": "sofa"
+      },
+      {
+        "type": "spatial",
+        "object_a": "lamp",
+        "relation": "to the left of",
+        "object_b": "vase"
+      },
+      {
+        "type": "spatial",
+        "object_a": "bottle",
+        "relation": "to the right of",
+        "object_b": "mat"
+      },
+      {
+        "type": "spatial",
+        "object_a": "clock",
+        "relation": "to the right of",
+        "object_b": "table"
+      },
+      {
+        "type": "spatial",
+        "object_a": "ball",
+        "relation": "behind",
+        "object_b": "box"
+      },
+      {
+        "type": "spatial",
+        "object_a": "bird",
+        "relation": "under",
+        "object_b": "basket"
+      },
+      {
+        "type": "spatial",
+        "object_a": "bowl",
+        "relation": "next to",
+        "object_b": "dog"
+      }
+    ],
+    "prompt": "A scene with a book to the right of a rug, a plate on a sofa, a lamp to the left of a vase, a bottle to the right of a mat, a clock to the right of a table, a ball behind a box, a bird under a basket, and a bowl next to a dog"
+  },
+  {
+    "id": "spat_k8_05",
+    "k": 8,
+    "type": "spatial",
+    "scene_prefix": "A scene with",
+    "constraints": [
+      {
+        "type": "spatial",
+        "object_a": "bird",
+        "relation": "to the left of",
+        "object_b": "sofa"
+      },
+      {
+        "type": "spatial",
+        "object_a": "book",
+        "relation": "on",
+        "object_b": "shelf"
+      },
+      {
+        "type": "spatial",
+        "object_a": "laptop",
+        "relation": "to the left of",
+        "object_b": "chair"
+      },
+      {
+        "type": "spatial",
+        "object_a": "cat",
+        "relation": "on",
+        "object_b": "mug"
+      },
+      {
+        "type": "spatial",
+        "object_a": "vase",
+        "relation": "to the right of",
+        "object_b": "dog"
+      },
+      {
+        "type": "spatial",
+        "object_a": "plate",
+        "relation": "behind",
+        "object_b": "mat"
+      },
+      {
+        "type": "spatial",
+        "object_a": "bowl",
+        "relation": "in front of",
+        "object_b": "hat"
+      },
+      {
+        "type": "spatial",
+        "object_a": "clock",
+        "relation": "on",
+        "object_b": "bed"
+      }
+    ],
+    "prompt": "A scene with a bird to the left of a sofa, a book on a shelf, a laptop to the left of a chair, a cat on a mug, a vase to the right of a dog, a plate behind a mat, a bowl in front of a hat, and a clock on a bed"
+  },
+  {
+    "id": "spat_k8_06",
+    "k": 8,
+    "type": "spatial",
+    "scene_prefix": "A scene with",
+    "constraints": [
+      {
+        "type": "spatial",
+        "object_a": "plate",
+        "relation": "to the right of",
+        "object_b": "bed"
+      },
+      {
+        "type": "spatial",
+        "object_a": "clock",
+        "relation": "next to",
+        "object_b": "basket"
+      },
+      {
+        "type": "spatial",
+        "object_a": "book",
+        "relation": "next to",
+        "object_b": "sofa"
+      },
+      {
+        "type": "spatial",
+        "object_a": "lamp",
+        "relation": "to the left of",
+        "object_b": "shoe"
+      },
+      {
+        "type": "spatial",
+        "object_a": "chair",
+        "relation": "under",
+        "object_b": "vase"
+      },
+      {
+        "type": "spatial",
+        "object_a": "bowl",
+        "relation": "to the right of",
+        "object_b": "table"
+      },
+      {
+        "type": "spatial",
+        "object_a": "bottle",
+        "relation": "to the left of",
+        "object_b": "ball"
+      },
+      {
+        "type": "spatial",
+        "object_a": "bird",
+        "relation": "to the left of",
+        "object_b": "cat"
+      }
+    ],
+    "prompt": "A scene with a plate to the right of a bed, a clock next to a basket, a book next to a sofa, a lamp to the left of a shoe, a chair under a vase, a bowl to the right of a table, a bottle to the left of a ball, and a bird to the left of a cat"
+  },
+  {
+    "id": "spat_k8_07",
+    "k": 8,
+    "type": "spatial",
+    "scene_prefix": "A scene with",
+    "constraints": [
+      {
+        "type": "spatial",
+        "object_a": "teddy bear",
+        "relation": "to the right of",
+        "object_b": "sofa"
+      },
+      {
+        "type": "spatial",
+        "object_a": "shoe",
+        "relation": "to the left of",
+        "object_b": "rug"
+      },
+      {
+        "type": "spatial",
+        "object_a": "book",
+        "relation": "next to",
+        "object_b": "bird"
+      },
+      {
+        "type": "spatial",
+        "object_a": "bowl",
+        "relation": "to the left of",
+        "object_b": "clock"
+      },
+      {
+        "type": "spatial",
+        "object_a": "ball",
+        "relation": "to the left of",
+        "object_b": "desk"
+      },
+      {
+        "type": "spatial",
+        "object_a": "bottle",
+        "relation": "behind",
+        "object_b": "plate"
+      },
+      {
+        "type": "spatial",
+        "object_a": "hat",
+        "relation": "behind",
+        "object_b": "apple"
+      },
+      {
+        "type": "spatial",
+        "object_a": "laptop",
+        "relation": "to the left of",
+        "object_b": "lamp"
+      }
+    ],
+    "prompt": "A scene with a teddy bear to the right of a sofa, a shoe to the left of a rug, a book next to a bird, a bowl to the left of a clock, a ball to the left of a desk, a bottle behind a plate, a hat behind a apple, and a laptop to the left of a lamp"
+  },
+  {
+    "id": "spat_k8_08",
+    "k": 8,
+    "type": "spatial",
+    "scene_prefix": "A scene with",
+    "constraints": [
+      {
+        "type": "spatial",
+        "object_a": "plate",
+        "relation": "to the left of",
+        "object_b": "sofa"
+      },
+      {
+        "type": "spatial",
+        "object_a": "apple",
+        "relation": "to the right of",
+        "object_b": "table"
+      },
+      {
+        "type": "spatial",
+        "object_a": "shoe",
+        "relation": "under",
+        "object_b": "cat"
+      },
+      {
+        "type": "spatial",
+        "object_a": "hat",
+        "relation": "on",
+        "object_b": "shelf"
+      },
+      {
+        "type": "spatial",
+        "object_a": "lamp",
+        "relation": "to the left of",
+        "object_b": "bowl"
+      },
+      {
+        "type": "spatial",
+        "object_a": "ball",
+        "relation": "under",
+        "object_b": "teddy bear"
+      },
+      {
+        "type": "spatial",
+        "object_a": "mug",
+        "relation": "to the right of",
+        "object_b": "basket"
+      },
+      {
+        "type": "spatial",
+        "object_a": "laptop",
+        "relation": "to the right of",
+        "object_b": "clock"
+      }
+    ],
+    "prompt": "A scene with a plate to the left of a sofa, a apple to the right of a table, a shoe under a cat, a hat on a shelf, a lamp to the left of a bowl, a ball under a teddy bear, a mug to the right of a basket, and a laptop to the right of a clock"
+  },
+  {
+    "id": "spat_k8_09",
+    "k": 8,
+    "type": "spatial",
+    "scene_prefix": "A scene with",
+    "constraints": [
+      {
+        "type": "spatial",
+        "object_a": "plate",
+        "relation": "under",
+        "object_b": "basket"
+      },
+      {
+        "type": "spatial",
+        "object_a": "chair",
+        "relation": "next to",
+        "object_b": "shelf"
+      },
+      {
+        "type": "spatial",
+        "object_a": "bottle",
+        "relation": "under",
+        "object_b": "shoe"
+      },
+      {
+        "type": "spatial",
+        "object_a": "pillow",
+        "relation": "next to",
+        "object_b": "ball"
+      },
+      {
+        "type": "spatial",
+        "object_a": "backpack",
+        "relation": "to the right of",
+        "object_b": "bed"
+      },
+      {
+        "type": "spatial",
+        "object_a": "bowl",
+        "relation": "behind",
+        "object_b": "vase"
+      },
+      {
+        "type": "spatial",
+        "object_a": "apple",
+        "relation": "behind",
+        "object_b": "clock"
+      },
+      {
+        "type": "spatial",
+        "object_a": "mug",
+        "relation": "inside",
+        "object_b": "cat"
+      }
+    ],
+    "prompt": "A scene with a plate under a basket, a chair next to a shelf, a bottle under a shoe, a pillow next to a ball, a backpack to the right of a bed, a bowl behind a vase, a apple behind a clock, and a mug inside a cat"
+  },
+  {
+    "id": "spat_k8_10",
+    "k": 8,
+    "type": "spatial",
+    "scene_prefix": "A scene with",
+    "constraints": [
+      {
+        "type": "spatial",
+        "object_a": "hat",
+        "relation": "to the right of",
+        "object_b": "basket"
+      },
+      {
+        "type": "spatial",
+        "object_a": "dog",
+        "relation": "under",
+        "object_b": "box"
+      },
+      {
+        "type": "spatial",
+        "object_a": "backpack",
+        "relation": "next to",
+        "object_b": "bed"
+      },
+      {
+        "type": "spatial",
+        "object_a": "laptop",
+        "relation": "to the right of",
+        "object_b": "rug"
+      },
+      {
+        "type": "spatial",
+        "object_a": "clock",
+        "relation": "to the left of",
+        "object_b": "lamp"
+      },
+      {
+        "type": "spatial",
+        "object_a": "bowl",
+        "relation": "to the right of",
+        "object_b": "teddy bear"
+      },
+      {
+        "type": "spatial",
+        "object_a": "shoe",
+        "relation": "behind",
+        "object_b": "cat"
+      },
+      {
+        "type": "spatial",
+        "object_a": "bottle",
+        "relation": "under",
+        "object_b": "apple"
+      }
+    ],
+    "prompt": "A scene with a hat to the right of a basket, a dog under a box, a backpack next to a bed, a laptop to the right of a rug, a clock to the left of a lamp, a bowl to the right of a teddy bear, a shoe behind a cat, and a bottle under a apple"
+  }
+]

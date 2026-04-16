@@ -36,6 +36,7 @@ def build_permutations(base_prompts, rng, n_perms=3):
     for base in base_prompts:
         constraints = base["constraints"]
         scene_prefix = base["scene_prefix"]
+        scene_suffix = base.get("scene_suffix", "")
         if len(constraints) < 2:
             continue
         seen_orders = {tuple(range(len(constraints)))}
@@ -57,8 +58,9 @@ def build_permutations(base_prompts, rng, n_perms=3):
                 "k": base["k"],
                 "type": base["type"],
                 "scene_prefix": scene_prefix,
+                "scene_suffix": scene_suffix,
                 "constraints": reordered,
-                "prompt": render_prompt(scene_prefix, reordered),
+                "prompt": render_prompt(scene_prefix, reordered, scene_suffix),
             })
             produced += 1
     return out
