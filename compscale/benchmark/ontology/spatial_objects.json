@@ -1,0 +1,47 @@
+{
+  "_notes": "Spatial relations require two well-individuated objects with clear visual boundaries. Avoid deformable or clustering objects (yarn, beads, loose flowers) — they're ambiguous about where the object ends and the relation begins. Relations are restricted to the set the VLM can verify reliably via VQA.",
+  "objects": [
+    {"object": "cat", "plural": "cats"},
+    {"object": "dog", "plural": "dogs"},
+    {"object": "bird", "plural": "birds"},
+    {"object": "book", "plural": "books"},
+    {"object": "mug", "plural": "mugs"},
+    {"object": "bottle", "plural": "bottles"},
+    {"object": "lamp", "plural": "lamps"},
+    {"object": "chair", "plural": "chairs"},
+    {"object": "bowl", "plural": "bowls"},
+    {"object": "plate", "plural": "plates"},
+    {"object": "pillow", "plural": "pillows"},
+    {"object": "backpack", "plural": "backpacks"},
+    {"object": "apple", "plural": "apples"},
+    {"object": "ball", "plural": "balls"},
+    {"object": "teddy bear", "plural": "teddy bears"},
+    {"object": "clock", "plural": "clocks"},
+    {"object": "vase", "plural": "vases"},
+    {"object": "hat", "plural": "hats"},
+    {"object": "shoe", "plural": "shoes"},
+    {"object": "laptop", "plural": "laptops"}
+  ],
+  "surfaces_and_containers": [
+    {"object": "table", "plural": "tables"},
+    {"object": "desk", "plural": "desks"},
+    {"object": "shelf", "plural": "shelves"},
+    {"object": "bed", "plural": "beds"},
+    {"object": "sofa", "plural": "sofas"},
+    {"object": "mat", "plural": "mats"},
+    {"object": "rug", "plural": "rugs"},
+    {"object": "box", "plural": "boxes"},
+    {"object": "basket", "plural": "baskets"}
+  ],
+  "relations": [
+    {"relation": "on", "inverse": "under", "vqa_template": "Is the {a} on the {b}?"},
+    {"relation": "under", "inverse": "on", "vqa_template": "Is the {a} under the {b}?"},
+    {"relation": "to the left of", "inverse": "to the right of", "vqa_template": "Is the {a} to the left of the {b}?"},
+    {"relation": "to the right of", "inverse": "to the left of", "vqa_template": "Is the {a} to the right of the {b}?"},
+    {"relation": "in front of", "inverse": "behind", "vqa_template": "Is the {a} in front of the {b}?"},
+    {"relation": "behind", "inverse": "in front of", "vqa_template": "Is the {a} behind the {b}?"},
+    {"relation": "inside", "inverse": "outside", "vqa_template": "Is the {a} inside the {b}?"},
+    {"relation": "next to", "inverse": "next to", "vqa_template": "Is the {a} next to the {b}?"}
+  ],
+  "_relation_notes": "Depth relations (in front of / behind) and inside/outside are weakest for VLM verification; prioritize on/under/left/right in pilot prompts, use depth relations only when necessary for k>=4 to fill out prompts."
+}

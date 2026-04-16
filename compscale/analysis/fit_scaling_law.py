@@ -32,6 +32,30 @@ def bootstrap_ci(values, n_boot=1000, ci=0.95):
     return lower, upper
 
 
+def bootstrap_ratio_ci(per_constraint, per_all_sat, k, n_boot=2000, ci=0.95, seed=0):
+    """Correctly parameterized bootstrap CI for the independence ratio at fixed k."""
+    rng = np.random.default_rng(seed)
+    per_constraint = np.asarray(per_constraint, dtype=float)
+    per_all_sat = np.asarray(per_all_sat, dtype=float)
+    if len(per_constraint) == 0 or len(per_all_sat) == 0:
+        return None
+    ratios = []
+    n = len(per_all_sat)
+    for _ in range(n_boot):
+        idx = rng.integers(0, n, size=n)
+        p = per_constraint[idx].mean()
+        observed = per_all_sat[idx].mean()
+        if p <= 0:
+            continue
+        ratios.append(observed / (p ** k))
+    if not ratios:
+        return None
+    lower = float(np.percentile(ratios, (1 - ci) / 2 * 100))
+    upper = float(np.percentile(ratios, (1 + ci) / 2 * 100))
+    median = float(np.median(ratios))
+    return {"median": median, "lower": lower, "upper": upper, "n_boot": len(ratios)}
+
+
 def main():
     parser = argparse.ArgumentParser(description="Fit decay curves to pilot results")
     parser.add_argument(
@@ -44,9 +68,28 @@ def main():
         default="compscale/analysis/figures",
         help="Output directory for figures",
     )
+    parser.add_argument(
+        "--type",
+        default=None,
+        help="Filter results by constraint type (attribute/negation/spatial/numeracy)",
+    )
+    parser.add_argument(
+        "--summary_name",
+        default="pilot_summary.json",
+        help="Filename for the summary JSON within output_dir",
+    )
+    parser.add_argument(
+        "--figure_name",
+        default="pilot_decay_curve.png",
+        help="Filename for the decay-curve figure within output_dir",
+    )
     args = parser.parse_args()
 
     results = json.loads(Path(args.results).read_text())
+    if args.type:
+        before = len(results)
+        results = [r for r in results if r.get("type") == args.type]
+        print(f"Filtered by type={args.type}: {before} -> {len(results)} records")
 
     # Aggregate by k
     k_levels = sorted(set(r["k"] for r in results))
@@ -112,8 +155,9 @@ def main():
         except RuntimeError as e:
             print(f"  {name}: fitting failed ({e})")
 
-    # Independence analysis
+    # Independence analysis (with bootstrap CI on ratio at each k)
     p_avg = np.mean(mean_arr)
+    independence_per_k = {}
     print(f"\nIndependence Analysis:")
     print(f"  Mean per-constraint satisfaction: p = {p_avg:.3f}")
     print(f"  If constraints fail independently, P(all k satisfied) = p^k:")
@@ -121,9 +165,20 @@ def main():
         predicted = p_avg ** k
         observed = np.mean(per_k_all_sat[k])
         ratio = observed / predicted if predicted > 0 else float("inf")
+        ratio_ci = bootstrap_ratio_ci(per_k[k], per_k_all_sat[k], k, seed=42 + k)
+        independence_per_k[str(k)] = {
+            "predicted_p_to_k": float(predicted),
+            "observed_all_satisfied": float(observed),
+            "ratio": float(ratio),
+            "ratio_ci_95": ratio_ci,
+        }
+        ci_str = (
+            f" CI=[{ratio_ci['lower']:.3f}, {ratio_ci['upper']:.3f}]"
+            if ratio_ci else ""
+        )
         print(
             f"    k={k}: predicted={predicted:.4f}, observed={observed:.4f}, "
-            f"ratio={ratio:.2f}"
+            f"ratio={ratio:.3f}{ci_str}"
         )
     print(
         f"  If ratio ≈ 1.0 across all k: constraints fail independently (no interference)."
@@ -196,13 +251,13 @@ def main():
     ax2.grid(True, alpha=0.3, axis="y")
 
     fig.tight_layout()
-    fig_path = output_dir / "pilot_decay_curve.png"
+    fig_path = output_dir / args.figure_name
     fig.savefig(fig_path, dpi=150, bbox_inches="tight")
     plt.close()
     print(f"\nFigure saved to {fig_path}")
 
-    # Save numerical summary
     summary = {
+        "type_filter": args.type,
         "k_levels": k_levels,
         "per_constraint_satisfaction": {
             str(k): {
@@ -214,6 +269,10 @@ def main():
             for k in k_levels
         },
         "all_satisfied_rate": {str(k): float(np.mean(per_k_all_sat[k])) for k in k_levels},
+        "independence": {
+            "mean_p": float(p_avg),
+            "per_k": independence_per_k,
+        },
         "fits": {
             name: {
                 "params": [float(x) for x in fit["params"]],
@@ -224,7 +283,7 @@ def main():
         },
         "best_fit": best_name,
     }
-    summary_path = output_dir / "pilot_summary.json"
+    summary_path = output_dir / args.summary_name
     summary_path.write_text(json.dumps(summary, indent=2))
     print(f"Summary saved to {summary_path}")
 

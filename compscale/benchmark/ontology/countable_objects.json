@@ -1,0 +1,44 @@
+{
+  "_notes": "Tiered countability ontology distilled from numeracy pilots v1/v2 on FLUX.2 klein 4B. Tier 1 objects achieved 75-100% count accuracy at counts 1-3; Tier 2 achieved 40-70%. Tier 3 (uncountable: beads, sequins, cotton, confetti, loose flowers like daisies/lavender/marigold, paperclips, etc.) is EXCLUDED — they are not usable for the numeracy axis. All counts in pilots/benchmarks must stay in {1,2,3}.",
+  "max_count": 3,
+  "tier1": [
+    {"object": "pumpkin", "plural": "pumpkins", "plausible_colors": ["orange", "white", "green"]},
+    {"object": "backpack", "plural": "backpacks", "plausible_colors": ["red", "blue", "black", "green", "yellow"]},
+    {"object": "gift box", "plural": "gift boxes", "plausible_colors": ["red", "blue", "green", "yellow", "white"]},
+    {"object": "stapler", "plural": "staplers", "plausible_colors": ["red", "blue", "black"]},
+    {"object": "calculator", "plural": "calculators", "plausible_colors": ["black", "white", "blue"]},
+    {"object": "toothbrush", "plural": "toothbrushes", "plausible_colors": ["blue", "green", "pink", "white"]},
+    {"object": "yarn ball", "plural": "yarn balls", "plausible_colors": ["red", "blue", "green", "yellow", "pink"]},
+    {"object": "spool of thread", "plural": "spools of thread", "plausible_colors": ["red", "blue", "white", "black"]},
+    {"object": "towel roll", "plural": "towel rolls", "plausible_colors": ["white", "blue", "pink"]},
+    {"object": "bell pepper", "plural": "bell peppers", "plausible_colors": ["red", "green", "yellow"]},
+    {"object": "bus", "plural": "buses", "plausible_colors": ["red", "blue", "yellow"]},
+    {"object": "teddy bear", "plural": "teddy bears", "plausible_colors": ["brown", "white", "pink"]},
+    {"object": "sponge", "plural": "sponges", "plausible_colors": ["yellow", "blue", "green", "pink"]},
+    {"object": "mug", "plural": "mugs", "plausible_colors": ["white", "red", "blue", "green", "black"]},
+    {"object": "cupcake", "plural": "cupcakes", "plausible_colors": ["pink", "white", "brown"]},
+    {"object": "bottle", "plural": "bottles", "plausible_colors": ["green", "blue", "brown", "clear"]},
+    {"object": "cucumber", "plural": "cucumbers", "plausible_colors": ["green"]}
+  ],
+  "tier2": [
+    {"object": "apple", "plural": "apples", "plausible_colors": ["red", "green", "yellow"]},
+    {"object": "tomato", "plural": "tomatoes", "plausible_colors": ["red", "green", "yellow"]},
+    {"object": "pen", "plural": "pens", "plausible_colors": ["blue", "black", "red"]},
+    {"object": "car", "plural": "cars", "plausible_colors": ["red", "blue", "black", "white", "yellow"]},
+    {"object": "mushroom", "plural": "mushrooms", "plausible_colors": ["brown", "white", "red"]},
+    {"object": "macaron", "plural": "macarons", "plausible_colors": ["pink", "green", "yellow"]},
+    {"object": "banana", "plural": "bananas", "plausible_colors": ["yellow", "green"]},
+    {"object": "pear", "plural": "pears", "plausible_colors": ["green", "yellow"]},
+    {"object": "tangerine", "plural": "tangerines", "plausible_colors": ["orange"]},
+    {"object": "folder", "plural": "folders", "plausible_colors": ["red", "blue", "green", "yellow"]},
+    {"object": "candle", "plural": "candles", "plausible_colors": ["white", "red", "blue"]},
+    {"object": "sticky note", "plural": "sticky notes", "plausible_colors": ["yellow", "pink", "green"]}
+  ],
+  "excluded_tier3": [
+    "bead", "sequin", "cotton ball", "feather", "forget-me-not", "daisy", "lavender",
+    "fern", "marigold", "sunflower", "confetti", "grape cluster", "sheet of paper",
+    "paperclip", "felt square", "hair tie", "croissant", "meringue", "lemon tart",
+    "mint cookie", "cookie", "soap bar", "crayon", "party hat", "napkin", "block",
+    "dinosaur", "streamer"
+  ]
+}

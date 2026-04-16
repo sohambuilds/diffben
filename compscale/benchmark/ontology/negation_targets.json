@@ -1,0 +1,74 @@
+{
+  "_notes": "Negation targets MUST be additive/modular objects that can plausibly be absent from a scene without violating physical priors. Structural elements (walls, floors, ceilings, sky, ground) are EXCLUDED — 'no floor' tests physical prior override, not logical negation processing. Each scene must have a realistic default expectation that such objects are often present, so saying 'no X' is a meaningful constraint on an otherwise typical scene.",
+  "scenes": {
+    "kitchen": {
+      "scene_filler_phrases": [
+        "a kitchen with marble countertops and warm afternoon light",
+        "a bright modern kitchen with wooden cabinets",
+        "a cozy kitchen with tiled floors and a sunny window",
+        "a tidy kitchen with stone counters and hanging pendant lights"
+      ],
+      "valid_negation_targets": [
+        "refrigerator", "microwave", "toaster", "blender", "kettle",
+        "dishwasher", "cutting board", "fruit bowl", "spice rack",
+        "coffee maker", "paper towel holder", "knife block"
+      ]
+    },
+    "bedroom": {
+      "scene_filler_phrases": [
+        "a bedroom with soft morning light and pale blue walls",
+        "a small bedroom with wooden flooring and a tall window",
+        "a neat bedroom with cream walls and patterned linens",
+        "a minimalist bedroom with light wood furniture"
+      ],
+      "valid_negation_targets": [
+        "lamp", "alarm clock", "bookshelf", "rug", "mirror",
+        "nightstand", "plant", "painting", "chair", "wardrobe",
+        "laundry basket", "fan"
+      ]
+    },
+    "street": {
+      "scene_filler_phrases": [
+        "a quiet suburban street in the late afternoon",
+        "a narrow city street with cobblestone pavement",
+        "a residential street lined with trees",
+        "a wide main street with shop fronts on both sides"
+      ],
+      "valid_negation_targets": [
+        "car", "bicycle", "mailbox", "bench", "trash can",
+        "streetlight", "bus stop", "fire hydrant", "parking meter",
+        "motorcycle", "newspaper stand", "potted plant"
+      ]
+    },
+    "office": {
+      "scene_filler_phrases": [
+        "a modern office room with large windows and light gray walls",
+        "a clean workstation in an open-plan office",
+        "a small private office with a wooden desk",
+        "a bright corporate meeting room"
+      ],
+      "valid_negation_targets": [
+        "computer monitor", "printer", "whiteboard", "clock",
+        "potted plant", "coffee mug", "bookshelf", "filing cabinet",
+        "telephone", "chair", "lamp", "bulletin board"
+      ]
+    },
+    "park": {
+      "scene_filler_phrases": [
+        "a public park on a sunny weekend morning",
+        "a small urban park with paved paths and green lawns",
+        "a neighborhood park with benches and flower beds",
+        "a wide open park under a clear blue sky"
+      ],
+      "valid_negation_targets": [
+        "bench", "fountain", "trash can", "swing set", "slide",
+        "bicycle", "dog", "kite", "picnic table", "lamppost",
+        "trash bin", "statue"
+      ]
+    }
+  },
+  "excluded_structural": [
+    "floor", "ceiling", "wall", "sky", "ground", "roof", "door", "window",
+    "sun", "moon", "air", "gravity", "shadow", "horizon"
+  ]
+}
