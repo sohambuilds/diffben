@@ -100,6 +100,57 @@ python compscale/evaluation/vlm_verify.py \
   --output compscale/evaluation/results/sanity_results.json
 ```
 
+### Step 3 (budget variant) — low-credit Gemini runs
+
+If you are credit-constrained on Gemini 3 Flash Preview and cannot afford
+~3,000 per-constraint calls for the main sanity block, use the budget
+flags. They compose; start with only `--batch_constraints` and add the
+subsamplers only if needed.
+
+`--batch_constraints` bundles every constraint for a single (prompt, image)
+pair into ONE VLM call (~3.75x fewer calls on the core suite: ~3,000 -> ~800).
+Per-constraint scoring is identical, so Module 1 baseline + Module 6 fits
+remain valid. If a batched response ever fails to parse, the script
+transparently falls back to per-constraint calls for just that image.
+
+```
+python compscale/evaluation/vlm_verify.py \
+  --prompts compscale/benchmark/prompts/attribute_pilot_v2.json \
+            compscale/benchmark/prompts/negation_pilot.json \
+            compscale/benchmark/prompts/spatial_pilot.json \
+            compscale/benchmark/prompts/numeracy_pilot_v3.json \
+  --images_dir compscale/generation/outputs/flux2-klein-9b \
+  --n_images 4 \
+  --batch_constraints \
+  --output compscale/evaluation/results/sanity_results.json
+```
+
+Further levers (stack only if batching alone is not enough):
+
+* `--max_prompts_per_k N` — keep only the first N prompts per (type, k).
+  Deterministic by file order. Halves calls at N=10 for attribute, etc.
+* `--max_k_levels 1 8` — drop the middle of the ladder. Only keeps
+  endpoint deltas; Module 6 curve-fit is no longer meaningful (need >=3
+  k-points), but the independence-ratio check at k=8 still works.
+* `--n_images 2` — halves calls at the cost of wider seed CIs.
+
+Example — maximally cheap smoke eval (batched + endpoints only + N=2):
+
+```
+python compscale/evaluation/vlm_verify.py \
+  --prompts compscale/benchmark/prompts/attribute_pilot_v2.json \
+            compscale/benchmark/prompts/negation_pilot.json \
+            compscale/benchmark/prompts/spatial_pilot.json \
+            compscale/benchmark/prompts/numeracy_pilot_v3.json \
+  --images_dir compscale/generation/outputs/flux2-klein-9b \
+  --n_images 2 --batch_constraints --max_k_levels 1 8 \
+  --output compscale/evaluation/results/sanity_results_cheap.json
+```
+
+If you run the cheap smoke eval first and still have credits, rerun the
+full command above — output files are written fresh each time, so pick
+whichever you want `sanity_report.py` to consume.
+
 Module 4 (permutation pilot):
 
 ```

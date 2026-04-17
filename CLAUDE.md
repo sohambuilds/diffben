@@ -1,10 +1,12 @@
-# CLAUDE.md — CompScale Project Context (v2)
+# CLAUDE.md — CompScale Project Context (v4)
 
 ## What This Document Is
 
 This is the canonical context file for the **CompScale** research project. Feed this to any agent (coding, writing, brainstorming, evaluation) working on any part of this project. It contains the full research motivation, literature positioning, methodology, technical specs, and open questions.
 
 **v2 changelog (March 2026):** Killed ConDecomp (scooped by PRISM @ ICLR 2026). Repositioned benchmark against DetailMaster and T2I-CoReBench. Updated model roster to FLUX.2 family. Promoted asymmetric interference analysis to full Contribution 3.
+
+**v4 changelog (April 2026):** Built the full six-module sanity-check suite (`core_plus_confound` scope) on FLUX.2 klein 9B. Added type-aware prompt generator covering all four constraint dimensions (attribute / negation / spatial / numeracy) with an explicit `type` field per constraint. Added Module 3 token-length gate with a **bidirectional** `[1/1.5, 1.5]` ratio requirement. Hit and fixed a token-length confound: the first draft had k=1 prompts at 10-20 tokens vs k=8 at 36-66, blowing the gate for all four types. Introduced a four-tier scene-framing system (HEAVY/MEDIUM/SHORT/MINIMAL prefix + suffix banks) that pads low-k prompts heavily and strips padding at high k. Literature re-check: T2I-CompBench++ does *not* duplicate CompScale — it tests low-complexity (2-3 objects) with no parametric k-ladder, no decay-function fitting, and no directional interference analysis.
 
 ---
 
@@ -531,7 +533,7 @@ Frame every section through the NLP lens:
 - **Researcher:** Soham, KIIT Bhubaneswar, pre-final year CS
 - **Prior work:** ICCV 2025 paper (accepted), GeoAgent (ACL submission), SEA-Web (adversarial web agent benchmark)
 - **Compute:** 3× 48GB VRAM GPUs, personal compute budget
-- **This document last updated:** March 2026, v3
+- **This document last updated:** April 2026, v4
 
 ---
 
@@ -656,3 +658,83 @@ bead, sequin, cotton ball, feather, forget-me-not, daisy, lavender, fern, marigo
 4. **VLM evaluator reliability:** Gemini 3 Flash Preview is reliable for counts 1-3 of Tier 1 objects. Unreliable for counts >5 or Tier 3 objects (impossible to distinguish evaluator failure from generation failure).
 5. **Numeracy on weak models is at floor.** For the scaling law analysis to work, need per-constraint baseline > 70%. Attribute binding is the better first dimension to test on small models. Save numeracy for frontier APIs.
 6. **Independence test is essential.** Always compare observed all-satisfied rates against the p^k independence model. The interesting finding is when observed < predicted (active interference), not when it merely follows binomial decay.
+
+---
+
+## Sanity Check Suite Build-Out (April 16, 2026)
+
+### Scope and Rationale
+
+Before committing GPU time to the full benchmark, build a single unified sanity suite that (a) demonstrates all four constraint dimensions (attribute / negation / spatial / numeracy) work end-to-end on a model we trust, and (b) closes out the three biggest known confounds that reviewers will raise. Selected scope: **`core_plus_confound`** — six modules gated with pass/fail thresholds:
+
+| Module | Purpose | Gate |
+|---|---|---|
+| **1. Baseline viability** | Confirm per-constraint satisfaction is detectable for all four types (not at floor, not at ceiling) | p ≥ 0.5 at k=1 per type |
+| **2. VLM reliability** | Verify Gemini 3 Flash Preview agrees with humans on all four VQA question templates, especially negation yes/no | Agreement > 0.90 per type |
+| **3. Token-length distribution** | Close the DetailMaster-style confound that prompt length covaries with k | median(k=8) / median(k=1) ∈ [1/1.5, 1.5] per type |
+| **4. Prompt-order permutation** | Confirm constraint ordering within a prompt does not drive the signal | Mean \|Δ satisfaction\| per base prompt < 0.10 |
+| **5. Seed variance** | Confirm N=4 images per prompt is enough — CI width acceptable | Median bootstrap 95% CI width at N=4 < 0.15 |
+| **6. Independence reproducibility** | Replicate the v3 attribute-binding finding (ratio < 1 at k=8) on klein 9B | Attribute k=8 observed/predicted ratio < 1, CI upper bound < 1 |
+
+### Model Choice: FLUX.2 klein 9B
+
+The pilot v3 result (attribute binding on klein 4B showing sigmoid decay + k=8 interference) is already re-provable at 4B. Running the suite on **klein 9B** instead serves a second purpose: an early scaling preview. If α or k₀ shifts between 4B and 9B in the sanity suite, that's a free direction signal on what the full scaling trio (4B/9B/32B) will show. Single GPU at 48GB VRAM fits klein 9B comfortably in native bfloat16.
+
+### Literature Re-check: T2I-CompBench / CompBench++ Does Not Duplicate Us
+
+Confirmed via paper + repo review that T2I-CompBench++ (TPAMI 2025) tests attribute binding, object relationships, and numeracy at **low fixed complexity** (2-3 objects), reports accuracy percentages, and does NOT fit decay functions, does NOT have a parametric k-ladder, and does NOT analyze cross-constraint interference. CompScale's three contributions are therefore uniquely ours: parametric k-isolation, mathematical scaling-law fitting, and asymmetric interference analysis. Cite T2I-CompBench++ as the low-complexity baseline, not as a competitor.
+
+### Benchmark Infrastructure Built This Session
+
+- **`compscale/benchmark/ontology/`** — three structured JSONs codifying pilot findings:
+  - `countable_objects.json` — Tier 1 and Tier 2 countable objects only (Tier 3 explicitly excluded), max count = 3.
+  - `negation_targets.json` — scene-scoped additive/modular objects; structural elements ("floor", "ceiling") blacklisted to avoid testing physical prior override.
+  - `spatial_objects.json` — objects + surfaces + relations with inverse mappings and per-relation VQA templates.
+- **`compscale/benchmark/generate_prompts.py`** — deterministic template generator emitting four pilot JSONs (attribute, negation, spatial, numeracy). Every constraint carries an explicit `type` field so the VLM verifier routes without heuristics. Every prompt stores `scene_prefix` and `scene_suffix` so the permutation module can reshuffle clauses without reparsing strings.
+- **`compscale/generation/permute_prompts.py`** — reads base prompts, samples 5 k=4 prompts per type, and emits 3 distinct clause-order permutations per base.
+- **`compscale/benchmark/validate_lengths.py`** — Module 3 gate. Tokenizes all prompts with Mistral-Nemo-Base-2407 (Mistral-3-family proxy for FLUX.2's text encoder), reports per-(type, k) min/median/mean/p95/max, emits a violin plot and JSON report, and applies the symmetric 1.5x ratio gate.
+- **`compscale/generation/generate_images.py`** (extended) — added `--klein_9b` flag, multi-prompt-file batching, per-model output subdirectories, and **stable per-prompt seeds** derived from `sha256(prompt_id) + base_seed` so extending from N=4 to N=16 for Module 5 does not re-roll existing images.
+- **`compscale/evaluation/vlm_verify.py`** (extended) — routes VQA questions on `constraint["type"]`: "What color is the {object}?" for attribute, "How many {color} {object}s..." for numeracy, "Is there a {object}..." (yes/no) for negation, "Is the {a} {relation} the {b}?" (yes/no) for spatial. Backward-compatible with un-typed prompts via `infer_type`.
+- **`compscale/evaluation/sample_for_labeling.py`** + **`vlm_reliability.py`** — Module 2 pipeline: stratified sample of 160 (image, constraint) pairs for hand-labeling, then VLM-vs-human agreement with a confusion matrix (negation FP/FN called out separately).
+- **`compscale/analysis/seed_variance.py`** — Module 5: subcommand `subset` picks 20 prompts for N=16 extension; subcommand `analyze` bootstraps per-prompt 95% CIs at N=4 and N=8 and applies the width gate.
+- **`compscale/analysis/order_permutation.py`** — Module 4 analysis: per-base-prompt |Δ satisfaction| between base and its permuted variants.
+- **`compscale/analysis/fit_scaling_law.py`** (extended) — `--type` filter, configurable output filenames, and bootstrap 95% CIs on the independence ratio at each k (for Module 6's CI-upper-bound < 1 check).
+- **`compscale/analysis/diagnose_pilot.py`** (extended) — generalized from numeracy-only to all four types via a `_signature` helper that keys aggregation per constraint type.
+- **`compscale/analysis/sanity_report.py`** — aggregates all six module gates into `compscale/sanity/sanity_report.json` with a pass/fail row per module.
+- **`compscale/sanity/RUN.md`** — sequential execution playbook for the whole suite.
+
+### Module 3 Gate: First Run Failed, Fixed in Session
+
+First validation run on klein 9B (Mistral-Nemo-Base-2407 tokenizer, 260 prompts across the five pilot files):
+
+**Failed results (one-sided gate, ratio ≤ 1.5):**
+
+| type | median k=1 | median k=8 | ratio | status |
+|---|---|---|---|---|
+| attribute | 17.5 | 36.5 | 2.09 | FAIL |
+| negation | 13.0 | 41.5 | 3.19 | FAIL |
+| numeracy | 19.5 | 41.0 | 2.10 | FAIL |
+| spatial | 10.5 | 66.5 | **6.33** | FAIL |
+
+**Root cause:** the original `scene_prefix` logic gave k=1 only ~10 tokens of filler ("A scene with ... featuring") while k=8 used the same minimal prefix plus eight full constraint clauses. Spatial was the worst because each spatial clause ("a cat on a mat") is ~6 tokens, so k=8 spatial stacked to 52+ clause-tokens alone.
+
+**Fix: four-tier scene framing (prefix + suffix).** Authored four length tiers of hand-written prefix templates (HEAVY ~25 tok, MEDIUM ~16 tok, SHORT ~8 tok, MINIMAL ~4 tok) and two tiers of trailing suffixes (HEAVY ~12 tok, MEDIUM ~6 tok). Tier selection inverts with k:
+
+| k | prefix tier | suffix tier | total filler (tok) |
+|---|---|---|---|
+| 1 | HEAVY | HEAVY | ~37 |
+| 2 | MEDIUM | MEDIUM | ~22 |
+| 4 | SHORT | (none) | ~8 |
+| 8 | MINIMAL | (none) | ~4 |
+
+All four types now share a single framing bank via a `{scene}` placeholder. Generic types (attribute / numeracy / spatial) fill it from `GENERIC_SCENE_QUALIFIERS` ("living room", "kitchen", etc.); negation fills it with the ontology scene name so scene coherence is preserved. Expected post-fix ratios (ballpark, to be verified): attribute ~1.05, negation ~0.80, numeracy ~1.07, spatial ~1.15 — all within the new symmetric band.
+
+**Gate is now symmetric: `ratio ∈ [1/1.5, 1.5]`.** The old one-sided check would silently pass the inverse confound (k=1 padded longer than k=8), which would also compromise the scaling-law causal story. We want k-dependent *constraint count* to be the only thing varying — length should be held constant in *either* direction.
+
+### Design Implications (additive to earlier pilot findings)
+
+1. **Always store `scene_prefix` AND `scene_suffix` alongside `constraints` in every prompt JSON.** Permutation, diagnostic reporting, and any later rewriter need to rebuild the string without parsing. The session's first permutation implementation tried brittle suffix-of-scene slicing and was replaced with metadata-driven rebuild.
+2. **`constraint["type"]` is canonical.** The VLM verifier routes on it; the diagnostic reporter signatures on it; the analysis scripts filter on it. All generators must set it explicitly.
+3. **Stable per-prompt seeds enable N extension.** Deriving seeds from `sha256(prompt_id) + base_seed` means Module 5's N=4→N=16 extension re-uses the first four images exactly and only generates the additional twelve. Any future "add more images to this prompt" workflow inherits this for free.
+4. **Token-length gate must be bidirectional.** Either direction of length imbalance confounds the k signal.
+5. **Tier-based scene framing generalizes beyond the pilot.** The same HEAVY/MEDIUM/SHORT/MINIMAL pattern will be needed for the full k={1,2,3,4,6,8,12,16} ladder; future extension should interpolate tiers at intermediate k (e.g., k=3 gets MEDIUM+SHORT, k=12 gets MINIMAL+none).
