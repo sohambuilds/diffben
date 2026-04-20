@@ -17,3 +17,7 @@ compscale/analysis/figures/
 # API keys
 .env
 CLAUDE.md
+README.md
+uv.lock
+.gitignore
+
